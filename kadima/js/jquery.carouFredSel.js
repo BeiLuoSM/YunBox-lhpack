@@ -911,7 +911,7 @@
 				scrl = sc_setScroll(a_dur, sO.easing, conf);
 
 				//	animate / set carousel
-				a_cfs[opts.d['left']] = 600;//(opts.usePadding) ? opts.padding[opts.d[3]] : 0;
+				a_cfs[opts.d['left']] = (opts.usePadding) ? opts.padding[opts.d[3]] : 0;
 
 				//	animate / set wrapper
 				if (opts[opts.d['width']] == 'variable' || opts[opts.d['height']] == 'variable')

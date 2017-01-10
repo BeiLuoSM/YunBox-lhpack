@@ -572,6 +572,7 @@ body {
 .row {
     margin-left: 0px;
     margin-right: 0px;
+	font-family: 'Arial';
 }
 
 a:hover, a:focus {
@@ -685,9 +686,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus {
-    color: #000;
+    color: #fff;
     text-decoration: none;
-    background-color: #fff !important;
+   
     padding: 7px 20px 7px 22px;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
@@ -704,7 +705,7 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown-menu> .active> a, .dropdown-menu> .active> a:hover, .dropdown-menu> .active> a:focus {
     
     text-decoration: none;
-    background-color: #fff;
+    background-color: transparent !important;
     outline: 0;
 }
 .dropdown-menu> .disabled> a, .dropdown-menu> .disabled> a:hover, .dropdown-menu> .disabled> a:focus {
@@ -1114,4 +1115,33 @@ h1, h2, h3, h4, h5, h6 {
 .input-group {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+.woocommerce #content div.product div.thumbnails a, .woocommerce div.product div.thumbnails a, .woocommerce-page #content div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a{
+	float:none !important;
+}
+
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
+	width:30%;
+	margin-top: 20px;
+}
+.woocommerce div.product div.images img{
+	float:left;
+	width: 70%;
+	margin-right: 90px;
+	margin-top: 20px;
+}
+.woocommerce div.product div.images .thumbnails img{
+	float:none;
+	width: 12%;
+}
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images{
+	width:70%;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+	color: #fff;
+    background-color: rgba(52, 151, 253, 0.81);
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
+	color: #fff;
+    background-color: rgba(52, 151, 253, 0.81);
 }

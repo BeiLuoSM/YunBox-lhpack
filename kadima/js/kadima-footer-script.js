@@ -25,3 +25,12 @@ $nav.children('li').mouseenter(function(){
 	jQuery(this).addClass("cur").siblings().removeClass("cur");
 })
 $nav.children('li').eq(0).mouseenter();
+/*
+jQuery('#myCarousel').carouFredSel({
+	scroll: {
+		items: 1,
+		duration: 1000,
+		timeoutDuration: 3000
+	}
+});
+*/

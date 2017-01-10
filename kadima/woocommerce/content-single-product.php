@@ -39,6 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php
+	woocommerce_template_single_title();
 		/**
 		 * woocommerce_before_single_product_summary hook.
 		 *
@@ -51,6 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="summary entry-summary">
 
 		<?php
+		remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
 			/**
 			 * woocommerce_single_product_summary hook.
 			 *
