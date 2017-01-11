@@ -1,17 +1,7 @@
-<?php //Template Name:Full-Width-Timeline Page
+<?php //Template Name:Full-Width-TimeSheet Page
 get_header(); 
 get_template_part('breadcrums'); ?>
-<div class="container">
-	<div class="row kadima_blog_wrapper">
-		<div class="col-md-12">	
-		<?php wp_nav_menu( array(
-			'theme_location' => 'secondary',
-			'menu_class' => 'nav cl-effect-5',
-			'fallback_cb' => 'kadima_fallback_page_menu',
-			'walker' => new kadima_nav_walker(),
-			)
-		);	?>
-		<?php get_template_part('post','page'); ?>	
+<style>
 		<!--reset.css-->
 		html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -562,118 +552,122 @@ header h1 {
   }
 }
 	<!--style.css-->
+		</style>
 		
-		<body>
-	<section id="cd-timeline" class="cd-container">
+<div class="container">
+	<div class="row kadima_blog_wrapper">
+		<div class="col-md-12">	
+		<?php wp_nav_menu( array(
+			'theme_location' => 'secondary',
+			'menu_class' => 'nav cl-effect-5',
+			'fallback_cb' => 'kadima_fallback_page_menu',
+			'walker' => new kadima_nav_walker(),
+			)
+		);	?>
+		<section id="cd-timeline" class="cd-container">
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-picture" style="top:-60px;width: 300px;height: 40px;margin-left: -145px;border-radius: 5px;    text-align: center">
+					<p style="color: #fff;padding-top: 10px;font-size: 1.3em;font-weight: bold;">2008 Company Formation</p>
+				</div>
+				<div class="cd-timeline-img cd-picture">
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture" style="top:-60px;width: 300px;height: 40px;margin-left: -145px;border-radius: 5px;    text-align: center">
-				<p style="color: #fff;padding-top: 10px;font-size: 1.3em;font-weight: bold;">2008 Company Formation</p>
-			</div>
-			<div class="cd-timeline-img cd-picture">
+				</div> <!-- cd-timeline-img -->
 
-			</div> <!-- cd-timeline-img -->
+				<div class="cd-timeline-content">
+					<h2 class="right1"><a class="cd-read-more2">2009</a></h2>
+					<p>We invented three-way electricity defender technology of instant electric water heater,prevented users fromelectric shock todeath in the shower</p>
+					<!--<a href="#0" class="cd-read-more">查看详情</a>-->
 
-			<div class="cd-timeline-content">
-				<h2 class="right1"><a class="cd-read-more2">2009</a></h2>
-				<p>We invented three-way electricity defender technology of instant electric water heater,prevented users fromelectric shock todeath in the shower</p>
-				<!--<a href="#0" class="cd-read-more">查看详情</a>-->
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
 
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-movie">
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
+				</div> <!-- cd-timeline-img -->
 
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2><a class="cd-read-more2">2010</a></h2>
-				<p>One of the top 500 companies'strategic partner</p>
-
-
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2 class="right1"><a class="cd-read-more2">2012</a></h2>
-				<p style="text-align: right;">Top 100 Enterprises awarded by government</p>
+				<div class="cd-timeline-content">
+					<h2><a class="cd-read-more2">2010</a></h2>
+					<p>One of the top 500 companies'strategic partner</p>
 
 
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-			</div> <!-- cd-timeline-img -->
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-picture">
 
-			<div class="cd-timeline-content">
-				<h2><a class="cd-read-more2 ">2013</a></h2>
-				<p>New and high technology enterprise awarded by govemment</p>
+				</div> <!-- cd-timeline-img -->
 
-
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2 class="right1"><a class="cd-read-more2">2014</a></h2>
-				<p style="text-align: right;">IEC TC61 W35 China sole representative</p>
+				<div class="cd-timeline-content">
+					<h2 class="right1"><a class="cd-read-more2">2012</a></h2>
+					<p style="text-align: right;">Top 100 Enterprises awarded by government</p>
 
 
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-location">
+				</div> <!-- cd-timeline-img -->
 
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2><a class="cd-read-more2">2015</a></h2>
-				<p>China largest electric instant waler heater manufacturer</p>
-
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2 class="right1" ><a class="cd-read-more2">2016</a></h2>
-				<p>China assistant living care products alliance enterprises</p>
+				<div class="cd-timeline-content">
+					<h2><a class="cd-read-more2 ">2013</a></h2>
+					<p>New and high technology enterprise awarded by govemment</p>
 
 
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-location">
 
-			</div> <!-- cd-timeline-img -->
+				</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
-				<h2><a class="cd-read-more2">2017</a></h2>
-				<p>We are on the way</p>
+				<div class="cd-timeline-content">
+					<h2 class="right1"><a class="cd-read-more2">2014</a></h2>
+					<p style="text-align: right;">IEC TC61 W35 China sole representative</p>
 
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-	</section> <!-- cd-timeline -->
-<script src="js/jquery.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-</body>
-		
-		
+
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-movie">
+
+				</div> <!-- cd-timeline-img -->
+
+				<div class="cd-timeline-content">
+					<h2><a class="cd-read-more2">2015</a></h2>
+					<p>China largest electric instant waler heater manufacturer</p>
+
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-location">
+
+				</div> <!-- cd-timeline-img -->
+
+				<div class="cd-timeline-content">
+					<h2 class="right1" ><a class="cd-read-more2">2016</a></h2>
+					<p>China assistant living care products alliance enterprises</p>
+
+
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-movie">
+
+				</div> <!-- cd-timeline-img -->
+
+				<div class="cd-timeline-content">
+					<h2><a class="cd-read-more2">2017</a></h2>
+					<p>We are on the way</p>
+
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+		</section> <!-- cd-timeline -->
 		</div>		
 	</div>
 </div>	
