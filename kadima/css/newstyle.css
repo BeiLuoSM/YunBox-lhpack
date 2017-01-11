@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6{
 p{
     padding:0 0;
     margin:0 0;
-    font-family: 'Open Sans';
+    font-family: 'Lato-Light_1';
 
 
 }
@@ -54,7 +54,7 @@ body{
     float:left;
    
     padding-left: 2.5em;
-    font-family: 'Open Sans';
+    font-family: 'Arial';
     font-size:13px;
 }
 .top-menu ul li{
@@ -160,7 +160,7 @@ a.button {
     padding: 0.8em 1em;
     color: #fff;
     border-radius: 5px;
-    font-family: 'Arial';
+    font-family: 'Lato-Light_1';
 }
 a.button:hover {
     background: #000;
@@ -236,7 +236,7 @@ a.button:hover {
     padding: 0.5em;
 }
 .most-1 h5{
-    font-size: 1.1em;
+    
     color: #27DA93;
     padding: 0em 0 0.3em;
     font-family: 'Montserrat-Regular';
@@ -245,9 +245,11 @@ a.button:hover {
 }
 .most-1 h5 a{
     text-decoration:none;
-    color: #333;
-    font-family: 'Arial';
+    color: #373737;
+    font-family: 'Lato-Light_1';
     font-weight: bold;
+	font-size: 1.2em;
+	
 
 }
 .most-1 h5 a:hover{
@@ -265,7 +267,7 @@ a.button:hover {
     font-family: 'Lato-Light_1' ;
 }
 .most-1 h6{
-    font-size: 1em;
+    font-size: 1.1em;
     color: #8d8d8d;
     padding: 0em 0 0.3em;
     margin-bottom: 1em;
@@ -274,6 +276,7 @@ a.button:hover {
 }
 .most-1 h6 a{
 	color: #8d8d8d;
+	font-family:'Lato-Light_1';
 }
 .most-1 h6 a:hover{
 	color: #8d8d8d !important;
@@ -433,7 +436,7 @@ i.skype {
     color: #555;
     font-size: 3em;
     padding: 0.3em 0 0.3em;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Lato-Light_1';
     font-size: 23px;
    
     font-family: 'Open Sans';
