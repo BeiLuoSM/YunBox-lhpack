@@ -10,7 +10,8 @@ get_template_part('breadcrums'); ?>
 			'fallback_cb' => 'kadima_fallback_page_menu',
 			'walker' => new kadima_nav_walker(),
 			)
-		);	?>
+		);	?>		
+		<?php get_template_part('post','page'); ?>	
 		</div>		
 	</div>
 </div>	
