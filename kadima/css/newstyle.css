@@ -167,8 +167,16 @@ a.button:hover {
 }
 .menu-asd-container .nav li{
 	float:left;
+	margin-right: 13em;
+	margin-bottom: 45px;
 }
-
+.menu-asd-container .nav li span{
+	padding-left: 15px;
+}
+.nav>li>a{
+	font-size: 33px;
+	color: #3399fe;
+}
 
 .copyrights{
     text-indent:-9999px;
