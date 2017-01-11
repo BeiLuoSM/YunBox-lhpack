@@ -165,7 +165,7 @@ a.button {
 a.button:hover {
     background: #000;
 }
-.menu-asd-container .nav li{
+.cl-effect-6 li{
 	float:left;
 	margin-right: 13em;
 	margin-bottom: 45px;
@@ -189,7 +189,10 @@ a.button:hover {
     float:left;
 
 }
-
+.nav>li>a:focus, .nav>li>a:hover{
+	border-bottom: 3px solid #3399fe;
+	background-color:#fff;
+}
 /*--BANNER--*/
 
 .contact-section{
