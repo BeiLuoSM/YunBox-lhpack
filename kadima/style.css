@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #666;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
     font-family: 'Lato-Light_1', 'Arimo', Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: bold; 
 }
 p, .textwidget {
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
