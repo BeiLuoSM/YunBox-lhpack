@@ -1262,7 +1262,7 @@ p, .textwidget {
     font-weight: normal;
     font-size: 18px;
     color: #fff;
-	font-family:Arial;
+	font-family:'Open Sans';
 }
 .kadima_sidebar_blog_shadow {
     background: url('./images/shadow.png') no-repeat top center;

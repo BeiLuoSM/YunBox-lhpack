@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6{
 p{
     padding:0 0;
     margin:0 0;
-    font-family: 'Arial';
+    font-family: 'Open Sans';
 
 
 }
@@ -54,12 +54,13 @@ body{
     float:left;
    
     padding-left: 2.5em;
-    font-family: 'Arial';
+    font-family: 'Open Sans';
     font-size:13px;
 }
 .top-menu ul li{
     display:inline-block;
     margin-right: 8px;
+	margin-bottom:0px;
 
 }
 .form-group input{
@@ -258,7 +259,7 @@ a.button:hover {
     padding: 0em 0 0.3em;
     margin-bottom: 1em;
     text-align: left;
-    font-family: 'Arial';
+  
 }
 .most-1 h6 a{
 	color: #8d8d8d;
@@ -266,7 +267,7 @@ a.button:hover {
 .most-1 h6 a:hover{
 	color: #8d8d8d !important;
 }
-
+ 
 
 span.four {
     background-color: #27DA93;
@@ -424,7 +425,7 @@ i.skype {
     font-family: 'Montserrat-Regular';
     font-size: 23px;
    
-    font-family: 'Arial';
+    font-family: 'Open Sans';
 	text-align:left;
 }
 
