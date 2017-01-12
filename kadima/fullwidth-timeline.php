@@ -6,11 +6,12 @@ get_template_part('breadcrums'); ?>
 		<div class="col-md-12">	
 		<?php wp_nav_menu( array(
 			'theme_location' => 'secondary',
-			'menu_class' => 'nav cl-effect-5',
+			'menu_class' => 'nav cl-effect-6',
 			'fallback_cb' => 'kadima_fallback_page_menu',
 			'walker' => new kadima_nav_walker(),
 			)
-		);	?>
+		);	?>		
+		<?php get_template_part('post','page'); ?>	
 		</div>		
 	</div>
 </div>	
