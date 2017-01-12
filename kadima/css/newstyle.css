@@ -22,7 +22,7 @@ p{
     margin:0 0;
     font-family: 'Lato-Light_1';
 	color: #dadada;
-
+	font-size:1em;
 
 }
 
@@ -459,7 +459,13 @@ i.skype {
 
 
 }
-
+.mark, mark{
+	display: none;
+}
+.cd-timeline-content p{
+	color:#333;
+	font-size:14px !important;
+}
 
 
 
