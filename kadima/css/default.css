@@ -572,7 +572,7 @@ body {
 .row {
     margin-left: 0px;
     margin-right: 0px;
-	font-family: 'Open Sans';
+	font-family: 'Lato-Light_1';
 }
 
 a:hover, a:focus {
@@ -846,7 +846,7 @@ h1, h2, h3, h4, h5, h6 {
 **************************************************************************************************************************/
 
 .kadima_header_breadcrum_title {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     background: #edf0f2;
     opacity: 1;
     padding-top: 8px;
