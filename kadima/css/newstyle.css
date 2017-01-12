@@ -122,7 +122,8 @@ nav a {
 }
 .btn-default:hover{
     background:#fff !important;
-    border-color: #fff;
+    border-color: #333 !important;
+	
 }
 .navbar-form{
     margin:0;
