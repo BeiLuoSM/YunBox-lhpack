@@ -190,9 +190,17 @@ a.button:hover {
     float:left;
 
 }
-.nav>li>a:focus, .nav>li>a:hover{
+.cl-effect-6>li>a {
+	line-height:0.8em;
+}
+.cl-effect-6>li>a:focus, .cl-effect-6>li>a:hover{
 	border-bottom: 3px solid #3399fe;
 	background-color:#fff;
+}
+.cl-effect-6 .subMenu{
+	font-size: 16px;
+	color:#333;
+	line-height:0.5em;
 }
 /*--BANNER--*/
 
