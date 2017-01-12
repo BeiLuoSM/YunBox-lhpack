@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, .textwidget {
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-size:1.1em;
+    font-size:1em;
     line-height: 1.42857143;
 }
 .head-contact-info {
@@ -1923,7 +1923,7 @@ p, .textwidget {
 }
 .kadima_footer_copyright_info {
     float: left;
-	font-size:0.95em;
+	font-size:1em;
 	color:#dadada;
 	padding-top: 5px;
 }
