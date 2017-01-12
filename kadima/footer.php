@@ -5,12 +5,21 @@
 			<div class="col-md-12" style="background-color: #454449;padding-top: 18px;padding-bottom: 10px;border-bottom: 10px solid #3399fe;">
 			    <div class="copyright-right " data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; ">
 					<div class="container">
-						<div class="col-md-8" style="float:left;padding:0;">
+						<div class="col-md-9" style="float:left;padding:0;">
 							<p class="kadima_footer_copyright_info wl_rtl" >
 							<?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }
-							if($wl_theme_options['info_copyright']) { echo "|" .esc_attr($wl_theme_options['info_copyright']); } ?>
+							if($wl_theme_options['info_copyright']) { echo "" .esc_attr($wl_theme_options['info_copyright']); } ?>
+							<ul style=";padding: 0;float:left;">
+								<li style="display: inline-block;padding: 0.1em 0;"><i class="phone"></i></li>
+								<li style="display: inline-block;padding: 0.1em 0;"><p class="label1">0086 592 6532303</p></li>
+							</ul>
+							<ul style=";padding: 0;float:left;">
+								<li style="display: inline-block;padding: 0.1em 0;"><i class="indicate"></i></li>
+								<li style="display: inline-block;padding: 0.1em 0;"><p class="label1">crm-a@xmetec.com</p></li>
+							</ul>
+							
 						</div>
-						<div class="col-md-4" style="float:right;padding:0;">
+						<div class="col-md-3" style="float:right;padding:0;">
 							<ul >
 								<?php if($wl_theme_options['fb_link']!='') { ?>
 									 <li class="twitter" title="Facebook"><a class="twitter" href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"></a></li>

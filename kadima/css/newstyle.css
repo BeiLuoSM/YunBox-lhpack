@@ -21,6 +21,7 @@ p{
     padding:0 0;
     margin:0 0;
     font-family: 'Lato-Light_1';
+	color: #dadada;
 
 
 }
@@ -381,8 +382,9 @@ i.skype {
 }
 .copyright-right ul{
     padding:0;
-    margin:0;
+    margin-left:70px;
     text-align: right;
+	
 }
 .copyright-right ul li{
     display:inline-block;
