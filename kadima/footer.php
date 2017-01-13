@@ -9,15 +9,9 @@
 							<p class="kadima_footer_copyright_info wl_rtl" >
 							<?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }
 							if($wl_theme_options['info_copyright']) { echo "" .esc_attr($wl_theme_options['info_copyright']); } ?>
-							<ul style=";padding: 0;float:left;">
-								<!--<li style="display: inline-block;padding: 0.1em 0;"><i class="phone"></i></li>-->
-								<li style="display: inline-block;padding: 0.1em 0;"><p class="label1" style="padding-top: 5px;">Tel: 0086 592 6532303</p></li>
-							</ul>
-							<ul style=";padding: 0;float:left;">
-								<!--<li style="display: inline-block;padding: 0.1em 0;"><i class="indicate"></i></li>-->
-								<li style="display: inline-block;padding: 0.1em 0;"><p class="label1" style="padding-top: 5px;">Email: crm-a@xmetec.com</p></li>
-							</ul>
-							
+							</p>
+							<p class="kadima_footer_copyright_info wl_rtl">&nbsp;&nbsp;&nbsp;&nbsp;Tel: 0086 592 6532303</p>							
+							<p class="kadima_footer_copyright_info wl_rtl">&nbsp;&nbsp;&nbsp;&nbsp;Email: crm-a@xmetec.com</p>							
 						</div>
 						<div class="col-md-3" style="float:right;padding:0;">
 							<ul >

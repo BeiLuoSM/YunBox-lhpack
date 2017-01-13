@@ -186,6 +186,7 @@ a.button:hover {
     font-size: 3em;
     padding: 1.0em 0 0.2em;
     font-family: 'Lato-Light_1' ;
+	margin-top: 0px;
 }
 .content-grid hr{
     height: 2px;

@@ -2,7 +2,7 @@
 <?php $wl_theme_options = kadima_get_options(); ?>
 <div class="content-grid">
 		<h3><?php echo esc_attr($wl_theme_options['port_heading']); ?></h3>
-		<p><hr></p>
+		<hr>
 		<div class="col-md-12 product-bj" style="padding-top: 20px;padding-bottom: 20px;">
 			<div class="container">
 				<?php for($i=1 ; $i<=4; $i++) { ?>
