@@ -73,7 +73,7 @@ body{
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 .top-menu ul li a{
     font-size:1.2em;
-    
+    text-align: center;
     text-decoration: none;
   
     font-weight: 700;
