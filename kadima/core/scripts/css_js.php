@@ -23,7 +23,6 @@
             wp_enqueue_script('responsiveslides', get_template_directory_uri() .'/js/responsiveslides.min.js');
             wp_enqueue_script('classie', get_template_directory_uri() .'/js/classie.js');
 			wp_enqueue_script('jquery.carouFredSel.packed', get_template_directory_uri() .'/js/jquery.carouFredSel.js');
-			wp_enqueue_script('ads', get_template_directory_uri() .'/js/ads.js');
         
     		}
             if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
