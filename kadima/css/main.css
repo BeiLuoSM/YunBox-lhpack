@@ -110,6 +110,7 @@ html {
     -ms-transition: opacity .4s, -ms-transform .5s;
     -o-transition: opacity .4s, -o-transform .5s;
     transition: opacity .4s, transform .5s;
+	width: 280px;
 }
 .menu .submenu li:hover a {
     border-left: 3px solid #3399fe;
@@ -119,6 +120,7 @@ html {
 .menu > li:hover .submenu, .menu > li:focus .submenu {
     max-height: 2000px;
     z-index: 10;
+	min-width:280px;
 }
 .menu > li:hover .submenu li, .menu > li:focus .submenu li {
     opacity: 1;
