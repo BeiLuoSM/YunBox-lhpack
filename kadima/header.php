@@ -63,12 +63,18 @@
 									<div id="menu" class="collapse navbar-collapse ">
 									<?php wp_nav_menu( array(
 											'theme_location' => 'primary',
-											'menu_class' => 'nav cl-effect-5',
+											'menu_class' => 'nav menu',
 											'fallback_cb' => 'kadima_fallback_page_menu',
 											'walker' => new kadima_nav_walker(),
 											)
 											);	?>
 									</div>
+									
+												
+					
+						
+									
+									
 	                <!--ul>
 	                    <nav class="cl-effect-5">
 	                        <li><a href="#" class="active"><span data-hover="Home">home</span></a></li>
