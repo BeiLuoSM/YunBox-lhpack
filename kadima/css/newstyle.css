@@ -16,6 +16,7 @@ input[type="button"]{
 h1,h2,h3,h4,h5,h6{
     padding:0 0;
     margin:0 0;
+	font-size: 36px;
 }
 p{
     padding:0 0;
@@ -169,8 +170,9 @@ a.button:hover {
 }
 .cl-effect-6 li{
 	float:left;
-	margin-right: 13em;
+	margin-right: 8em;
 	margin-bottom: 45px;
+	margin-left: 8em;
 }
 .menu-asd-container .nav li span{
 	padding-left: 15px;
@@ -259,8 +261,10 @@ a.button:hover {
     font-family: 'Lato-Light_1';
     font-weight: bold;
 	font-size: 1.2em;
-	
 
+}
+.most-1 h5 {
+	font-size:16px;
 }
 .most-1 h5 a:hover{
     color: #000;

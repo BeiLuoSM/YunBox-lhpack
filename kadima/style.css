@@ -845,7 +845,7 @@ p, .textwidget {
 	margin-top:90px;
 }
 .kadima_blog_wrapper  .col-md-12 h1 {
-    text-align:center;
+    text-align:left;
 }
 
 
@@ -913,16 +913,18 @@ p, .textwidget {
 }
 .kadima_tags a, .kadima_cats a {
     padding: 3px 7px;
-    margin: 4px 4px 4px 0;
+    margin: 4px 4px 4px 4px;
     margin-bottom: 10px;
     -webkit-transition: all ease 0.8s;
     -moz-transition: all ease 0.8s;
     transition: all ease 0.8s;
-    color: #515151;
+    color: #6a6a6a;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 1.2em;
     white-space: nowrap;
     display: inline-block;
+	font-weight: 600;
+	padding: 4px 16px;
 }
 .kadima_tags a i {
     margin-right: 5px;
@@ -1581,6 +1583,18 @@ p, .textwidget {
     vertical-align: middle;
     width: 100%;
 }
+.kadima_blog-img img{
+	max-width:100%;
+	height: 100%;
+}
+.row .col-md-12 .p1{
+	text-align: right;
+	color: #333;
+	font-weight: 600;
+}
+.kadima_blog_wrapper1{
+	margin-top:0px;
+}
 .kadima_con_input_control:focus, .kadima_con_textarea_control:focus {
     outline: 0;
 }
@@ -1592,9 +1606,9 @@ p, .textwidget {
 }
 .kadima_send_button, #kadima_send_button {
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Lato-Light_1', 'Arimo', Arial, Helvetica, sans-serif;
     display: inline-block;
-    padding: 15px 40px;
+    padding: 5px 12px;
     margin-bottom: 0;
     font-size: 18px;
     line-height: 1.428571429;
@@ -1603,8 +1617,9 @@ p, .textwidget {
     vertical-align: middle;
     cursor: pointer;
     background-image: none;
-    border: 2px solid transparent;
+    border: 1px solid #333;
     transition: all 0.4s ease;
+	
 }
 .kadima_comment_title h3 {
     color: #121212;
@@ -2266,9 +2281,13 @@ table td {
 /*HTML POST HEADING CSS*/
 
 .kadima_fuul_blog_detail_padding h1, .kadima_fuul_blog_detail_padding h3, .kadima_fuul_blog_detail_padding h4, .kadima_fuul_blog_detail_padding h5, .kadima_fuul_blog_detail_padding h5, .kadima_fuul_blog_detail_padding h6 {
-    color: #31A3DD;
+    color: #252525;
     margin-top: 10px;
     margin-bottom: 10px;
+	font-weight:bold;
+}
+.kadima_fuul_blog_detail_padding p {
+	color: #252525;
 }
 #wblizar_nav span {
     padding-top: 20px;
@@ -2382,9 +2401,7 @@ table td {
     .kadima_gallery_page  {
         width: 25%;
     }
-    .post-content-wrap {
-        width: 83%;
-    }
+    
     .post-content-wrap-right {
         width: 83%;
     }

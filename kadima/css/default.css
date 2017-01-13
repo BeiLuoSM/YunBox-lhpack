@@ -348,7 +348,7 @@
 }
 .kadima_send_button:hover, #kadima_send_button:hover {
     background-position: 0 -100%;
-    border: 2px solid #31A3DD;
+    border: 1px solid #31A3DD;
     color: #ffffff;
     background-color: #31A3DD;
 }
