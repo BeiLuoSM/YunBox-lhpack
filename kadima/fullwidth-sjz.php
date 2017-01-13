@@ -650,7 +650,7 @@ header h1 {
 
 				<div class="cd-timeline-content">
 					<h2 class="right1" ><a class="cd-read-more2">2016</a></h2>
-					<p>China assistant living care products alliance enterprises</p>
+					<p style="text-align: right;">China assistant living care products alliance enterprises</p>
 
 
 				</div> <!-- cd-timeline-content -->

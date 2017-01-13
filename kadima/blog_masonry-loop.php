@@ -24,6 +24,7 @@
 			<?php else : ?>
 				<span class="date"><?php echo get_the_date(); ?></span>
 			<?php endif; ?>
+			<a href="<?php the_permalink(); ?>" class="blog-post__link" style="float: right;"><i class="jt"></i></a>
 			<?php
 			//the_content( __( 'Read More' , 'kadima' ) ); 
 			$defaults = array(

@@ -22,7 +22,7 @@ p{
     margin:0 0;
     font-family: 'Lato-Light_1';
 	color: #dadada;
-
+	font-size:1em;
 
 }
 
@@ -122,7 +122,8 @@ nav a {
 }
 .btn-default:hover{
     background:#fff !important;
-    border-color: #fff;
+    border-color: #333 !important;
+	
 }
 .navbar-form{
     margin:0;
@@ -355,7 +356,26 @@ i.phone {
     background-size: contain;
     margin-right: 5px;
 }
-
+i.jt {
+    width: 50px;
+    height: 50px;
+    background: url("../images/jt3.svg") no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align:middle;
+    background-size: contain;
+    margin-right: 5px;
+	margin-top: -17px;
+	
+}
+i.jt:hover {
+    width: 50px;
+    height: 50px;
+    background: url("../images/jt2.svg") no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align:middle;
+    background-size: contain;
+    margin-right: 5px;
+}
 i.message {
     width: 25px;
     height: 25px;
@@ -449,7 +469,7 @@ i.skype {
     font-family: 'Lato-Light_1';
     font-size: 23px;
    
-    font-family: 'Open Sans';
+   
 	text-align:left;
 }
 
@@ -459,9 +479,17 @@ i.skype {
 
 
 }
+.mark, mark{
+	display: none;
+}
+.cd-timeline-content p{
+	color:#333;
+	font-size:14px !important;
+}
 
-
-
+.kadima_blog_wrapper .col-md-4 {
+	margin-bottom:40px;
+}
 
 
 @media(max-width:1366px){
