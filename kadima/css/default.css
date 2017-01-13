@@ -348,7 +348,7 @@
 }
 .kadima_send_button:hover, #kadima_send_button:hover {
     background-position: 0 -100%;
-    border: 2px solid #31A3DD;
+    border: 1px solid #31A3DD;
     color: #ffffff;
     background-color: #31A3DD;
 }
@@ -765,7 +765,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-collapse {
     max-height: 340px;
     padding-right: 15px;
-    margin-top: 24px;
+    margin-top: 5px;
 
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
@@ -808,7 +808,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .fa-angle-down {
     font-size: 18px !important;
-    float: right;
+  
     margin-right: -13px;
 }
 .dropdown-submenu {

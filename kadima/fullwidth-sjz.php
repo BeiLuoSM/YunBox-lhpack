@@ -301,7 +301,7 @@ header h1 {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+ 
   border-radius: 0.25em;
   padding: 1em;
 
@@ -385,7 +385,7 @@ header h1 {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -406,7 +406,7 @@ header h1 {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
@@ -554,7 +554,8 @@ header h1 {
 	<!--style.css-->
 		</style>
 		
-<div class="container">
+<div style="background:url(../wp-content/themes/kadima/images/history.jpg) repeat ;background-size: cover;">
+
 	<div class="row kadima_blog_wrapper">
 		<div class="col-md-12">	
 		<?php wp_nav_menu( array(
