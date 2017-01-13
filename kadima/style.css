@@ -841,8 +841,8 @@ p, .textwidget {
     padding-bottom: 90px;
 }
 .kadima_blog_wrapper {
-    margin-bottom: 90px;
-	margin-top:90px;
+    margin-bottom: 2em;
+	margin-top:2em;
 }
 .kadima_blog_wrapper  .col-md-12 h1 {
     text-align:left;

@@ -2,91 +2,7 @@
 get_header(); 
 get_template_part('breadcrums'); ?>
 <style>
-		<!--reset.css-->
-		html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, main {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-		<!--reset.css ned-->		
-		
-		<!--style.css-->
-		html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 100%;
-  
-  color: #7f8c97;
-  background-color: #fff;
-}
-
-a {
-  color: #acb7c0;
-  text-decoration: none;
-  
-}
-
-img {
-  max-width: 100%;
-}
-
-h1, h2 {
-  
-  font-weight: bold;
-}
-
-/* -------------------------------- 
-
-Modules - reusable parts of our design
-
--------------------------------- */
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
@@ -100,32 +16,6 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
-header {
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  background: #303e49;
-}
-header h1 {
-  color: white;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-@media only screen and (min-width: 1170px) {
-  header {
-    height: 300px;
-    line-height: 300px;
-  }
-  header h1 {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
 
 #cd-timeline {
   position: relative;
@@ -555,7 +445,7 @@ header h1 {
 		</style>
 		
 <div style="background:url(../wp-content/themes/kadima/images/history.jpg) repeat ;background-size: cover;">
-
+<div class="container">
 	<div class="row kadima_blog_wrapper">
 		<div class="col-md-12">	
 		<?php wp_nav_menu( array(
@@ -671,5 +561,6 @@ header h1 {
 		</section> <!-- cd-timeline -->
 		</div>		
 	</div>
+</div>	
 </div>	
 <?php get_footer(); ?>
