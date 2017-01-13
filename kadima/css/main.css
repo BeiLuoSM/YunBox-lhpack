@@ -13,10 +13,6 @@ This stylesheet and the associated (x)html may be modified in any way to fit you
 html {
     background-color: #000;
 }
-.header .container {
-
-    width: 90%;
-}
 
 /* general styles */
 .menu, .menu ul {
@@ -40,7 +36,7 @@ html {
 
     border-bottom: 2px solid #333;
     border-top: 2px solid #333;
-    min-width: 160px;
+    min-width: 108px;
 }
 .menu > li {
     display: block;
