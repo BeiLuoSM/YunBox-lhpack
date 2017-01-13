@@ -2985,17 +2985,6 @@ table td {
     }
 }
 
-.xxx {
-margin-right: 13em;
-}
-.xxx>a {
-font-size: 35px;color:#3399fe;
-}
-.xxx>a:hover {
-
-border-top: 5px solid #3399fe;margin:0;width: 5em;
-
-}
-.xxx .sub{
-color:#333;
+.dropdown-menu {
+	border-top: 0px !important;
 }

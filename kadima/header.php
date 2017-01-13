@@ -81,13 +81,14 @@
 	            <!--script-nav-->
 	           
 	            <!-- start search-->
-	             <div class="search-sub">
-	                <form class="navbar-form navbar-left" role="search">
-	                    <div class="form-group">
-	                        <input type="text" class="form-control" >
+	            <div class="search-sub">
+					<form role="search" method="get" class="navbar-form navbar-left" action="<?php echo home_url( '/' ); ?>">
+						<div class="form-group">						
+							<label class="screen-reader-text" for="s">Search for:</label>
+							<input type="text" name="s" id="s" class="form-control" value="<?php the_search_query(); ?>"/>
 	                    </div>
-	                    <button type="submit" class="btn btn-default">SEARCH</button>
-	                </form>
+						<input type="submit" value="Search" class="btn btn-default"/>
+					</form>
 	            </div>
 	           
 	        </div>

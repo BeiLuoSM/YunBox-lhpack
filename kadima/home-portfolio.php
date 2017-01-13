@@ -8,7 +8,7 @@
 				<?php for($i=1 ; $i<=4; $i++) { ?>
 					<div class="col-md-3 box_2" >
 							<div style="box-shadow:0px 10px 17px rgba(51, 51, 51, 0.3);">
-							<a class="mask" href="<?php echo esc_url($wl_theme_options['port_img_'.$i]); ?>">
+							<a class="mask" href="<?php echo esc_url($wl_theme_options['port_link_'.$i]); ?>">
 								<img class="img-responsive zoom-img" src="<?php echo esc_url($wl_theme_options['port_img_'.$i]); ?>" alt="<?php echo esc_attr($wl_theme_options['port_title_'.$i]); ?>">
 							</a>
 							<div class="most-1">
