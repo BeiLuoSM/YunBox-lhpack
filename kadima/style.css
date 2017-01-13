@@ -845,7 +845,7 @@ p, .textwidget {
 	margin-top:90px;
 }
 .kadima_blog_wrapper  .col-md-12 h1 {
-    text-align:center;
+    text-align:left;
 }
 
 
@@ -1581,6 +1581,16 @@ p, .textwidget {
     vertical-align: middle;
     width: 100%;
 }
+.kadima_blog-img img{
+	max-width:100%;
+	height: 100%;
+}
+.row .col-md-12 .p1{
+	text-align: right;
+}
+.kadima_blog_wrapper1{
+	margin-top:0px;
+}
 .kadima_con_input_control:focus, .kadima_con_textarea_control:focus {
     outline: 0;
 }
@@ -2266,9 +2276,13 @@ table td {
 /*HTML POST HEADING CSS*/
 
 .kadima_fuul_blog_detail_padding h1, .kadima_fuul_blog_detail_padding h3, .kadima_fuul_blog_detail_padding h4, .kadima_fuul_blog_detail_padding h5, .kadima_fuul_blog_detail_padding h5, .kadima_fuul_blog_detail_padding h6 {
-    color: #31A3DD;
+    color: #252525;
     margin-top: 10px;
     margin-bottom: 10px;
+	font-weight:bold;
+}
+.kadima_fuul_blog_detail_padding p {
+	color: #252525;
 }
 #wblizar_nav span {
     padding-top: 20px;
@@ -2382,9 +2396,7 @@ table td {
     .kadima_gallery_page  {
         width: 25%;
     }
-    .post-content-wrap {
-        width: 83%;
-    }
+    
     .post-content-wrap-right {
         width: 83%;
     }

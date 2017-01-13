@@ -13,7 +13,7 @@ get_template_part('breadcrums'); ?>
 		kadima_navigation_posts();
 		comments_template( '', true ); ?>
 	</div>
-	<?php get_sidebar(); ?>	
+	<?php //get_sidebar(); ?>	
 	</div> <!-- row div end here -->	
 </div><!-- container div end here -->
 <?php get_footer(); ?>
