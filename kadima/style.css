@@ -913,7 +913,7 @@ p, .textwidget {
 }
 .kadima_tags a, .kadima_cats a {
     padding: 3px 7px;
-    margin: 4px 4px 4px 0;
+    margin: 4px 4px 4px 4px;
     margin-bottom: 10px;
     -webkit-transition: all ease 0.8s;
     -moz-transition: all ease 0.8s;
