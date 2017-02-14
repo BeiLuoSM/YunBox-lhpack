@@ -94,7 +94,7 @@ nav a {
 .navbar-form{
     margin:0;
 	float: right !important;
-	padding-top: 5px;
+	padding-top: 12px;
 	text-align: right;
 	width: 25%;
 	padding-right: 0;
@@ -234,6 +234,11 @@ a.button:hover {
     font-weight: bold;
 	font-size: 1.1em;
 
+}
+
+.submenu a{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
 }
 .menu2 ul li a {
 	color: #6B7077;
@@ -473,6 +478,7 @@ i.skype {
 	color:#009afe;
 	padding-left:15px;
 	padding-right:15px;
+	padding-top: 10px;
 }
 .col-md-12 .col-md-6 .do-box  p{
 	
@@ -487,6 +493,7 @@ i.skype {
 
 .columns ul{
 	float:right;
+	padding-top: 6px;
 	
 }
 @media(max-width:1366px){

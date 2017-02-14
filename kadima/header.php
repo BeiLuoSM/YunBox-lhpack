@@ -39,7 +39,7 @@
 <div>
 	<!-- header -->
 	  <div class="header" id="home" style="background-color: #333 !important;border-top: 10px solid #3399fe;">
-	    <div class="container">
+	    <div class="container"  style="padding-bottom:10px;">
 	        <div class="header-bottom">
 	            <div class="logo">
 								<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
