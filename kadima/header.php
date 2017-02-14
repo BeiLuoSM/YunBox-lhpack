@@ -50,53 +50,67 @@
 									} ?>
 								</a>
 	            </div>
-	            <div class="top-menu">
-	                
-									<div class="navbar-header">
-										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-											<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-										</button>
-									</div>
-									<div id="menu" class="collapse navbar-collapse ">
-									<?php wp_nav_menu( array(
-											'theme_location' => 'primary',
-											'menu_class' => 'nav menu',
-											'fallback_cb' => 'kadima_fallback_page_menu',
-											'walker' => new kadima_nav_walker(),
-											)
-											);	?>
-									</div>
-									
-												
+				<div class="columns">
+				
 					
-						
-									
-									
-	                <!--ul>
-	                    <nav class="cl-effect-5">
-	                        <li><a href="#" class="active"><span data-hover="Home">home</span></a></li>
-	                        <li><a href="#"><span data-hover="gallery">PRODUCTS & EQUIPMENT</span></a></li>
-	                        <li><a href="#"><span data-hover="blog">GUESTBOOK</span></a></li>
-	                        <li><a href="#"><span data-hover="services">CONTACTS US</span></a></li>
-	                    </nav>
-	                </ul-->
-	            </div>
+						<div class="top-menu menu2" style="border-bottom:1px solid #fff; padding-left:0;color:#6B7077;">	                
+											<div class="navbar-header" >
+												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+													<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button>
+											</div>
+											<div id="menu" class="collapse navbar-collapse "style="width: 75%;">
+											<?php wp_nav_menu( array(
+													'theme_location' => 'secondary',
+													'menu_class' => 'nav menu',
+													'fallback_cb' => 'kadima_fallback_page_menu',
+													'walker' => new kadima_nav_walker(),
+													)
+													);	?>
+											</div>				
+						</div>
+					
+					
+						 <div class="top-menu" style="padding-left:0;">	   
+						 
+											<div class="navbar-header">
+												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+													<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button>
+											</div>
+											
+						<form role="search" method="get" class="navbar-form navbar-left" action="<?php echo home_url( '/' ); ?>">
+								<div class="form-group" style="width: 66%;">						
+									<label class="screen-reader-text" for="s">Search for:</label>
+									<input type="text" name="s" id="s" class="form-control" value="<?php the_search_query(); ?>"/>
+								</div>
+								<input type="submit" value="Search" class="btn btn-default"/>
+							</form>
+							<div id="menu" class="collapse navbar-collapse " style="float: right;">
+											<?php wp_nav_menu( array(
+													'theme_location' => 'primary',
+													'menu_class' => 'nav menu',
+													'fallback_cb' => 'kadima_fallback_page_menu',
+													'walker' => new kadima_nav_walker(),
+													)
+													);	?>
+											</div>	
+						</div>									
+						</div>
+				
+			</div>
 	            <!--script-nav-->
 	           
 	            <!-- start search-->
-	            <div class="search-sub">
-					<form role="search" method="get" class="navbar-form navbar-left" action="<?php echo home_url( '/' ); ?>">
-						<div class="form-group">						
-							<label class="screen-reader-text" for="s">Search for:</label>
-							<input type="text" name="s" id="s" class="form-control" value="<?php the_search_query(); ?>"/>
-	                    </div>
-						<input type="submit" value="Search" class="btn btn-default"/>
-					</form>
-	            </div>
-	           
+	            
+	          
 	        </div>
 	    </div>
+		 
 	</div>
