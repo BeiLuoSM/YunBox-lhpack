@@ -764,8 +764,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-collapse {
     max-height: 340px;
-    padding-right: 15px;
-    margin-top: 2em;
+    padding-right: 0px;
+	padding-left:0px;
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
     border-top: 0px solid transparent;

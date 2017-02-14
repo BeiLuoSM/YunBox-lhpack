@@ -18,7 +18,6 @@
     display: block;
 }
 .top-menu{
-    float:left;
    
     padding-left: 2.5em;
     font-family: 'Arial';
@@ -26,7 +25,7 @@
 }
 .top-menu ul li{
     display:inline-block;
-    margin-right: 8px;
+   
 	margin-bottom:0px;
 
 }
@@ -34,11 +33,12 @@
     background-color: #dcdcdc;
     border-color: #dcdcdc;
 	border-radius: 5px;
+	width: 100% !important;
 }
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 .top-menu ul li a{
-    font-size:1.2em;
-   
+    font-size: 0.75em;
+    padding: 10px 13px;
     text-decoration: none;
   
     font-weight: 700;
@@ -69,7 +69,7 @@ nav a {
 /*start search*/
 
 .search-sub{
-    float:right;
+    
     margin-top: 2.2em;
     margin-bottom: 1em;
 }
@@ -93,6 +93,11 @@ nav a {
 }
 .navbar-form{
     margin:0;
+	float: right !important;
+	padding-top: 5px;
+	text-align: right;
+	width: 25%;
+	padding-right: 0;
 }
 
 
@@ -224,11 +229,14 @@ a.button:hover {
 }
 .most-1 h5 a{
     text-decoration:none;
-    color: #373737;
+    color: #5a5a5a;
     font-family: 'Lato-Light_1';
     font-weight: bold;
 	font-size: 1.1em;
 
+}
+.menu2 ul li a {
+	color: #6B7077;
 }
 .most-1 h5 {
 	font-size:16px;
@@ -461,8 +469,26 @@ i.skype {
 .kadima_blog_wrapper .col-md-4 {
 	margin-bottom:40px;
 }
+.col-md-12 .col-md-6 .do-box a p{
+	color:#009afe;
+	padding-left:15px;
+	padding-right:15px;
+}
+.col-md-12 .col-md-6 .do-box  p{
+	
+	padding-left:15px;
+	padding-right:15px;
+}
+.columns{
+	float:left;
+	padding-left: 40px;
+	width: 88%;
+}
 
-
+.columns ul{
+	float:right;
+	
+}
 @media(max-width:1366px){
     .sb-search.sb-search-open, .no-js .sb-search {
         width: 16%;
