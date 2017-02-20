@@ -333,12 +333,6 @@ i.skype {
 .copyright-right{
     text-align: center;
 }
-.copyright-right ul{
-    padding:0;
-    margin-left:70px;
-    text-align: right;
-	
-}
 .copyright-right ul li{
     display:inline-block;
 

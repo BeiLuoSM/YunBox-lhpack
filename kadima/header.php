@@ -51,8 +51,8 @@
 				</div>
 			</div>
 			<div class="col-md-10">
-				<div class="top-menu-first">	                
-					<div class="navbar-header" >
+				<div class="top-menu-first">
+					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
 							<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
 							<span class="icon-bar"></span>
@@ -60,21 +60,27 @@
 							<span class="icon-bar"></span>
 						</button>
 					</div>
-					<div class="collapse navbar-collapse" style="text-align:right;">
-						<?php 
-							wp_nav_menu( array(
-								'theme_location' => 'secondary',
-								'menu_class' => 'nav col-md-8',
-								'walker' => new kadima_nav_walker(),
-							) );
-						?>					
-						<form role="search" method="get" class="navbar-form col-md-4" action="<?php echo home_url( '/' ); ?>">
-							<div class="form-group">						
-								<label class="screen-reader-text" for="s">Search for:</label>
-								<input type="text" name="s" id="s" class="form-control" value="<?php the_search_query(); ?>"/>
+					<div class="row">
+						<div class="col-md-4 pull-right">						
+							<form method="post" class="form-inline" action="<?php echo home_url( '/' ); ?>" style="margin-top: 6px;">
+								<div class="form-group">						
+									<label class="sr-only" for="s">Search for:</label>
+									<input type="text" name="s" id="s" class="form-control" placeholder="<?php the_search_query(); ?>"/>
+								</div>
+								<button type="submit" class="btn btn-default">Search</button>
+							</form>
+						</div>
+						<div class="col-md-8">
+							<div class="collapse navbar-collapse" style="text-align:right;">
+								<?php 
+									wp_nav_menu( array(
+										'theme_location' => 'secondary',
+										'menu_class' => 'nav',
+										'walker' => new kadima_nav_walker(),
+									) );
+								?>
 							</div>
-							<input type="submit" value="Search" class="btn btn-default"/>
-						</form>
+						</div>						
 					</div>
 				</div>
 				<div class="top-menu-sec">
