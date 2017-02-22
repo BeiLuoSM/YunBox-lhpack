@@ -36,7 +36,7 @@
 							?>
 								<p class="kadima_footer_copyright_info">
 								<?php
-									echo "&nbsp;&nbsp;&nbsp;&nbsp;".esc_attr($wl_theme_options['info_support']);
+									echo "&nbsp;&nbsp;&nbsp;&nbsp;".$wl_theme_options['info_support'];
 								?>
 								</p>
 						<?php }?>

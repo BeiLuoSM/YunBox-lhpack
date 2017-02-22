@@ -29,8 +29,6 @@
             wp_enqueue_script('kadima-footer-script', get_template_directory_uri() .'/js/kadima-footer-script.js','','',true);
             wp_enqueue_script('waypoints', '//cdn.bootcss.com/waypoints/4.0.1/jquery.waypoints.min.js','','',true);
             wp_enqueue_script('scroll', get_template_directory_uri() .'/js/scroll.js','','',true);
-			//wp_enqueue_script('responsiveslides', get_template_directory_uri() .'/js/responsiveslides.min.js');
-            //wp_enqueue_script('classie', get_template_directory_uri() .'/js/classie.js');
         }
     }
 	add_action('wp_enqueue_scripts', 'kadima_scripts');
@@ -532,30 +530,29 @@
 		}
 	}
 	function customWp_admin_style_scripts() {
+		wp_enqueue_style( 'font-awesome-css', '//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css');
 		wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
 		wp_enqueue_style( 'admin-css', get_template_directory_uri() . '/css/admin.css');
 		if ( $_GET['page'] == 'yc-plugin-dashboard/yc-plugin-dashboard.php') {
 			wp_enqueue_style('materialize-css', '//cdn.bootcss.com/materialize/0.97.8/css/materialize.min.css');
 			wp_enqueue_style('woocommerce-dashboard',  get_template_directory_uri() . '/../../plugins/woocommerce/assets/css/dashboard.css');
 			wp_enqueue_style('animate-css', '//cdn.bootcss.com/animate.css/3.5.2/animate.min.css');
-			wp_enqueue_script('jquery3', '//cdn.bootcss.com/jquery/3.1.1/jquery.min.js');
-	        wp_enqueue_script('materialize-js', '//cdn.bootcss.com/materialize/0.97.8/js/materialize.min.js', array('jquery3'));
-	        wp_enqueue_script('echarts-js', '//cdn.bootcss.com/echarts/3.3.1/echarts.min.js', array('jquery3'));
+			wp_enqueue_script('jquery2', '//cdn.bootcss.com/jquery/2.2.4/jquery.min.js');
+	        wp_enqueue_script('materialize-js', '//cdn.bootcss.com/materialize/0.97.8/js/materialize.min.js', array('jquery2'));
+			wp_enqueue_style( 'layim-style', '//statics.yunclever.com/layui/css/layui.css' );
+			wp_enqueue_script('layim', '//statics.yunclever.com/layui/layui.js', array('jquery2'));
+			wp_enqueue_script('onlinesupport', get_template_directory_uri() .'/js/onlinesupport.js', array('jquery2'));
 		}
-		if ( $_GET['page'] == 'yc-plugin-dashboard/yc-plugin-setting.php') {
-			wp_enqueue_style('layui-css', '//cdn.yunclever.com/static/layui/css/layui.css');
-			wp_enqueue_script('jquery3', '//cdn.bootcss.com/jquery/3.1.1/jquery.min.js');
-	        wp_enqueue_script('layui-js', '//cdn.yunclever.com/static/layui/layui.js', array('jquery3'));
+		if ( $_GET['page'] == 'yc-plugin-dashboard/yc-setting.php') {
+			wp_enqueue_style('layui-css', '//statics.yunclever.com/layui/css/layui.css');
+			wp_enqueue_script('jquery2', '//cdn.bootcss.com/jquery/2.2.4/jquery.min.js');
+	        wp_enqueue_script('layui-js', '//statics.yunclever.com/layui/layui.js', array('jquery2'));
 		}
-		//wp_enqueue_script('webim', get_template_directory_uri() .'/web-im/webim.config.js', array('jquery'));
-		//wp_enqueue_script('strophe', get_template_directory_uri() .'/web-im/strophe-1.2.8.min.js', array('jquery'));
-		//wp_enqueue_script('websdk', get_template_directory_uri() .'/web-im/websdk-1.4.5.js', array('jquery'));
 	}
 	function customWp_plugin_check_missing() {
 		$plugins = array(
 			array('type' => 'function', 'name' => 'A2A_SHARE_SAVE_init', 'desc' => 'AddToAny Share Buttons'),
 			array('type' => 'class', 'name' => 'woocommerce', 'desc' => 'WooCommerce'),
-			//array('type' => 'define', 'name' => 'ALM_VERSION', 'desc' => 'Ajax Load More'),
 			array('type' => 'define', 'name' => 'WPCF7_VERSION', 'desc' => 'Contact From 7'),
 			array('type' => 'define', 'name' => 'DLM_VERSION', 'desc' => 'Download Monitor'),
 			array('type' => 'class', 'name' => 'LazyLoad_Images', 'desc' => 'Lazy Load'),
