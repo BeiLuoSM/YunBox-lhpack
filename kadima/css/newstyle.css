@@ -21,6 +21,32 @@ nav a {
 	background-color: transparent !important;
 }
 
+
+
+
+.cl-effect-7 li {
+    float: left;
+    margin-right: 6em;
+    margin-bottom: 45px;
+    margin-left: 6em;
+}
+.cl-effect-7>li>a {
+	line-height:0.8em;
+}
+.cl-effect-7>li>a:focus, .cl-effect-7>li>a:hover{
+	border-bottom: 3px solid #3399fe;
+	background-color:#fff;
+	margin-bottom:-3px;
+}
+.cl-effect-7 .subTab{
+	font-size: 16px;
+	color:#333;
+	line-height:0.5em;
+}
+.nav>li>a {
+    font-size: 33px;
+    color: #3399fe;
+}
 /*start search*/
 
 .search-sub{
