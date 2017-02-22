@@ -1,4 +1,4 @@
-/*******
+/*
 Theme Name: YunBox
 Theme URI:http://28story.com
 Author: JamesLiao
@@ -9,16 +9,12 @@ License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Text Domain: kadima
 */
-
-/* Main css with editable-------------------------------------------------------------- */
-
+/* Main css with editable */
 .row {
     margin-left: 0px;
     margin-right: 0px;
 }
-
-/* Header Section css-------------------------------------------------------------- */
-
+/* Header Section css */
 body {
     /* padding:0 30px;*/
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
@@ -28,7 +24,6 @@ body {
     position: relative;
     transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
-
 a:hover, a:focus {
     text-decoration: none;
     
@@ -36,8 +31,6 @@ a:hover, a:focus {
 .content-grid img{
   max-width: 100% !important;
 }
-
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color: #666;
@@ -72,8 +65,9 @@ p, .textwidget {
 }
 .logo {
     text-align: left;
-    padding-bottom: 0px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;	
+    float:left;
+    margin-top: 1.8em;
 }
 .logo a {
     font-weight: 600;
@@ -96,14 +90,11 @@ p, .textwidget {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 .social i {
     color: #fff;
     line-height: 30px;
 }
-
 /* facebook */
-
 .social li.facebook {
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, transparent 50%, #4C66A4 50%);
@@ -112,17 +103,12 @@ p, .textwidget {
     background-position: 0 -100%;
     background-color: #4C66A4;
 }
-
 /* dribble */
-
 .social li.dribbble {
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, transparent 50%, #EA4C89 50%);
 }
-
-
-/* dribble */
-
+/* twitter */
 .social li.twitter {
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, transparent 50%, #f60 50%);
@@ -131,9 +117,7 @@ p, .textwidget {
     background-position: 0 -100%;
     background-color: #f60;
 }
-
 /* linkedin */
-
 .social li.linkedin {
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, transparent 50%, #069 50%);
@@ -142,9 +126,7 @@ p, .textwidget {
     background-position: 0 -100%;
     background-color: #069;
 }
-
 /* youtube */
-
 .social li.youtube {
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, transparent 50%, #C92228 50%);
@@ -164,10 +146,7 @@ p, .textwidget {
     letter-spacing: 1px;
     padding-bottom: 10px;
     line-height: 40px;
-}
-.kadima_heading_title h3 {
     font-size: 30px;
-    font-weight: 500;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
@@ -183,19 +162,13 @@ p, .textwidget {
     padding-bottom: 10px;
     font-weight: 600;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-}
-.kadima_heading_title2 h3 {
     font-size: 22px;
-    font-weight: 500;
     text-transform: uppercase;
 }
-
-/* Flex Slider css *****************************************************************************************************************
-********************************************************************************************************************************/
-
-/*.carousel {
-    margin-bottom: 40px;
-}*/
+/* Flex Slider css */
+.carousel {
+    margin-bottom: 0px;
+}
 .carousel-inner img {
     width: 100%;
 }
@@ -278,10 +251,7 @@ p, .textwidget {
     -o-animation-delay: .7s;
     animation-delay: .7s;
 }
-
-/** Service Section  ***************************************************************************************************************
-********************************************************************************************************************************/
-
+/** Service Section */
 .kadima_service {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -377,17 +347,7 @@ p, .textwidget {
 .kadima_service_area_2:hover .kadima_service_iocn_2 i {
     color: #fff;
 }
-
-/*** Project Or Works  ******************************************************************************************************
-**************************************************************************************************************************/
-
-.kadima_project_section {
-    background: #ecf0f1;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    border-top: 1px solid #DEE1E2;
-    border-bottom: 1px solid #DEE1E2;
-}
+/* portfolio */
 .kadima_carousel-navi {
     text-align: center;
     margin-top: 15px;
@@ -517,6 +477,7 @@ p, .textwidget {
     text-align: center;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     cursor: pointer;
+	background: #fff;
 }
 .kadima_home_portfolio_caption h3 {
     font-size: 14px;
@@ -529,16 +490,11 @@ p, .textwidget {
 .kadima_home_portfolio_caption small {
     font-size: 13px;
     line-height: 20px;
-}
-.kadima_home_portfolio_caption {
-    background: #fff;
+	color: #777777;
 }
 .kadima_home_portfolio_caption h3 a {
     color: #404040;
     font-size: 22px;
-}
-.kadima_home_portfolio_caption small {
-    color: #777777;
 }
 .kadima_proejct_button {
     border-radius: 0;
@@ -563,10 +519,7 @@ p, .textwidget {
 .kadima_portfolio_page {
     margin-bottom: 70px;
 }
-
-/* Isotope Animating
- * -------------------------- */
-
+/* Isotope Animating */
 .isotope, .isotope .isotope-item {
     /* change duration value to whatever you like */
     -webkit-transition-duration: 0.8s;
@@ -589,9 +542,7 @@ p, .textwidget {
     -o-transition-property: -o-transform, opacity;
     transition-property: transform, opacity;
 }
-
-/**** disabling Isotope CSS3 transitions ****/
-
+/* disabling Isotope CSS3 transitions */
 .isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
     -webkit-transition-duration: 0s;
     -moz-transition-duration: 0s;
@@ -611,46 +562,7 @@ p, .textwidget {
     height: 25px;
     bottom: 26px;
 }
-
-/********** project detail page css **********************************************
-***********************************************************************************/
-
-.kadima-project-detail-section {
-    margin-bottom: 70px;
-}
-.kadima-project-detail-section img {
-    margin-bottom: 30px;
-}
-.kadima-project-description h3 {
-    text-align: left;
-    font-size: 24px;
-    margin: 20px 0;
-}
-.kadima-project-description h3 span {
-    text-align: left;
-    font-size: 24px;
-}
-.kadima-project-description p {
-    text-align: left;
-    font-size: 16px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-.kadima-related-project {
-    padding-top: 55px;
-    padding-bottom: 30px;
-    width: 100%;
-}
-.kadima-related-project .kadima_portfolio_4col_row {
-    margin: 0px;
-}
-.kadima-related-project .kadima_portfolio-4col-column {
-    margin-bottom: 90px;
-}
-.kadima-related-project h3 {
-    margin-bottom: 25px;
-    margin-top: 0;
-}
+/* project detail page css */
 .kadima_portfolio_detail_pagi {
     text-align: left;
     overflow: hidden;
@@ -672,170 +584,16 @@ p, .textwidget {
 .kadima_portfolio_detail_pagi li a span {
     font-size: 22px;
 }
-.kadima-project-detail-sidebar {
-    padding-left: 10px;
-}
-.kadima-project-detail-sidebar p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    margin: 0 0 10px;
-    padding-bottom: 15px;
-    padding-top: 0px;
-}
-.kadima-project-detail-sidebar p small {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding-left: 0px;
-    display: block;
-    margin-top: 6PX;
-}
-.kadima-project-detail-sidebar .launch-kadima-project a {
-    display: inline-block;
-    font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 15px 0 15px;
-    padding: 8px 30px;
-    text-align: right;
-    text-transform: lovercase;
-    transition: all 0.4s ease 0s;
-    vertical-align: middle;
-}
-.kadima-project-detail-sidebar .launch-kadima-project a {
-    text-decoration: none;
-}
-.kadima_project_detail_related_projet {
-    margin-bottom: 70px;
-}
-.kadima_project_detail_related_projet .kadima_carousel-navi {
-    text-align: center;
-    display: inline-flex;
-    margin-top: 0px;
-    float: right;
-}
 .sidebar-img {
     margin-right: 5px;
 }
-.kadima-project-description h3 span {
-    color: #f9504b;
-}
-.kadima-project-description p {
-    color: #6a6a6a;
-}
-.kadima-related-project {
-    background: none repeat scroll 0 0 #F9F9F9;
-    border-top: 2px solid #D1D1D1;
-}
-
-/******* gallery css *****************************************************
-*********************************************************************/
-
-.kadima_gallery_page {
-    margin-bottom: 70px;
-    width: 100%;
-    float: left;
-    margin-right: auto;
-    margin-left: auto;
-}
-.kadima_gallery-padding {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-bottom: 0px;
-}
-.kadima_gal_img {
-    position: relative;
-    overflow: hidden;
-}
-.gallery_wrapper {
-    margin-bottom: 0px;
-    overflow: hidden;
-}
-.kadima_gallery_showcase {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-.kadima_gallery_blog {
-    width: 24.98%;
-    margin-right: 0;
-    margin-bottom: 0;
-    float: left;
-}
+/* gallery css */
 .kadima_img_responsive {
     width: 100%;
     display: block;
 }
-.kadima_gallery_showcase_overlay {
-    visibility: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -80%;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    -webkit-transition: all .25s linear;
-    -moz-transition: all .25s linear;
-    -o-transition: all .25s linear;
-    transition: all .25s linear;
-}
-.kadima_gallery_showcase img {
-    -webkit-transition: all .25s ease-in;
-    -moz-transition: all .25s ease-in;
-    -o-transition: all .25s ease-in;
-    transition: all .25s ease-in;
-}
-.kadima_gallery_showcase_overlay_inner {
-    position: absolute;
-    bottom: -110%;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    visibility: hidden;
-    -webkit-transition: all .25s ease-in;
-    -moz-transition: all .25s ease-in;
-    -o-transition: all .25s ease-in;
-    transition: all .25s ease-in;
-}
-.kadima_gallery_showcase .kadima_gallery_showcase_icons {
-    margin-top: 10px;
-    text-align: center;
-    width: 100%;
-}
-.kadima_gallery_showcase .kadima_gallery_showcase_icons a {
-    display: inline-block;
-    margin-left: 2px;
-    padding: 8px 8px;
-    opacity: 1;
-    text-decoration: none;
-    margin-right: 5px;
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    transition: all 0.3s ease 0s;
-}
-.kadima_gallery_showcase .kadima_gallery_showcase_icons a i {
-    font-size: 1.6em;
-    line-height: 40px;
-}
-.kadima_gallery_showcase:hover .kadima_gallery_showcase_overlay {
-    visibility: visible;
-    top: 0;
-}
-.kadima_gallery_showcase:hover .kadima_gallery_showcase_overlay_inner {
-    visibility: visible;
-    bottom: 40%;
-    left: 0;
-}
-
-/***************** BLog Section *************************************************************************
-***************************************************************************************************/
-
-
+/* Blog Section */
 /** wrapper for front page **/
-
 .kadima_blog_area {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -847,9 +605,6 @@ p, .textwidget {
 .kadima_blog_wrapper  .col-md-12 h1 {
     text-align:left;
 }
-
-
-
 .kadima_blog_thumb_wrapper {
     margin-bottom: 40px;
     border-radius: 4px;
@@ -1015,9 +770,7 @@ p, .textwidget {
     font-size: 1.6em;
     line-height: 40px;
 }
-
 /********* Blog Full width css ********/
-
 .kadima_blog_full {
     margin-bottom: 20px;
     margin-top: 10px;
@@ -1028,12 +781,10 @@ p, .textwidget {
 .kadima_blog_full .kadima_blog_thumb_wrapper_showcase {
     margin-bottom: 20px;
 }
-
 /* .kadima_blog_full img{
 	width:100%
 }
 */
-
 .blog-date-left {
     list-style: none;
     float: left;
@@ -1128,7 +879,6 @@ p, .textwidget {
 .post-content-wrap img{
 	width:100%;
 }*/
-
 .post-content-wrap-right {
     float: right;
     width: 86%;
@@ -1190,10 +940,7 @@ p, .textwidget {
     color: #f5f5f5;
     background-color: #f5f5f5;
 }
-
-/***** Blog page with sidebar *****************************************************************
-***************************************************************************************/
-
+/* Blog page with sidebar */
 .kadima_recent_widget_post {
     margin: 0 0 5px !important;
     padding-bottom: 16px;
@@ -1293,9 +1040,7 @@ p, .textwidget {
     height: 25px;
     bottom: 26px;
 }
-
 /* blog pagination */
-
 .kadima_blog_pagination {
     margin-bottom: 20px;
     overflow: auto;
@@ -1321,9 +1066,7 @@ p, .textwidget {
     vertical-align: baseline;
     white-space: nowrap;
 }
-
-/**** link widget **/
-
+/* link widget */
 .kadima_sidebar_widget ul li a, .kadima_footer_widget_column ul li a {
     position: relative;
 }
@@ -1370,9 +1113,7 @@ p, .textwidget {
 .kadima_sidebar_link p a, .kadima_sidebar_widget ul li a {
     color: #6a6a6a;
 }
-
 /*** tag widget **/
-
 .kadima_widget_tags, .tagcloud {
     margin: 0px 0 10px;
     overflow: hidden;
@@ -1402,9 +1143,7 @@ p, .textwidget {
     -moz-transition: all ease 0.8s;
     transition: all ease 0.8s;
 }
-
 /*** Flickr widget **/
-
 .flickr-photos-list {
     padding-left: 0;
     list-style: none;
@@ -1432,9 +1171,7 @@ p, .textwidget {
 .kadima_blog_right_side {
     float: right;
 }
-
 /********* Blog detail page *************/
-
 .kadima_author_detail_section {
     margin-bottom: 60px;
     margin-top: 20px;
@@ -1657,121 +1394,7 @@ p, .textwidget {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
     color: #555555;
 }
-
-/*** Testimonial Section  ******************************************************************************************************
-**************************************************************************************************************************/
-
-.kadima_testimonial_area {
-    background: #ecf0f1;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    border-top: 1px solid #DEE1E2;
-    border-bottom: 1px solid #DEE1E2;
-    text-align: center;
-}
-.kadima_testimonial {
-    text-align: center;
-    margin-bottom: 15px;
-}
-.kadima_testimonial_area i {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-.kadima_testimonial_area p {
-    color: #727272;
-    font-size: 20px;
-    font-family: 'georgia';
-    font-style: italic;
-    margin-bottom: 20px;
-    line-height: 32px;
-}
-.kadima_testimonial_area img {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    margin-bottom: 10px;
-    width: 150px;
-    height: auto;
-}
-.kadima_testimonial_area h3 {
-    margin: 0 0 10px 0;
-}
-.kadima_testimonial_area span {
-    margin: 0 0 20px 0;
-    font-size: 16px;
-    color: #666;
-}
-.pager a {
-    border-radius: 20px;
-    cursor: pointer;
-    display: inline-block;
-    height: 15px;
-    text-indent: -9999px;
-    width: 15px;
-    margin: 0 3px;
-    text-decoration: none outside;
-}
-.pager a:focus {
-    outline: none;
-}
-.pager {
-    list-style: none outside none;
-    margin: 0px;
-    padding-left: 0;
-    text-align: center;
-    margin-top: 30px;
-}
-
-/***Client Section ******************************************************************************************************
-**************************************************************************************************************************/
-
-.kadima_client_area {
-    padding-top: 90px;
-    padding-bottom: 40px;
-}
-.kadima_client_wrapper {
-    border: 4px solid #ecf0f1;
-    opacity: 0.95;
-    filter: alpha(opacity=95);
-    text-align: center;
-    transition: all 0.3s ease 0s;
-    margin-bottom: 50px;
-}
-.kadima_client_area .kadima_heading_title2 {
-    text-align: right;
-    margin-bottom: 40px;
-}
-.kadima_client_navi {
-    overflow: hidden;
-    display: inline;
-}
-.kadima_client_prev {
-    background-position: center center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    display: inline;
-    transition: all 0.3s ease 0s;
-    padding: 6px 15px 10px;
-    margin-right: 5px;
-}
-.kadima_client_next {
-    background-position: center center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    display: inline;
-    transition: all 0.3s ease 0s;
-    padding: 6px 15px 10px;
-}
-.kadima_client_prev i, .kadima_client_next i {
-    font-size: 20px;
-    vertical-align: middle;
-    transition: all 0.3s ease 0s;
-}
-
-/***** Call Out Section *****************************************************************
-***************************************************************************************/
-
+/* Call Out Section */
 .kadima_callout_area {
     width: 100%;
     padding-top: 39px;
@@ -1831,10 +1454,7 @@ p, .textwidget {
     background-position: 0 -100%;
     color: #fff;
 }
-
-/***** Footer widget Area *****************************************************************
-***************************************************************************************/
-
+/* Footer widget Area */
 .kadima_footer_widget_area {
     padding: 38px 0 20px;
 }
@@ -1916,41 +1536,13 @@ p, .textwidget {
     overflow: hidden;
     padding: 0px 0 0px;
     transition: all 0.4s ease 0s;
-}
-.kadima_footer_widget_link a {
     color: #ffffff;
     text-decoration: none;
 }
 .kadima_footer_widget_link a:hover {
     color: #f8504b;
 }
-
-/* Footer area Section Css------------------------------------------------------------ */
-
-.kadima_footer_area {
-    padding: 10px 0 0px;
-}
-.kadima_footer_area p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    line-height: 20px;
-    font-size: 13px;
-    bottom: 0;
-    text-align: center;
-    padding-top: 12px;
-}
-.kadima_footer_area p {
-    color: #f2f2f2;
-    font-size: 15px;
-}
-.kadima_footer_area p span {
-    color: #fa504b;
-}
-.kadima_footer_area p a {
-    color: #000000;
-}
-.kadima_footer_area p a:hover {
-    color: #ffffff;
-}
+/* Footer */
 .kadima_footer_copyright_info {
     float: left;
 	font-size:1em;
@@ -1960,9 +1552,7 @@ p, .textwidget {
 .kadima_footer_social_div {
     float: right;
 }
-
 /* Scroll To Top ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 .kadima_scrollup {
     width: 45px;
     height: 40px;
@@ -1994,11 +1584,7 @@ a.kadima_scrollup:hover i, a.kadima_scrollup:focus i {
     color: #fafafa;
     outline: none;
 }
-
-/*-----------------------
------Scrollimations------
-------------------------*/
-
+/* Scrollimations */
 .scrollimation.fade-in {
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
@@ -2114,9 +1700,7 @@ a.kadima_scrollup:hover i, a.kadima_scrollup:focus i {
     -ms-transform: translateY(0px);
     transform: translateY(0px);
 }
-
 /***********theme required css **********/
-
 .wp-caption-text {
     font: 14px;
     text-align: center;
@@ -2213,9 +1797,7 @@ table.table, table {
 .kadima_blog_post_content img {
     max-width: 100%;
 }
-
 /*Calander Widget CSS*/
-
 #wp-calendar tbody tr td {
     text-align: center;
 }
@@ -2252,9 +1834,7 @@ table td {
 .kadima_footer_widget_column #wp-calendar thead tr th {
     color: #fff;
 }
-
 /*Flikr Widget CSS**/
-
 .kadima-sidebar .flickr_badge_image {
     float: left;
     margin-bottom: 5%;
@@ -2277,9 +1857,7 @@ table td {
     display: block;
 }
 .sticky {}
-
 /*HTML POST HEADING CSS*/
-
 .kadima_fuul_blog_detail_padding h1, .kadima_fuul_blog_detail_padding h3, .kadima_fuul_blog_detail_padding h4, .kadima_fuul_blog_detail_padding h5, .kadima_fuul_blog_detail_padding h5, .kadima_fuul_blog_detail_padding h6 {
     color: #252525;
     margin-top: 10px;
@@ -2311,9 +1889,7 @@ table td {
 .fa-arrow-right:before {
     content: "\f061";
 }
-
 /* Flickr Gallery Shortcode */
-
 .col-sm-4.col-center.weblizar-flickr-div a {
     display: inline-block !important;
 }
@@ -2323,15 +1899,11 @@ table td {
 #fancybox-loading {
     display: none;
 }
-
 /* UR Image Slider Pro */
-
 .kadima_blog_full {
     overflow: hidden;
 }
-
 /* Text meant only for screen readers. */
-
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
@@ -2359,12 +1931,10 @@ table td {
     z-index: 100000;
     /* Above WP toolbar. */
 }
-
 .do-box.bg-color a,
 .do-box:hover a{
     color: #e4010c;
 }
-
 @media (min-width:1200px) {
     .kadima_gallery_page  {
         width: 25%;
@@ -2394,9 +1964,7 @@ table td {
         left: 0;
     }
 }
-
 /* This Media screen css called for All Hc Pages Element---------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 @media only screen and (min-width: 960px) and (max-width: 1200px) {
     .kadima_gallery_page  {
         width: 25%;
@@ -3001,7 +2569,74 @@ table td {
         display: none;
     }
 }
-
 .dropdown-menu {
 	border-top: 0px !important;
+}
+.top-menu-first{
+    font-family: 'Arial';
+    font-size: 13px;
+	border-bottom: 1px solid #fff;
+	padding-left: 0;
+	color: #6B7077;
+}
+.top-menu-first ul li{
+    display:inline-block;   
+	margin-bottom:0px;
+}
+.top-menu-first ul li a{
+    font-size: 1em;
+    padding: 10px 13px;
+    text-decoration: none;  
+    font-weight: 700;	
+    color:  rgba(201, 201, 201, 1);
+}
+.top-menu-first ul li a:hover {
+    color: #fff;
+	background-color: transparent !important;
+}
+.top-menu-first ul li a:focus {
+	background-color: transparent !important;
+}
+.top-menu-sec{
+    padding-left: 0;
+    font-family: 'Arial';
+    font-size: 16px;
+}
+.top-menu-sec>ul>li{
+    width: 30%;
+}
+.top-menu-sec ul li{
+    display: inline-block;   
+	margin-bottom: 0px;
+}
+.top-menu-sec ul li a{
+    font-size: 1em;
+	padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-decoration: none;  
+    font-weight: 700;
+    color: #dadada;
+}
+.top-menu-sec ul li a:hover {
+    color: #fff;
+	background-color: transparent !important;
+}
+.top-menu-sec ul li a:focus {
+	background-color: transparent !important;
+}
+.header {
+	background-color: #333 !important;
+	border-top: 6px solid #3399fe;
+	padding-bottom:10px;
+}
+.nav-left {
+	float: left;
+}
+.navbar-form {
+	text-align: right;
+}
+.product-categories {
+	padding-left: 10px;
 }

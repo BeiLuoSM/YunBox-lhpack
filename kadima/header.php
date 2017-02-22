@@ -34,83 +34,90 @@
 		}
 	?>
 	<?php wp_head(); ?>
+	<script src="https://use.typekit.net/onu7wui.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+		var u="//analytics.yunclever.com/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '11']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+
 </head>
 <body <?php body_class(); ?>>
-<div>
-	<!-- header -->
-	  <div class="header" id="home" style="background-color: #333 !important;border-top: 10px solid #3399fe;">
-	    <div class="container"  style="padding-bottom:10px;">
-	        <div class="header-bottom">
-	            <div class="logo">
-								<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-								<?php if($wl_theme_options['upload_image_logo']){ ?>
-									<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
-									<?php } else {
-										echo get_bloginfo('name');
-									} ?>
-								</a>
-	            </div>
-				<div class="columns">
-				
-					
-						<div class="top-menu menu2" style="border-bottom:1px solid #fff; padding-left:0;color:#6B7077;">	                
-											<div class="navbar-header" >
-												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-													<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-												</button>
-											</div>
-											<div id="menu" class="collapse navbar-collapse "style="width: 75%;">
-											<?php wp_nav_menu( array(
-													'theme_location' => 'secondary',
-													'menu_class' => 'nav menu',
-													'fallback_cb' => 'kadima_fallback_page_menu',
-													'walker' => new kadima_nav_walker(),
-													)
-													);	?>
-											</div>				
-						</div>
-					
-					
-						 <div class="top-menu" style="padding-left:0;">	   
-						 
-											<div class="navbar-header">
-												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-													<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-												</button>
-											</div>
-											
-						<form role="search" method="get" class="navbar-form navbar-left" action="<?php echo home_url( '/' ); ?>">
-								<div class="form-group" style="width: 66%;">						
-									<label class="screen-reader-text" for="s">Search for:</label>
-									<input type="text" name="s" id="s" class="form-control" value="<?php the_search_query(); ?>"/>
-								</div>
-								<input type="submit" value="Search" class="btn btn-default"/>
-							</form>
-							<div id="menu" class="collapse navbar-collapse " style="float: right;">
-											<?php wp_nav_menu( array(
-													'theme_location' => 'primary',
-													'menu_class' => 'nav menu',
-													'fallback_cb' => 'kadima_fallback_page_menu',
-													'walker' => new kadima_nav_walker(),
-													)
-													);	?>
-											</div>	
-						</div>									
-						</div>
-				
+<div class="header">
+	<div class="container" id="home">
+	    <div class="header-bottom row">
+			<div class="col-md-2">
+				<div class="logo">
+					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<?php if($wl_theme_options['upload_image_logo']){ ?>
+						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
+						<?php } else {
+							echo get_bloginfo('name');
+						} ?>
+					</a>
+				</div>
 			</div>
-	            <!--script-nav-->
-	           
-	            <!-- start search-->
-	            
-	          
-	        </div>
-	    </div>
-		 
+			<div class="col-md-10">
+				<div class="top-menu-first">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="row">
+						<div class="col-md-4 pull-right">						
+							<form method="post" class="form-inline" action="<?php echo home_url( '/' ); ?>" style="margin-top: 6px;">
+								<div class="form-group">						
+									<label class="sr-only" for="s">Search for:</label>
+									<input type="text" name="s" id="s" class="form-control" placeholder="<?php the_search_query(); ?>"/>
+								</div>
+								<button type="submit" class="btn btn-default">Search</button>
+							</form>
+						</div>
+						<div class="col-md-8">
+							<div class="collapse navbar-collapse" style="text-align:right;">
+								<?php 
+									wp_nav_menu( array(
+										'theme_location' => 'secondary',
+										'menu_class' => 'nav',
+										'walker' => new kadima_nav_walker(),
+									) );
+								?>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="top-menu-sec">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="menu" class="collapse navbar-collapse " style="float: left;">
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'primary',
+								'menu_class' => 'nav menu',
+								'walker' => new kadima_nav_walker(),
+							) );
+						?>
+					</div>	
+				</div>
+			</div>
+		</div>
 	</div>
+</div>
