@@ -34,6 +34,8 @@
 		}
 	?>
 	<?php wp_head(); ?>
+	<script src="https://use.typekit.net/onu7wui.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<script type="text/javascript">
 	  var _paq = _paq || [];
 	  _paq.push(['trackPageView']);
