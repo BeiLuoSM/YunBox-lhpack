@@ -136,6 +136,7 @@
 		//set_post_thumbnail_size( 160 );
 		register_nav_menu( 'primary', __( 'Primary Menu', 'kadima' ) );
 		register_nav_menu( 'secondary', __( 'Secondary Menu', 'kadima' ) );
+		register_nav_menu( 'third', __( 'third Menu', 'kadima' ) );
 		$args = array('default-color' => '000000',);
 		add_theme_support( 'custom-background', $args);
 		add_theme_support( 'automatic-feed-links');
