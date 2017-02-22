@@ -1,4 +1,3 @@
-
 .menu li {
     background: -moz-linear-gradient(#292929, #252525);
     background: -ms-linear-gradient(#292929, #252525);
@@ -9,6 +8,7 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#252525')";
     background: linear-gradient(#333, #333);
 }
+
 .menu > li {
     display: block;
     float: left;
@@ -26,7 +26,6 @@
     padding: 0 25px;
     text-decoration: none;
 }
-
 /* onhover styles */
 .menu li:hover {
     background-color: #1c1c1c;
@@ -44,7 +43,6 @@
     border-left: 3px solid #3399fe;
     color: #fff;
 }
-
 /* submenu styles */
 .submenu {
     left: 0;
@@ -73,7 +71,7 @@
     -ms-transition: opacity .4s, -ms-transform .5s;
     -o-transition: opacity .4s, -o-transform .5s;
     transition: opacity .4s, transform .5s;
-	width: 280px;
+	width: 200px;
 }
 .menu .submenu li:hover a {
     border-left: 3px solid #3399fe;
@@ -83,7 +81,9 @@
 .menu > li:hover .submenu, .menu > li:focus .submenu {
     max-height: 2000px;
     z-index: 10;
-	min-width:280px;
+	min-width:200px;
+	min-width:200px;
+	min-width:200px;
 }
 .menu > li:hover .submenu li, .menu > li:focus .submenu li {
     opacity: 1;
@@ -94,7 +94,6 @@
     -o-transform: none;
     transform: none;
 }
-
 /* CSS3 delays for transition effects */
 .menu li:hover .submenu li:nth-child(1) {
     -webkit-transition-delay: 0s;
@@ -152,7 +151,6 @@
     -o-transition-delay: 350ms;
     transition-delay: 350ms;
 }
-
 .submenu li:nth-child(1) {
     -webkit-transition-delay: 350ms;
     -moz-transition-delay: 350ms;

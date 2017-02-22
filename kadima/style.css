@@ -35,8 +35,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color: #666;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
-    font-family: 'Lato-Light_1', 'Arimo', Arial, Helvetica, sans-serif;
-     
+    font-family: 'Lato Light', 'Arimo', Arial, Helvetica, sans-serif;
 }
 p, .textwidget {
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
@@ -67,7 +66,6 @@ p, .textwidget {
     text-align: left;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;	
     float:left;
-    margin-top: 1.8em;
 }
 .logo a {
     font-weight: 600;
@@ -892,7 +890,7 @@ p, .textwidget {
     width: 100%;
 }
 .kadima_blog_post_content p {
-    font-family: 'Lato-Light_1', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Lato Light', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27px;
     margin: 0 0 20px;
@@ -1026,7 +1024,7 @@ p, .textwidget {
     font-weight: normal;
     font-size: 18px;
     color: #fff;
-	font-family:'Lato-Light_1';
+	font-family:'Lato Light';
 }
 .kadima_sidebar_blog_shadow {
     background: url('./images/shadow.png') no-repeat top center;
@@ -1343,7 +1341,7 @@ p, .textwidget {
 }
 .kadima_send_button, #kadima_send_button {
     font-weight: 600;
-    font-family: 'Lato-Light_1', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Lato Light', 'Arimo', Arial, Helvetica, sans-serif;
     display: inline-block;
     padding: 5px 12px;
     margin-bottom: 0;
@@ -2143,9 +2141,11 @@ table td {
         top: 20%;
     }
 }
+/*
 .content-grid .col-md-3{
     width: 25% !important;
 }
+*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .dropdown-menu {
         width: 100%;

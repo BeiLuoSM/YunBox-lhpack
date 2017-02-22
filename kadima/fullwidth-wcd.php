@@ -1,12 +1,6 @@
 <?php //Template Name:Full-Width-wcd Page
 get_header(); 
 get_template_part('breadcrums'); ?>
-<style>
-img{
-	width:100%;
-	margin-top:-70px;
-}
-</style>
 <div class="container">
 	<div class="row kadima_blog_wrapper">
 		<div class="col-md-12">	
@@ -20,7 +14,7 @@ img{
 		</div>		
 	</div>
 </div>	
-<div><img  src="../wp-content/themes/kadima/images/wcd.jpg"></div>
+<div><img src="../wp-content/themes/kadima/images/wcd.jpg" style="width:100%;"></div>
 <?php get_footer(); 
 
 

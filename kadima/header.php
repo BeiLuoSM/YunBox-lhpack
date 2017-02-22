@@ -58,7 +58,7 @@
 				<div class="logo">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php if($wl_theme_options['upload_image_logo']){ ?>
-						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
+						<img src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
 						<?php } else {
 							echo get_bloginfo('name');
 						} ?>
@@ -85,12 +85,12 @@
 								<button type="submit" class="btn btn-default">Search</button>
 							</form>
 						</div>
-						<div class="col-md-8">
-							<div class="collapse navbar-collapse" style="text-align:right;">
+						<div class="col-md-6" style="width: 44%; margin-left: 22.5%;">
+							<div id="menutop" class="collapse navbar-collapse">
 								<?php 
 									wp_nav_menu( array(
 										'theme_location' => 'secondary',
-										'menu_class' => 'nav',
+										'menu_class' => 'nav menu',
 										'walker' => new kadima_nav_walker(),
 									) );
 								?>
@@ -111,7 +111,7 @@
 						<?php
 							wp_nav_menu( array(
 								'theme_location' => 'primary',
-								'menu_class' => 'nav menu',
+								'menu_class' => 'nav',
 								'walker' => new kadima_nav_walker(),
 							) );
 						?>

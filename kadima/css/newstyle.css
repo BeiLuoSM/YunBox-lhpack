@@ -20,15 +20,11 @@ nav a {
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
 	background-color: transparent !important;
 }
-
-
-
-
 .cl-effect-7 li {
     float: left;
-    margin-right: 6em;
+    margin-right: 4.5em;
     margin-bottom: 45px;
-    margin-left: 6em;
+    margin-left: 4.5em;
 }
 .cl-effect-7>li>a {
 	line-height:0.8em;
