@@ -631,12 +631,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
 }
 .navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:focus {
+	/*
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
     -webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
     -moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
     box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	*/
     color: #fff;
     font-weight: normal;
     font-size: 15px;
@@ -672,14 +674,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
     white-space: nowrap;
     color: #fff;
+	/*
     -webkit-transition: padding 400ms;
     -moz-transition: padding 400ms;
     transition: padding 400ms;
+	*/
 }
 .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus {
     color: #fff;
     text-decoration: none;   
-    padding: 7px 20px 7px 22px;
+    
 }
 .dropdown-menu> li> a:before {
     content: "\f105";

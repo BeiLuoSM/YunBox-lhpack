@@ -916,13 +916,12 @@ i.skype {
     perspective: 400px;
 }
 .submenu li {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: rotateY(90deg);
     -moz-transform: rotateY(90deg);
     -ms-transform: rotateY(90deg);
     -o-transform: rotateY(90deg);
     transform: rotateY(90deg);
-
     -webkit-transition: opacity .4s, -webkit-transform .5s;
     -moz-transition: opacity .4s, -moz-transform .5s;
     -ms-transition: opacity .4s, -ms-transform .5s;
