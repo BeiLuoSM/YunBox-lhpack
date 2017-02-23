@@ -7,19 +7,19 @@
 	define('WL_TEMPLATE_DIR_CORE' , WL_TEMPLATE_DIR . '/core');
 	require( WL_TEMPLATE_DIR_CORE . '/menu/menu_nav_walker.php' );
 	function kadima_scripts() {
-        wp_enqueue_style('bootstrap', '//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css');
+        wp_enqueue_style('bootstrap', '//statics.yunclever.com/bootstrap/3.3.7/css/bootstrap.min.css');
         wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css');
         wp_enqueue_style('animations', '//cdn.bootcss.com/animations/2.1/css/animations.min.css');
-        wp_enqueue_style('font-awesome', '//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css');
-        wp_enqueue_style('video-js-css', '//cdn.bootcss.com/video.js/5.14.1/video-js.min.css');
+        wp_enqueue_style('font-awesome', '//statics.yunclever.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        wp_enqueue_style('video-js-css', '//statics.yunclever.com/videojs/5.17.0/video-js.min.css');
         wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
         wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
         wp_enqueue_style('newstyle', get_template_directory_uri() . '/css/newstyle.css');
         wp_enqueue_style('linearicons', get_template_directory_uri() . '/css/linearicons.css');
-		wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
-        wp_enqueue_script('bootstrap-js', '//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
-        wp_enqueue_script('video-js', '//cdn.bootcss.com/video.js/5.14.1/video.min.js', array('jquery'));
+        wp_enqueue_script('bootstrap-js', '//statics.yunclever.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
+        wp_enqueue_script('video-js', '//statics.yunclever.com/videojs/5.17.0/video.min.js', array('jquery'));
         wp_enqueue_script('menu', get_template_directory_uri() .'/js/menu.js', array('jquery'));
+        wp_enqueue_script('logjs', '//statics.yunclever.com/log/0.3.0/log.min.js', array('jquery'));
         wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
         if(is_front_page()){
             wp_enqueue_script('jquery.carouFredSel', '//cdn.bootcss.com/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js');

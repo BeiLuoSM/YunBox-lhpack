@@ -19,6 +19,8 @@
 		if (is_home()) {
 			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
 			<link rel="dns-prefetch" href="//cdn.yunclever.com">
+			<link rel="dns-prefetch" href="//analytics.yunclever.com">
+			<link rel="dns-prefetch" href="//statics.yunclever.com">
 			<link rel="dns-prefetch" href="//cdn.bootcss.com">
 			<link rel="dns-prefetch" href="//use.typekit.net">
 			<link rel="dns-prefetch" href="//static.addtoany.com">';
@@ -28,14 +30,16 @@
 		else {
 			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
 			<link rel="dns-prefetch" href="//cdn.yunclever.com">
+			<link rel="dns-prefetch" href="//analytics.yunclever.com">
+			<link rel="dns-prefetch" href="//statics.yunclever.com">
 			<link rel="dns-prefetch" href="//cdn.bootcss.com">
 			<link rel="dns-prefetch" href="//use.typekit.net">
 			<link rel="dns-prefetch" href="//static.addtoany.com">';
 		}
 	?>
 	<?php wp_head(); ?>
-	<script src="https://use.typekit.net/onu7wui.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<!--script src="https://use.typekit.net/onu7wui.js"></script>
+	<script>//try{Typekit.load({ async: true });}catch(e){}</script-->
 	<script type="text/javascript">
 	  var _paq = _paq || [];
 	  _paq.push(['trackPageView']);
@@ -76,8 +80,8 @@
 						</button>
 					</div>
 					<div class="row">
-						<div class="col-md-4 pull-right">						
-							<form method="post" class="form-inline" action="<?php echo home_url( '/' ); ?>" style="margin-top: 6px;">
+						<div class="col-md-4 pull-right" style="padding: 0px;">						
+							<form method="post" class="form-inline pull-right" action="<?php echo home_url( '/' ); ?>" style="margin-top: 6px;">
 								<div class="form-group">						
 									<label class="sr-only" for="s">Search for:</label>
 									<input type="text" name="s" id="s" class="form-control" placeholder="<?php the_search_query(); ?>"/>
@@ -85,8 +89,8 @@
 								<button type="submit" class="btn btn-default">Search</button>
 							</form>
 						</div>
-						<div class="col-md-6" style="width: 44%; margin-left: 22.5%;">
-							<div id="menutop" class="collapse navbar-collapse">
+						<div class="col-md-8">
+							<div id="menutop" class="collapse navbar-collapse pull-right">
 								<?php 
 									wp_nav_menu( array(
 										'theme_location' => 'secondary',
