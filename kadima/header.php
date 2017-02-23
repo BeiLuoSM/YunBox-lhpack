@@ -94,7 +94,7 @@
 								<?php 
 									wp_nav_menu( array(
 										'theme_location' => 'secondary',
-										'menu_class' => 'nav menu',
+										'menu_class' => 'nav cl-effect-5',
 										'walker' => new kadima_nav_walker(),
 									) );
 								?>
