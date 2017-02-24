@@ -189,7 +189,7 @@ a.button:hover {
 	font-size:16px;
 }
 .most-1 h5 a:hover{
-    color: #000;
+    color: #333;
 }
 .most-1 p{
     font-size:0.9em;
@@ -372,22 +372,18 @@ i.skype {
     color: #555;
     font-size: 3em;
     padding: 0.3em 0 0.3em;
-    font-size: 23px;
-   
-   
+    font-size: 23px;   
 	text-align:left;
 }
 .product-bj{
    background-color: #fafafa;
     background-size:cover;
-
-
 }
 .mark, mark{
 	display: none;
 }
 .cd-timeline-content p{
-	color:#000;
+	color:#333;
 	font-size:14px !important;
 }
 .kadima_blog_wrapper .col-md-4 {
