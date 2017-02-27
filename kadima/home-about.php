@@ -12,15 +12,20 @@
 											<div class="col-md-6 col-sm-6 col-xs-12" style="pading-left:0;pading-right:0;">
 													
 													<div class="do-box text-center" >
-															<?php if($wl_theme_options['about_slide_img_'.$i] !='') { ?>
-																<i class="lnr"><img src="<?php echo esc_url($wl_theme_options['about_slide_img_'.$i]); ?>" style="height: 60px;"></i>
-															<?php } ?>
-															
-															<?php if($wl_theme_options['about_slide_title_'.$i] !='') { ?><h3 style="text-align: center;font-size: 2em;font-weight: bold;margin-top:0 !important;""><?php echo esc_attr($wl_theme_options['about_slide_title_'.$i]); ?></h3><?php } ?>
-															<?php if($wl_theme_options['about_slide_description_'.$i] !='') { ?><p ><?php echo apply_filters('the_content', $wl_theme_options['about_slide_description_'.$i], true); ?></p><?php } ?>
-															<a href="<?php echo esc_url($wl_theme_options['about_slide_btn_link_'.$i]); ?>">
-																<?php if($wl_theme_options['about_slide_btn_text_'.$i] !='') { ?><p><?php echo apply_filters('the_content', $wl_theme_options['about_slide_btn_text_'.$i], true); ?></p><?php } ?>
-															</a>
+															<div class="col-md-2" style="float:left;padding-top: 3em;">
+																<?php if($wl_theme_options['about_slide_img_'.$i] !='') { ?>
+																	<i class="lnr"><img src="<?php echo esc_url($wl_theme_options['about_slide_img_'.$i]); ?>" style="height: 70px;"></i>
+																<?php } ?>
+																
+																
+															</div>
+															<div class="col-md-10" style="float:right;text-align: left;">
+															<?php if($wl_theme_options['about_slide_title_'.$i] !='') { ?><h3 style="font-size: 2em;font-weight: bold;margin-top:0 !important;""><?php echo esc_attr($wl_theme_options['about_slide_title_'.$i]); ?></h3><?php } ?>
+																<?php if($wl_theme_options['about_slide_description_'.$i] !='') { ?><p ><?php echo apply_filters('the_content', $wl_theme_options['about_slide_description_'.$i], true); ?></p><?php } ?>
+																<a href="<?php echo esc_url($wl_theme_options['about_slide_btn_link_'.$i]); ?>">
+																	<?php if($wl_theme_options['about_slide_btn_text_'.$i] !='') { ?><p><?php echo apply_filters('the_content', $wl_theme_options['about_slide_btn_text_'.$i], true); ?></p><?php } ?>
+																</a>
+															</div>
 													</div>
 													
 											</div>

@@ -16,7 +16,6 @@ Text Domain: kadima
 }
 /* Header Section css */
 body {
-    /* padding:0 30px;*/
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif !important;
     background-color: #fff;
 }
@@ -35,10 +34,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color: #666;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
-    font-family: 'Lato Light', 'Arimo', Arial, Helvetica, sans-serif;
 }
 p, .textwidget {
-    font-family: 'Lato Light', 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size:1em;
     line-height: 1.42857143;
 }
@@ -63,13 +60,10 @@ p, .textwidget {
     display: inline;
 }
 .logo {
-    text-align: left;
-    font-family: 'Lato Light', 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;	
     float:left;
 }
 .logo a {
     font-weight: 600;
-    font-family: 'Lato Light', 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
     font-size: 50px;
     color: #fff;
@@ -78,7 +72,6 @@ p, .textwidget {
     color: #fff;
 }
 .logo p {
-    font-family: 'Lato Light', 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     margin-top: 5px;
     color: #fff;
 }

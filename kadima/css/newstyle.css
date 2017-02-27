@@ -189,7 +189,7 @@ a.button:hover {
 	font-size:16px;
 }
 .most-1 h5 a:hover{
-    color: #000;
+    color: #333;
 }
 .most-1 p{
     font-size:0.9em;
@@ -372,22 +372,18 @@ i.skype {
     color: #555;
     font-size: 3em;
     padding: 0.3em 0 0.3em;
-    font-size: 23px;
-   
-   
+    font-size: 23px;   
 	text-align:left;
 }
 .product-bj{
    background-color: #fafafa;
     background-size:cover;
-
-
 }
 .mark, mark{
 	display: none;
 }
 .cd-timeline-content p{
-	color:#000;
+	color:#333;
 	font-size:14px !important;
 }
 .kadima_blog_wrapper .col-md-4 {
@@ -395,14 +391,7 @@ i.skype {
 }
 .col-md-12 .col-md-6 .do-box a p{
 	color:#009afe;
-	padding-left:15px;
-	padding-right:15px;
 	
-}
-.col-md-12 .col-md-6 .do-box  p{
-	
-	padding-left:15px;
-	padding-right:15px;
 }
 /*
 .columns{
@@ -865,6 +854,7 @@ i.skype {
 		padding: 0 0 0.8em;
 	}
 }
+/*
 .menu li {
     background: -moz-linear-gradient(#292929, #252525);
     background: -ms-linear-gradient(#292929, #252525);
@@ -892,7 +882,6 @@ i.skype {
     padding: 0 25px;
     text-decoration: none;
 }
-/* onhover styles */
 .menu li:hover {
     background-color: #1c1c1c;
     background: -moz-linear-gradient(#1c1c1c, #1b1b1b);
@@ -909,7 +898,6 @@ i.skype {
     border-left: 3px solid #3399fe;
     color: #fff;
 }
-/* submenu styles */
 .submenu {
     left: 0;
     max-height: 0;
@@ -924,14 +912,12 @@ i.skype {
     perspective: 400px;
 }
 .submenu li {
-    opacity: 0;
-
+    opacity: 1;
     -webkit-transform: rotateY(90deg);
     -moz-transform: rotateY(90deg);
     -ms-transform: rotateY(90deg);
     -o-transform: rotateY(90deg);
     transform: rotateY(90deg);
-
     -webkit-transition: opacity .4s, -webkit-transform .5s;
     -moz-transition: opacity .4s, -moz-transform .5s;
     -ms-transition: opacity .4s, -ms-transform .5s;
@@ -959,7 +945,6 @@ i.skype {
     -o-transform: none;
     transform: none;
 }
-/* CSS3 delays for transition effects */
 .menu li:hover .submenu li:nth-child(1) {
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
@@ -1072,3 +1057,4 @@ i.skype {
     -o-transition-delay: 0s;
     transition-delay: 0s;
 }
+*/
