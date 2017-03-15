@@ -7,7 +7,7 @@
 						<p style="margin-bottom: 0;">subscribe</p>
 							<p>Be the first to know about our latest products</p>
 								<textarea id="yourmessage" class="form-control" style="border: 1px solid #dcdcdc; height:34px;" rows="3" placeholder="Enter Youremail Address"></textarea>
-								<p><button class="btn btn-default" type="button">Submif</button></p>
+								<p><button class="btn btn-default" type="button">Submit</button></p>
 									<?php if($wl_theme_options['footer_section_social_media_enbled'] == '1') { ?>
 										<div class="kadima_footer_social_div" style="padding-top:10px;">
 											<ul class="social">
