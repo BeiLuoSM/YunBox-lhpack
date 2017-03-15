@@ -2,7 +2,7 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
 	  <?php $wl_theme_options = kadima_get_options(); $j=1;
-			for($i=1; $i<=4; $i++){  ?>
+			for($i=1; $i<=3; $i++){  ?>
 			<?php if($wl_theme_options['slide_image_'.$i]!='') {
               			?>
         <div class="item <?php if($j==1) echo "active"; ?>">
@@ -12,7 +12,7 @@
             <div class="carousel-caption">
 			<?php if($wl_theme_options['slide_title_'.$i]!='') {  ?>
 			<div class="carousel-text">
-            
+            <h1 class="animated bounceInRight"><?php echo esc_attr($wl_theme_options['slide_title_'.$i]); ?></h1>
 			<?php
 			 if($wl_theme_options['slide_desc_'.$i]!='') {  ?>
 			  <ul class="list-unstyled carousel-list">

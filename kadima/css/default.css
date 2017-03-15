@@ -5,7 +5,8 @@
 /*  header contact info section ***/
 
 .header_section {
-    background-color: #31A3DD;
+    background-color: #fff;
+
     color: #fff;
 }
 
@@ -13,7 +14,6 @@
 
 .navigation_menu {
     background-color: #fff;
-    border-top: 2px solid #31A3DD;
 }
 .navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus, .dropdown-menu .active a {
     background-color: #31A3DD;
@@ -27,11 +27,11 @@
 .navbar-default .navbar-nav> .open> a, .navbar-default .navbar-nav> .open> a:hover, .navbar-default .navbar-nav> .open> a:focus {
     background-color: #31A3DD;
 }
-.navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:focus {
-    background-color: #31A3DD;
-}
+/**.navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:focus {
+    background-color: #007bd9;
+}**/
 .dropdown-menu {
-    background-color: #333;
+    background-color: rgba(49, 162, 221, 0.9);
 }
 
 /** headings titles css ***/
@@ -48,7 +48,7 @@
 /** slider css ***/
 
 .carousel-list li {
-   /* background: rgba(49, 162, 221, 0.8);*/
+    background: rgba(49, 162, 221, 0.8);
 }
 
 /** service  section css ***/
@@ -121,15 +121,15 @@
     text-decoration: none;
 }
 .kadima_carousel-prev, .kadima_carousel-next {
-    background-color: #fff;
-    border: 2px solid #31A3DD;
+    background-color: #c9c9c9;
+    border: 2px solid #c9c9c9;
 }
 .kadima_carousel-prev:hover, .kadima_carousel-next:hover {
-    background-color: #31A3DD;
+    background-color: #fff;
     color: #fff;
 }
 .kadima_carousel-prev:hover i, .kadima_carousel-next:hover i {
-    color: #fff;
+    color: #c9c9c9;
 }
 .kadima_carousel-prev i, .kadima_carousel-next i {
     color: #31A3DD;
@@ -199,8 +199,6 @@
 
 .kadima_blog_thumb_wrapper {
     background: #fff;
-    border-bottom: 5px solid #31A3DD;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .7);
 }
 .kadima_blog_thumb_wrapper h2 a {
     color: #31A3DD;
@@ -240,10 +238,10 @@
     border-top: 3px solid #f5f5f5;
 }
 .kadima_blog_read_btn {
-	border: 2px solid #ce1e03;
+    border: 2px solid #31A3DD;
     background-size: 100% 200%;
-    background-color: #ce1e03;
-    background-image: linear-gradient(to bottom, #ce1e03 50%, #fff 50%);
+    background-color: #31A3DD;
+    background-image: linear-gradient(to bottom, #31A3DD 50%, #fff 50%);
 }
 .kadima_blog_read_btn i {
     margin-right: 5px;
@@ -273,8 +271,8 @@
 /********* Blog Full width css ********/
 
 .kadima_post_date {
-    background: #31A3DD;
-    color: #ffffff;
+    background: #fff;
+    color: #999;
 }
 .kadima_blog_comment:hover i, .kadima_blog_comment:hover h6 {
     color: #31A3DD;
@@ -292,13 +290,13 @@
     color: #31A3DD;
 }
 .kadima_sidebar_widget {
-    border-left: 3px solid #333;
-    border-right: 3px solid #333;
-    border-bottom: 3px solid #333;
+    border-left: 3px solid #31A3DD;
+    border-right: 3px solid #31A3DD;
+    border-bottom: 3px solid #31A3DD;
     background-color: #ffffff;
 }
 .kadima_sidebar_widget_title {
-    background: #333333;
+    background: #31A3DD;
 }
 .kadima_sidebar_link p a:hover, .kadima_sidebar_widget ul li a:hover {
     color: #31A3DD;
@@ -348,7 +346,7 @@
 }
 .kadima_send_button:hover, #kadima_send_button:hover {
     background-position: 0 -100%;
-    border: 1px solid #31A3DD;
+    border: 2px solid #31A3DD;
     color: #ffffff;
     background-color: #31A3DD;
 }
@@ -406,7 +404,7 @@
     color: #fff;
 }
 .kadima_carousel-prev i, .kadima_carousel-next i {
-    color: #31A3DD;
+    color: #fff;
 }
 
 /**** About us page Css *************************************************
@@ -446,8 +444,9 @@
 ***************************************************************************************/
 
 .kadima_footer_area {
-    background: #31A3DD;
+    background: #3d3938;
     border-top: 0px solid #6B6B6B;
+	border-top: 1px solid #fff;
 }
 
 /***** Contact Info Css *****************************************************************
@@ -478,7 +477,7 @@
 /*** breadcum style css **/
 
 .breadcrumb li a {
-    color: #000 !important;
+    color: #31A3DD !important;
 }
 
 /** progress bar or nav button css */
@@ -487,7 +486,7 @@
     background-color: #31A3DD !important;
 }
 .btn-search {
-    background: #333 !important;
+    background: #31A3DD !important;
 }
 .nav-pills> li> a {
     border: 3px solid #31A3DD !important;
@@ -507,12 +506,8 @@
     background-image: linear-gradient(to bottom, #31A3DD 50%, #31A3DD 50%) !important;
     background-color: #31A3DD;
 }
-.navbar-toggle {
-    background-color: #333 !important;
-    border: 1px solid #333 !important;
-}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #31A3DD !important;
+    background-color: #049CFD;
 }
 .kadima_blockquote_section blockquote {
     border-left: 5px solid #31A3DD;
@@ -566,13 +561,17 @@ ul .social li .facebook a:hover, ul .social li .twitter a:hover, ul .social li .
     color: white;
 }
 body {
+    /* padding:0 30px;*/
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .row {
     margin-left: 0px;
     margin-right: 0px;
 }
-
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 a:hover, a:focus {
     text-decoration: none;
 }
@@ -580,6 +579,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color: #666;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
@@ -589,6 +589,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation_menu {
     width: 100%;
     position: relative;
+    border-bottom: 2px solid #007bd9;
 }
 .navbar-default {
     background-color: transparent;
@@ -602,6 +603,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
     box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
     color: #fff;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 15px;
 }
@@ -613,35 +615,40 @@ h1, h2, h3, h4, h5, h6 {
     -moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
     box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
     color: #fff;
-    font-weight: normal;
-    font-size: 15px;
+    font-family: 'AVGARDD', 'Arimo', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
 }
 .navbar-default .navbar-nav> li {
     margin-right: 7px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .navbar-default .navbar-nav> li> a {
     color: #000;
     border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+	padding-top:0;
+	padding-left:0;
+	padding-right:0;
+	padding-bottom:30px;
     text-transform: uppercase;
-    font-weight: normal;
-    font-size: 15px;
+    font-family: 'AVGARDD', 'Arimo', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
 }
 .navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:focus {
-	/*
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    -webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    -moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-	*/
-    color: #fff;
-    font-weight: normal;
-    font-size: 15px;
+    border-radius: 15px 15px 0 0;
+    color: #009946;
+    font-family: 'AVGARDD', 'Arimo', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 2px solid #009946;
+	padding-bottom: 20px;
 }
 .dropdown-menu {
     position: absolute;
@@ -653,7 +660,7 @@ h1, h2, h3, h4, h5, h6 {
     float: left;
     min-width: 200px;
     padding: 0px 0;
-    margin: 0px 0 0;
+    margin: 2px 0 0;
     font-size: 14px;
     list-style: none;
     background-clip: padding-box;
@@ -663,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     text-transform: uppercase;
-	border-top: 1px solid #fff;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .dropdown-menu> li> a {
     display: block;
@@ -674,16 +681,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
     white-space: nowrap;
     color: #fff;
-	/*
     -webkit-transition: padding 400ms;
     -moz-transition: padding 400ms;
     transition: padding 400ms;
-	*/
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus {
-    color: #fff;
-    text-decoration: none;   
-    
+    color: #000;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 7px 20px 7px 22px;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .dropdown-menu> li> a:before {
     content: "\f105";
@@ -696,9 +704,9 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 .dropdown-menu> .active> a, .dropdown-menu> .active> a:hover, .dropdown-menu> .active> a:focus {
-    
+    color: #333;
     text-decoration: none;
-    background-color: transparent !important;
+    background-color: #fff;
     outline: 0;
 }
 .dropdown-menu> .disabled> a, .dropdown-menu> .disabled> a:hover, .dropdown-menu> .disabled> a:focus {
@@ -740,6 +748,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.05em;
     text-transform: uppercase;
     font-weight: 800;
+    font-family: 'Lato';
 }
 .navbar-brand:hover {
     float: left;
@@ -752,16 +761,17 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.05em;
     text-transform: uppercase;
     font-weight: 800;
+    font-family: 'Lato';
 }
 .navbar-collapse {
     max-height: 340px;
-    padding-right: 0px;
-	padding-left:0px;
+    padding-right: 15px;
+    margin-top: 25px;
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
     border-top: 0px solid transparent;
-  
-
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+	float:right;
 }
 .navbar-toggle {
     position: relative;
@@ -787,9 +797,6 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #049CFD;
     border-radius: 4px;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #049CFD;
-}
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
@@ -797,8 +804,8 @@ h1, h2, h3, h4, h5, h6 {
     border-top: none;
 }
 .fa-angle-down {
-    
-  
+    font-size: 18px !important;
+    float: right;
     margin-right: -13px;
 }
 .dropdown-submenu {
@@ -836,6 +843,7 @@ h1, h2, h3, h4, h5, h6 {
 **************************************************************************************************************************/
 
 .kadima_header_breadcrum_title {
+    margin-bottom: 70px;
     background: #edf0f2;
     opacity: 1;
     padding-top: 8px;
@@ -843,7 +851,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .kadima_header_breadcrum_title h1 {
     color: #777777;
-    font-size: 25px;
 }
 .breadcrumb {
     font-size: 17px;
@@ -855,8 +862,6 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 0;
     border-radius: 0;
     list-style: none;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 .breadcrumb li {
     display: inline-block;
@@ -932,6 +937,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .nav-pills> li> a:hover {
     color: #fff;
@@ -958,6 +964,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .nav-stacked> li> a:hover {
     color: #fff;
@@ -979,6 +986,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #e8e8e8;
     border-radius: 0px;
     margin-right: 0px;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 .nav-tabs li.active> a {
@@ -998,14 +1006,13 @@ h1, h2, h3, h4, h5, h6 {
 .panel {
     margin-bottom: 20px;
     background-color: #ffffff;
-    border: 1px solid #d3ced2;
-    border-radius: 0px;
+    border: 1px solid transparent;
+    border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) 0 10px rgba(0, 0, 0, 0.175);
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) 0 10px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) 0 10px rgba(0, 0, 0, 0.175);
-	padding: 10px !important;
 }
 .panel-default {
     border-color: #e9e9e9;
@@ -1102,33 +1109,250 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.woocommerce #content div.product div.thumbnails a, .woocommerce div.product div.thumbnails a, .woocommerce-page #content div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a{
-	float:none !important;
+.col-md-12 .row .col-md-6{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 50px;
+}
+.col-md-1{
+	margin-top: 95px;
+}
+.kadima_footer_social_div ul li a.twitter{
+    background: url(../images/facebook.png) no-repeat 0px 0px;
+    height: 35px;
+    display: block;
+    width: 35px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.facebook{
+    background: url(../images/twitter.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.chrome{
+    background: url(../images/tumblr.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.pinterest{
+    background: url(../images/in.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.linkedin{
+    background: url(../images/google.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.dribbble{
+    background: url(../images/icons.png) no-repeat -164px 0px;
 }
 
-.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
-	width:30%;
-	margin-top: 20px;
+
+
+.kadima_footer_social_div2 .social li {
+    font-size: 18px;
+    display: inline-block;
+    height: 25px;
+    margin-right: 5px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
 }
-.woocommerce div.product div.images img{
-	float:left;
-	width: 70%;
-	margin-right: 90px;
-	margin-top: 20px;
+.kadima_footer_social_div2 ul li a.twitter{
+    background: url(../images/facebook.png) no-repeat 0px 0px;
+    height: 25px;
+    display: block;
+    width: 25px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.facebook{
+    background: url(../images/twitter.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.chrome{
+    background: url(../images/tumblr.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.pinterest{
+    background: url(../images/linkedin.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.linkedin{
+    background: url(../images/google+.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.dribbble{
+    background: url(../images/icons.png) no-repeat -164px 0px;
+}
+.wl_rtl .lnr2{
+	width: 25px;
+    height: 25px;
+    background: url("../images/shopping.png") no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+	margin-right:5px;
+    
+}
+#newsCarousel .carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(0,0,0,.0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0000) 0,rgba(0,0,0,.0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0000)),to(rgba(0,0,0,.0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.0000) 0,rgba(0,0,0,.0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+#newsCarousel .carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0)),to(rgba(0,0,0,.0000)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.0) 0,rgba(0,0,0,.0000) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+.col-md-6 #kadima_blog_section li{
+	list-style-type:none;
+}
+.col-md-6 #kadima_blog_section a{
+	color:#666;
+}
+#kadima_blog_section .col-md-8 .lnr{
+	width: 25px;
+    height: 25px;
+    background: url("../images/jt.png") no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+	margin-right:5px;
+    
+}
+.kadima_service_iocn {
+    margin: 0 auto;
+    -webkit-border-radius: 10% !important;
+    border-radius: 10% !important;
+    border: 4px solid #ff7f02 !important;
+    background-color: #ff7f02 !important;
+    background-image: linear-gradient(to bottom, #ff7f02 50%, #fff 50%) !important;
+}
+.kadima_service_iocn {
+    border: 4px solid #ff7f02;
+    background-color: #31A3DD;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #31A3DD 50%, #fff 50%);
+}
+.kadima_service_iocn i {
+    color: #fff;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 90px;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+.kadima_service_iocn {
+    width: 90px;
+    height: 90px;
+    display: block;
+   
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+
+
+.kadima_service_area:hover .kadima_service_iocn i {
+    color: #ff7f02 !important;
+}
+.kadima_service_detail h3 {
+    font-size: 24px;
+    letter-spacing: normal;
+    line-height: 32px;
+    word-wrap: break-word;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+.kadima_service_detail>h3>a {
+    color: #000 !important;
+	text-decoration:none;
+}
+.col-sm-2 {
+    width: 25%;
+	padding-right: 7px;
+    padding-left: 7px;
+}
+.kadima_service_area {
+    text-align: center;
+    margin-bottom: 0px !important;
 	border: 1px solid #333;
 }
-.woocommerce div.product div.images .thumbnails img{
-	float:none;
-	width: 12%;
+.lnr{
+	width: 25px;
+    height: 25px;
+    background: url('../images/dh.png') no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-right: 5px;
 }
-.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images{
-	width:70%;
+.lnr2{
+	width: 25px;
+    height: 25px;
+    background: url('../images/em.png') no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-right: 5px;
 }
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
-	color: #fff;
-    background-color: rgba(52, 151, 253, 0.81);
+.most-1 p a{
+    width: 100%;
+    padding: 6px 39px;
+    text-align: center;
+    border: 1px solid #333;
+    background: #fff;
+    color: #000;
+    
+    text-decoration: none;
 }
-.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
-	color: #fff;
-    background-color: rgba(52, 151, 253, 0.81);
+.most-1 p a:hover {
+    background: #333;
+    color: #fff;
+}
+.service-box .icon {
+    height: 215px;
+    background: #cecccc;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding-top: 3em;
+}
+.btn-default {
+    color: #fff;
+    background-color: #019A44;
+    border-color: #019A44;
+}
+.content-grid2 h5:after, .content-grid2 h5:before {
+    width: 200px;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    background: #019A44;
+    margin: 0 1%;
+}
+.kadima_service_detail p{
+    display: inline-block;
+	background-color:#019A44;
+	padding:5px 25px;
+	color:#fff;
+	position: absolute;
+	bottom: -27px;
+	right: 29%
 }

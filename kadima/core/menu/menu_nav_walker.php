@@ -16,25 +16,33 @@ class kadima_nav_walker extends Walker_Nav_Menu {
 		}
 		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
+
 		$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
 		$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
+
 		$output .= $indent . '<li' . $id . $value . $class_names .'>';
+
 		$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
 		$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
 		$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
 		$attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+		//$attributes .= ($args->has_children) 	    ? ' data-toggle="dropdown" data-target="#" class="dropdown-toggle"' : '';
+
 		$item_output = $args->before;
 		$item_output .= '<a'. $attributes .'>';
 		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-		//$item_output .= ($args->has_children) ? '&nbsp;<i class="fa fa-angle-down"></i></a>' : '<br/><span class="subTab">' . $item->description . '</span></a>';
 		$item_output .= ($args->has_children) ? '<i class="fa fa-angle-down"></i></a>' : '</a>';
 		$item_output .= $args->after;
+
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
 	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
+
 		if ( !$element )
 			return;
+
 		$id_field = $this->db_fields['id'];
+
 		//display this element
 		if ( is_array( $args[0] ) )
 			$args[0]['has_children'] = ! empty( $children_elements[$element->$id_field] );
@@ -42,10 +50,14 @@ class kadima_nav_walker extends Walker_Nav_Menu {
 			$args[0]->has_children = ! empty( $children_elements[$element->$id_field] );
 		$cb_args = array_merge( array(&$output, $element, $depth), $args);
 		call_user_func_array(array($this, 'start_el'), $cb_args);
+
 		$id = $element->$id_field;
+
 		// descend only when the depth is right and there are childrens for this element
 		if ( ($max_depth == 0 || $max_depth > $depth+1 ) && isset( $children_elements[$id]) ) {
+
 			foreach( $children_elements[ $id ] as $child ){
+
 				if ( !isset($newlevel) ) {
 					$newlevel = true;
 					//start the child delimiter
@@ -56,11 +68,13 @@ class kadima_nav_walker extends Walker_Nav_Menu {
 			}
 			unset( $children_elements[ $id ] );
 		}
+
 		if ( isset($newlevel) && $newlevel ){
 			//end the child delimiter
 			$cb_args = array_merge( array(&$output, $depth), $args);
 			call_user_func_array(array($this, 'end_lvl'), $cb_args);
 		}
+
 		//end this element
 		$cb_args = array_merge( array(&$output, $element, $depth), $args);
 		call_user_func_array(array($this, 'end_el'), $cb_args);
@@ -72,24 +86,18 @@ function kadima_nav_menu_css_class( $classes ) {
 	return $classes;
 }
 add_filter( 'nav_menu_css_class', 'kadima_nav_menu_css_class' );
-
 function kadima_page_menu_args( $args ) {
 	if ( ! isset( $args['show_home'] ) )
 		$args['show_home'] = true;
 	return $args;
 }
 add_filter( 'wp_page_menu_args', 'kadima_page_menu_args' );
-
 function kadima_fallback_page_menu( $args = array() ) {
-
 	$defaults = array('sort_column' => 'menu_order, post_title', 'menu_class' => 'menu', 'echo' => true, 'link_before' => '', 'link_after' => '');
 	$args = wp_parse_args( $args, $defaults );
 	$args = apply_filters( 'wp_page_menu_args', $args );
-
 	$menu = '';
-
 	$list_args = $args;
-
 	// Show Home in the menu
 	if ( ! empty($args['show_home']) ) {
 		if ( true === $args['show_home'] || '1' === $args['show_home'] || 1 === $args['show_home'] )
@@ -136,7 +144,6 @@ class kadima_walker_page_menu extends Walker_Page{
 			$indent = str_repeat("\t", $depth);
 		else
 			$indent = '';
-
 		extract($args, EXTR_SKIP);
 		$css_class = array('page_item', 'page-item-'.$page->ID);
 		if ( !empty($current_page) ) {

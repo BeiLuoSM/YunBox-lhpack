@@ -1,39 +1,32 @@
-<?php
-/** Theme Name	: Kadima
-* Theme Core Functions and Codes
-*/
+<?php /* Theme Name	: Kadima */
 	define('WL_TEMPLATE_DIR_URI', get_template_directory_uri());
 	define('WL_TEMPLATE_DIR', get_template_directory());
 	define('WL_TEMPLATE_DIR_CORE' , WL_TEMPLATE_DIR . '/core');
 	require( WL_TEMPLATE_DIR_CORE . '/menu/menu_nav_walker.php' );
 	function kadima_scripts() {
         wp_enqueue_style('bootstrap', '//statics.yunclever.com/bootstrap/3.3.7/css/bootstrap.min.css');
-        wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css');
-        wp_enqueue_style('animations', '//cdn.bootcss.com/animations/2.1/css/animations.min.css');
+        wp_enqueue_style('animations', '//statics.yunclever.com/animate/3.5.1/animate.css');
+        //wp_enqueue_style('theme-animtae', get_template_directory_uri() . '/css/theme-animtae.css');
         wp_enqueue_style('font-awesome', '//statics.yunclever.com/font-awesome/4.7.0/css/font-awesome.min.css');
         wp_enqueue_style('video-js-css', '//statics.yunclever.com/videojs/5.17.0/video-js.min.css');
         wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
+        wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css');
         wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
-        wp_enqueue_style('newstyle', get_template_directory_uri() . '/css/newstyle.css');
-        wp_enqueue_style('linearicons', get_template_directory_uri() . '/css/linearicons.css');
         wp_enqueue_script('bootstrap-js', '//statics.yunclever.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
         wp_enqueue_script('video-js', '//statics.yunclever.com/videojs/5.17.0/video.min.js', array('jquery'));
-        wp_enqueue_script('menu', get_template_directory_uri() .'/js/menu.js', array('jquery'));
         wp_enqueue_script('logjs', '//statics.yunclever.com/log/0.3.0/log.min.js', array('jquery'));
         wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
         if(is_front_page()){
             wp_enqueue_script('jquery.carouFredSel', '//cdn.bootcss.com/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js');
             wp_enqueue_script('photobox-js', '//cdn.bootcss.com/photobox/1.9.9/photobox/jquery.photobox.min.js');
             wp_enqueue_style('photobox', '//cdn.bootcss.com/photobox/1.9.9/photobox/photobox.min.css');
-            wp_enqueue_script('kadima-footer-script', get_template_directory_uri() .'/js/kadima-footer-script.js','','',true);
             wp_enqueue_script('waypoints', '//cdn.bootcss.com/waypoints/4.0.1/jquery.waypoints.min.js','','',true);
-            wp_enqueue_script('scroll', get_template_directory_uri() .'/js/scroll.js','','',true);
+            wp_enqueue_script('kadima-footer-script', get_template_directory_uri() .'/js/kadima-footer-script.js','','',true);
         }
     }
 	add_action('wp_enqueue_scripts', 'kadima_scripts');
 	//require( WL_TEMPLATE_DIR_CORE . '/comment-function.php' );
 	require(dirname(__FILE__).'/customizer.php');
-
 	function get_client_language(){ // 获取访问用户的语言
 		if(isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])){
 			preg_match("/([^,;]*)/", $_SERVER["HTTP_ACCEPT_LANGUAGE"], $array_languages);
@@ -43,8 +36,8 @@
 	}
 	function kadima_default_settings() {
 	    $count12 = array('One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'TEN', 'ELEVEN', 'TWELVE');
-    	$Image_silde =  esc_url(get_template_directory_uri() .'/images/1.png');
-    	$Image_portfolio = esc_url(get_template_directory_uri() .'/images/portfolio1.png');
+    	$Image_silde =  esc_url(get_template_directory_uri() .'/images/placeholder.jpg');
+    	$Image_portfolio = esc_url(get_template_directory_uri() .'/images/placeholder.jpg');
         $wl_theme_options = array(
 			'upload_image_logo'=>'',
 			'height'=>'55',
@@ -56,7 +49,7 @@
 			'fc_home'=>'1',
 			'fc_title' => __('', 'kadima' ),
 			'fc_btn_txt' => __('', 'kadima' ),
-			'fc_btn_link' =>"",
+			'fc_btn_link' =>'',
 			'fc_icon' => 'fa fa-thumbs-up',
 			'header_social_media_in_enabled'=>'1',
 			'footer_section_social_media_enbled'=>'1',
@@ -73,7 +66,7 @@
 			'info_tel' => __('', 'kadima' ),
 			'info_fax' => __('', 'kadima' ),
 			'info_mail'=> __('', 'kadima' ),
-			'info_support'=> __('<a href="http://www.yunclever.com" target="_blank">YunClever</a>', 'kadima' ),
+			'info_support'=> __('<a href="https://www.yunclever.com" target="_blank">YunClever</a>', 'kadima' ),
 			'service_home'=>'1',
 			'home_service_heading' => __('', 'kadima' ),
 			'portfolio_home'=>'0',
@@ -83,33 +76,9 @@
 			'about_title' => __('', 'kadima' ),
 			'blog_title' => __('', 'kadima' ),
 		);
-		for($i=1;$i<=12;$i++){
-			$wl_theme_options['slide_image_'.$i] = $Image_silde;
-			$wl_theme_options['slide_title_'.$i] = __('', 'kadima' );
-			$wl_theme_options['slide_desc_'.$i] = __('', 'kadima' );
-			$wl_theme_options['slide_btn_text_'.$i] = __('', 'kadima' );
-			$wl_theme_options['slide_btn_link_'.$i] = '';
-			//
-			$wl_theme_options['service_icons_'.$i] = 'fa fa-database';
-			$wl_theme_options['service_img_'.$i] = $Image_portfolio;
-			$wl_theme_options['service_title_'.$i] = __($count12[$i-1],'kadima' );
-			$wl_theme_options['service_text_'.$i] = __('', 'kadima' );
-			$wl_theme_options['service_link_'.$i] = '';
-			//
-			$wl_theme_options['port_img_'.$i] = $Image_portfolio;
-			$wl_theme_options['port_title_'.$i] = __('', 'kadima' );
-			$wl_theme_options['port_description_'.$i] = __('', 'kadima' );
-			$wl_theme_options['port_link_'.$i] = '';
-			//
-			$wl_theme_options['about_slide_img_'.$i] = $Image_portfolio;
-			$wl_theme_options['about_slide_title_'.$i] = __('', 'kadima' );
-			$wl_theme_options['about_slide_desc_'.$i] = __('', 'kadima' );
-			$wl_theme_options['about_slide_link_'.$i] = '';
-		}
 		return apply_filters( 'kadima_options', $wl_theme_options );
     }
-	function kadima_get_options() {
-        // Options API
+	function kadima_get_options() { // Options API
         return wp_parse_args(
             get_option( 'kadima_options', array() ),
             kadima_default_settings()
@@ -128,9 +97,6 @@
 		add_theme_support( 'post-thumbnails' );
 		//set_post_thumbnail_size( 160 );
 		register_nav_menu( 'primary', __( 'Primary Menu', 'kadima' ) );
-		register_nav_menu( 'secondary', __( 'Secondary Menu', 'kadima' ) );
-		register_nav_menu( 'third', __( 'third Menu', 'kadima' ) );
-		register_nav_menu( 'timelinenav', __( 'Time Line Menu', 'kadima' ) );		
 		$args = array('default-color' => '000000',);
 		add_theme_support( 'custom-background', $args);
 		add_theme_support( 'automatic-feed-links');
@@ -141,7 +107,8 @@
 			setcookie('yc_visit_cookie', 1, time()+1209600, COOKIEPATH, COOKIE_DOMAIN, false);
 		}
 	}
-	function kadima_content_more($more) { // Read more tag to formatting in blog page
+	// Read more tag to formatting in blog page
+	function kadima_content_more($more) {
 	   return '<div class="blog-post-details-item"><a class="kadima_blog_read_btn" href="'.get_permalink().'"><i class="fa fa-plus-circle"></i>"'.__('Read More', 'kadima' ).'"</a></div>';
 	}
 	add_filter( 'the_content_more_link', 'kadima_content_more' );
@@ -151,15 +118,16 @@
 	add_filter('excerpt_more', 'kadima_excerpt_more');
 	add_action( 'widgets_init', 'kadima_widgets_init'); // widget area
 	function kadima_widgets_init() {
-    	register_sidebar( array(
-    		'name' => __( 'Sidebar', 'kadima' ),
-    		'id' => 'sidebar-primary',
-    		'description' => __( 'The primary widget area', 'kadima' ),
-    		'before_widget' => '<div class="kadima_sidebar_widget">',
-    		'after_widget' => '</div>',
-    		'before_title' => '<div class="kadima_sidebar_widget_title"><h2>',
-    		'after_title' => '</h2></div>'
-    	) );
+    	/*sidebar*/
+		register_sidebar( array(
+			'name' => __( 'Sidebar ', 'kadima' ),
+			'id' => 'sidebar-primary',
+			'description' => __( 'The primary widget area', 'kadima' ),
+			'before_widget' => '<div class="kadima_sidebar_widget">',
+			'after_widget' => '</div>',
+			'before_title' => '<div class="kadima_sidebar_widget_title"><h2>',
+			'after_title' => '</h2></div>'
+		) );
     	register_sidebar( array(
     		'name' => __( 'Footer Widget Area', 'kadima' ),
     		'id' => 'footer-widget-area',
@@ -170,7 +138,7 @@
     		'after_title' => '</h3>',
     	) );
 	}
-	function kadima_breadcrumbs() {
+	function kadima_breadcrumbs() { // 面包屑导航
         $delimiter = '';
         $home = __('Home', 'kadima' ); // text for the 'Home' link
         $before = '<li>'; // tag before the current crumb
@@ -248,7 +216,7 @@
         }
         echo '</ul>';
 	}
-	function kadima_pagination($pages = '', $range = 2) {
+	function kadima_pagination($pages = '', $range = 2) { //分页
         $showitems = ($range * 2)+1;
         global $paged;
         if(empty($paged)) $paged = 1;
@@ -291,7 +259,7 @@
         $class = str_replace("class='avatar", "class='author_detail_img", $class);
         return $class;
 	}
-	/****--- Navigation for Author, Category , Tag , Archive ---***/
+	/* Navigation for Author, Category , Tag , Archive */
 	function kadima_navigation() { ?>
         <div class="kadima_blog_pagination">
             <div class="kadima_blog_pagi">
@@ -300,7 +268,7 @@
 	    </div>
 	<?php
     }
-	/****--- Navigation for Single ---***/
+	/* Navigation for Single */
 	function kadima_navigation_posts() { ?>
     	<div class="navigation_en">
         	<nav id="wblizar_nav">
@@ -394,7 +362,7 @@
 	}
     function customWp_footer_admin_change () {return '';}
 	function customWp_right_admin_footer_text($text) {
-		$text = 'Power by 云聪智能全网营销平台 - Version : 1.0.6 Build 161214';
+		$text = 'Power by 云聪智能全网营销平台 - Version : 1.0.7 Build 170221';
 		return $text;
 	}
     function customWp_screen_options_remove(){ return false;}
@@ -533,26 +501,31 @@
 		wp_enqueue_style( 'font-awesome-css', '//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css');
 		wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
 		wp_enqueue_style( 'admin-css', get_template_directory_uri() . '/css/admin.css');
+		//wp_enqueue_script('webim', get_template_directory_uri() .'/web-im/webim.config.js', array('jquery'));
+		//wp_enqueue_script('strophe', get_template_directory_uri() .'/web-im/strophe-1.2.8.min.js', array('jquery'));
+		//wp_enqueue_script('websdk', get_template_directory_uri() .'/web-im/websdk-1.4.5.js', array('jquery'));
 		if ( $_GET['page'] == 'yc-plugin-dashboard/yc-plugin-dashboard.php') {
 			wp_enqueue_style('materialize-css', '//cdn.bootcss.com/materialize/0.97.8/css/materialize.min.css');
 			wp_enqueue_style('woocommerce-dashboard',  get_template_directory_uri() . '/../../plugins/woocommerce/assets/css/dashboard.css');
 			wp_enqueue_style('animate-css', '//cdn.bootcss.com/animate.css/3.5.2/animate.min.css');
 			wp_enqueue_script('jquery2', '//cdn.bootcss.com/jquery/2.2.4/jquery.min.js');
 	        wp_enqueue_script('materialize-js', '//cdn.bootcss.com/materialize/0.97.8/js/materialize.min.js', array('jquery2'));
-			wp_enqueue_style( 'layim-style', '//statics.yunclever.com/layui/css/layui.css' );
-			wp_enqueue_script('layim', '//statics.yunclever.com/layui/layui.js', array('jquery2'));
+	        wp_enqueue_script('echarts-js', '//cdn.bootcss.com/echarts/3.3.1/echarts.min.js', array('jquery2'));
+			wp_enqueue_style( 'layim-style', '//cdn.yunclever.com/static/layui/css/layui.css' );
+			wp_enqueue_script('layim', '//cdn.yunclever.com/static/layui/layui.js', array('jquery2'));
 			wp_enqueue_script('onlinesupport', get_template_directory_uri() .'/js/onlinesupport.js', array('jquery2'));
 		}
 		if ( $_GET['page'] == 'yc-plugin-dashboard/yc-setting.php') {
-			wp_enqueue_style('layui-css', '//statics.yunclever.com/layui/css/layui.css');
+			wp_enqueue_style('layui-css', '//cdn.yunclever.com/static/layui/css/layui.css');
 			wp_enqueue_script('jquery2', '//cdn.bootcss.com/jquery/2.2.4/jquery.min.js');
-	        wp_enqueue_script('layui-js', '//statics.yunclever.com/layui/layui.js', array('jquery2'));
+	        wp_enqueue_script('layui-js', '//cdn.yunclever.com/static/layui/layui.js', array('jquery2'));
 		}
 	}
 	function customWp_plugin_check_missing() {
 		$plugins = array(
 			array('type' => 'function', 'name' => 'A2A_SHARE_SAVE_init', 'desc' => 'AddToAny Share Buttons'),
 			array('type' => 'class', 'name' => 'woocommerce', 'desc' => 'WooCommerce'),
+			//array('type' => 'define', 'name' => 'ALM_VERSION', 'desc' => 'Ajax Load More'),
 			array('type' => 'define', 'name' => 'WPCF7_VERSION', 'desc' => 'Contact From 7'),
 			array('type' => 'define', 'name' => 'DLM_VERSION', 'desc' => 'Download Monitor'),
 			array('type' => 'class', 'name' => 'LazyLoad_Images', 'desc' => 'Lazy Load'),
@@ -746,12 +719,4 @@
 	    );
 	}
 	//smilies_reset();
-
-	add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
-	add_filter('loop_shop_columns', 'loop_columns');
-	if (!function_exists('loop_columns')) {
-    		function loop_columns() {
-      	  		return 4;
-    		}
-	}
 ?>
