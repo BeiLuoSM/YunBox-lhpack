@@ -290,7 +290,7 @@ p, .textwidget {
 
 
 .kadima_service_detail h3 {
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: normal;
     line-height: 32px;
     word-wrap: break-word;
@@ -298,6 +298,7 @@ p, .textwidget {
     font-weight: 600;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 	padding-bottom: 30px;
+	padding-top: 10px;
 }
 .kadima_service_detail p {
     font-size: 16px;

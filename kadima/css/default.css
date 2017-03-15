@@ -16,7 +16,7 @@
     background-color: #fff;
 }
 .navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus, .dropdown-menu .active a {
-    background-color: #31A3DD;
+    background-color: #fff;
 }
 .collapse ul.nav li.current-menu-parent .dropdown-toggle, .collapse ul.nav li.current-menu-item .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current-menu-parent .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current-menu-item .dropdown-toggle .collapse ul.nav li.current_page_ancestor .dropdown-toggle, .collapse ul.nav li.current_page_ancestor .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current_page_ancestor .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current_page_ancestor .dropdown-toggle {
     background-color: #31A3DD;
@@ -589,23 +589,21 @@ h1, h2, h3, h4, h5, h6 {
 .navigation_menu {
     width: 100%;
     position: relative;
-    border-bottom: 2px solid #007bd9;
+  
 }
 .navbar-default {
     background-color: transparent;
     border: 0;
 }
 .navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    -webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    -moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    color: #fff;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 15px;
+	color: #019A44; 
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-family: 'AVGARDD', 'Arimo', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
 }
 .navbar-default .navbar-nav> .open> a, .navbar-default .navbar-nav> .open> a:hover, .navbar-default .navbar-nav> .open> a:focus {
     -webkit-border-radius: 0px;
@@ -1355,4 +1353,11 @@ h1, h2, h3, h4, h5, h6 {
 	position: absolute;
 	bottom: -27px;
 	right: 29%
+}
+.kadima_service_area img{
+	cursor: pointer;  
+    transition: all 0.6s;  
+}
+.kadima_service_area img:hover{
+	transform: scale(1.1);  
 }
