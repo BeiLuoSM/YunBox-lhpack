@@ -1,8 +1,8 @@
 <?php $wl_theme_options = kadima_get_options(); ?>
-<div class="kadima_service">
-<div class="content-grid2 specialty-info wow fadeInLeft animated animated" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+<div style="display: inline-block;width:100%;" class="content-grid2 specialty-info wow fadeInLeft animated animated" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
 <h5 style="text-align:center;"><span style="padding:10px 35px;background-color: #019A44;color:#fff;">View Details</span></h5>
 </div>
+<div class="kadima_service">
 <?php if($wl_theme_options['custom_title_3'] !='') { ?>
 <div class="container">
 	<div class="row">
