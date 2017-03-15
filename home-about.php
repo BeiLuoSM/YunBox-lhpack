@@ -5,7 +5,7 @@
 			<h3 style="color: #fff;font-weight: 100;margin-bottom: 20px;padding:0 35px;font-size: 34px;text-align: center;">
 				<span style="padding: 0 30px;color:#019A44;"><?php echo $theme_options['custom_title_1']; ?></span>
 			</h3>
-			<h5 style="color: #fff;font-weight: 100;margin-bottom: 20px;padding:0 30px;font-size: 16px;text-align: center;">
+			<h5 style="color: #fff;font-weight: 100;margin-bottom: 5em;padding:0 30px;font-size: 16px;text-align: center;">
 				<span style="padding: 0 30px;color:#676767;"><?php echo $theme_options['custom_desciption_1']; ?></span>
 			</h5>
 			<div class="col-md-12" style="background: #f2f2f2;padding-top: 10px;padding-bottom: 10px;padding-left:0;padding-right:0;padding-bottom:0;">
