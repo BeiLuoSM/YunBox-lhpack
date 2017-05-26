@@ -13,6 +13,9 @@
 			<?php the_content( __( 'Read More' , 'kadima' ) ); ?>
 		</div>
 </div>	
+<div class="push-right">
+	<hr class="blog-sep header-sep">
+</div>
 <?php comments_template( '', true ); ?>
 <?php
 endwhile;
