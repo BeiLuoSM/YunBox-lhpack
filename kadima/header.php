@@ -36,7 +36,55 @@
 <body <?php body_class(); ?>>
 
 <div>
-	<div class="navigation_menu "  data-spy="affix" data-offset-top="95" id="kadima_nav_top">
+	<!-- Header Section -->
+	<div class="header_section" style="display: none" >
+		<div class="container" >
+			<!-- Logo & Contact Info -->
+			<div class="row ">
+				<div class="col-md-6 col-sm-12 wl_rtl" >
+					<div class="logo">
+					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<?php if($wl_theme_options['upload_image_logo']){ ?>
+						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
+						<?php } else {
+							echo get_bloginfo('name');
+						} ?>
+					</a>
+					<p><?php bloginfo( 'description' ); ?></p>
+					</div>
+				</div>
+				<?php if($wl_theme_options['header_social_media_in_enabled']=='1') { ?>
+				<div class="col-md-6 col-sm-12">
+				<?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
+				<ul class="head-contact-info">
+						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
+						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
+				</ul>
+				<?php } ?>
+					<ul class="social">
+					<?php if($wl_theme_options['fb_link']!='') { ?>
+					   <li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
+					<?php } if($wl_theme_options['twitter_link']!='') { ?>
+					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']); ?>"><i class="fa fa-twitter"></i></a></li>
+					<?php } if($wl_theme_options['linkedin_link']!='') { ?>
+					<li class="linkedin" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><a href="<?php echo esc_url($wl_theme_options['linkedin_link']); ?>"><i class="fa fa-linkedin"></i></a></li>
+					<?php } if($wl_theme_options['youtube_link']!='') { ?>
+					<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"><a href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
+	                <?php } if($wl_theme_options['gplus']!='') { ?>
+					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="gplus"><a href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
+	                <?php } if($wl_theme_options['instagram']!='') { ?>
+					<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"><i class="fa fa-instagram"></i></a></li>
+	                <?php } ?>
+					</ul>
+				</div>
+				<?php } ?>
+			</div>
+			<!-- /Logo & Contact Info -->
+		</div>
+	</div>
+	<!-- /Header Section -->
+	<!-- Navigation  menus -->
+	<div class="navigation_menu "  data-offset-top="95" id="kadima_nav_top" >
 		<div class="container navbar-container" >
 			<nav class="navbar navbar-default " role="navigation">
 				<div class="navbar-header">
@@ -46,17 +94,18 @@
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					</button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="logo" src="http://localhost/wrd-lh/wp-content/themes/lh/images/h-logo.gif" class="img-responsive">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <h2>LINGHAI <br>PLASTIC</h2>
+                    </a>
 				</div>
-				<div class="logo">
-					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php if($wl_theme_options['upload_image_logo']){ ?>
-						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
-						<?php } else {
-							echo get_bloginfo('name');
-						} ?>
-					</a>
-				</div>
-				<div id="menu" class="collapse navbar-collapse">
+                <div class="nav-phone">
+                    <a href="#">Quote Now</a>
+                    <span><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/phone.gif" alt="">86-754-88676633</span>
+                </div>
+				<div id="menu" class="collapse navbar-collapse ">
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'primary',
@@ -66,8 +115,20 @@
 							)
 						);
 					?>
-					<div id="google_translate_element"></div>
+					<div id="google_translate_element" ></div>
+                    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/search.gif" alt="">
+                    <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <div class="input-group">
+                            <input type="text" class="form-control"  name="s" id="s" placeholder="<?php _e( "What do you want to find?", 'kadima' ); ?>" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-search" type="submit" ><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+
+                    </form>
 				</div>
 			</nav>
 		</div>
 	</div>
+
+

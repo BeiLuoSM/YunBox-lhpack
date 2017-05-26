@@ -1,0 +1,378 @@
+@import "response";
+@r:59.362;
+
+//导航
+.navigation_menu{
+  border-bottom: 4px solid #009944;
+}
+.navbar {
+  min-height: 158px;
+  margin-bottom: 0px;
+  border-bottom:4px solid #009944;
+  background-color: #fff;
+  border:none;
+  .navbar-collapse{
+    padding:0;
+    position: relative;
+    img{
+      position: absolute;
+      right: 0;
+      bottom: 15px;
+      cursor: pointer;
+    }
+    #searchform{
+      position: absolute;
+      margin-top: 180px;
+      transition: 0.5s;
+      opacity: 0;
+    }
+  }
+  .nav-phone {
+    .phone{
+      display:inline-block;
+      width: 192px;
+      height: 44px;
+      text-align:center;
+      line-height:44px;
+      background:#00a0e8;
+      float: right;
+      border-radius:3px;
+      box-sizing: border-box;
+      margin-top:24px;
+      color:#fff;
+      font-size:16px;
+    }
+    span{
+      .phone;
+      margin-right: 14px;
+      img{
+        margin:10px;
+      }
+    }
+    a{
+      .phone;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .navbar-nav {
+    padding-left: 330px;
+    float: right;
+    margin-top:34px;
+    padding-right: 19px;
+    &>li{
+      padding-left: 18px;
+      padding-right: 18px;
+      font-size:18px;
+      a{
+        &:hover{
+          color:#009944 !important;
+        }
+      }
+    }
+    .active{
+      &>a{
+        background:#fff !important;
+        color:#009944 !important;
+      }
+    }
+    img{
+      margin-top:16px;
+      cursor: pointer;
+    }
+  }
+  .navbar-brand{
+    h2{
+      color:#008ecd;
+      line-height:44px;
+      font-size: 36px;
+    }
+  }
+}
+
+
+#myCarousel{
+  z-index: -11;
+  .carousel-indicators,.carousel-control{
+    display: none;
+  }
+}
+.kadima_service{
+  display: none;
+}
+
+//关于
+.about-us{
+  position:relative;
+  .about-us-A{
+    position:absolute;
+    top: -144px;
+    z-index: -12;
+  }
+  h2{
+    color:#4f4f4f;
+  }
+  .about-us-title{
+    margin-top:86px;
+    .about-us-container{
+      img{
+        margin-bottom:28px;
+      }
+      .under-title{
+        font-size:26px;
+        color:#545454;
+        margin-bottom:28px;
+      }
+      p{
+        font-size:18px;
+        color:#9b9b9b;
+        line-height:27px;
+      }
+      a{
+        color:#009944;
+        font-size:18px;
+      }
+    }
+  }
+}
+
+.container-fluid{
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+//优势
+.advantage{
+  margin-top:74px;
+  position:relative;
+  margin-bottom: 250px;
+  .advantage-bg{
+    position: absolute;
+    width: 100%;
+  }
+  .advantage-container{
+    margin-top:2rem;
+    h2{
+      margin-top: 1rem;
+      font-size:36px;
+      color:#4f4f4f;
+      margin-left:40px;
+      margin-bottom:30px;
+    }
+    .advantage-right{
+      margin-bottom:12%;
+      position: relative;
+      li{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 1s;
+      }
+      .advantage-right-active{
+        opacity: 1 !important;
+      }
+      img{
+        width: 95%;
+        height: 95%;
+      }
+    }
+    .advantage-left {
+      li{
+        cursor: pointer;
+        width: 210px;
+        height: 60px;
+        background:#fff;
+        border:2px solid #009944;
+        box-sizing:border-box;
+        margin-bottom:24px;
+        color:#4e4e4e;
+        text-align:center;
+        line-height:60px;
+        font-size:32px;
+        &:hover{
+          background:#009944 ;
+          color: #fff;
+        }
+      }
+      .advantage-left-active{
+        background:#0fa250 !important;
+        color:#fff !important;
+      }
+    }
+  }
+}
+//产品
+.product{
+  margin-top: 10px;
+  width: 100%;
+  h1{
+    font-size:36px;
+    color:#4f4f4f;
+    margin-left:15px;
+    margin-bottom:50px;
+  }
+  .product-item {
+    h2{
+      margin-bottom:16px;
+      color:#009944;
+    }
+    img{
+      margin-bottom:12px;
+      width: 100%;
+      opacity: 0.7;
+      transition: .5s;
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    a{
+      display:block;
+      border:1px solid #007f38;
+      color:#009944;
+      width: 176px;
+      height: 36px;
+      text-align:center;
+      line-height:36px;
+      font-size:18px;
+      margin: 0 auto;
+      text-decoration: none;
+      &:hover{
+        background:#009944;
+        color: #fff;
+      }
+    }
+    &:nth-of-type(even){
+      margin-top:38px;
+    }
+  }
+  .product-down{
+    width: 100%;
+  }
+}
+//视频
+.video{
+  margin-top:112px;
+  .video-left {
+    img{
+      width: 100%;
+    }
+  }
+  .video-right {
+    h2{
+      font-size:26px;
+      color:#6b6b6b;
+      margin-top:10px;
+      margin-bottom:16px;
+    }
+    p{
+      font-size:21px;
+      color:#a1a1a1;
+    }
+    a{
+      display: block;
+      font-size:18px;
+      color:#009944;
+      margin-top:20px;
+    }
+  }
+}
+//底部
+.footer{
+  width: 100%;
+  position: relative;
+  margin-top:2rem;
+  color:#fff;
+  &>img{
+    width: 100%;
+    position:absolute;
+    z-index: -10;
+  }
+  .footer-container{
+    text-align:center;
+    padding-top:1.8rem;
+    h1{
+      font-size:60rem/@r;
+      img{
+        margin-right: 20rem/@r;
+      }
+    }
+    h2{
+      font-size:24rem/@r;
+      font-weight:600;
+    }
+    .footer-container-address{
+      font-size:22rem/@r;
+    }
+    .footer-container-num{
+      display: block;
+      font-size:48rem/@r;
+      font-weight:600;
+      margin-top:20rem/@r;
+      margin-bottom: 20rem/@r;
+      img{
+        margin-right:10rem/@r;
+      }
+    }
+    ul{
+      width: 280px;
+      margin:1rem auto;
+      li{
+        float: left;
+        font-size: 26rem/@r;
+        a{
+          color: #fff;
+        }
+
+        &:nth-of-type(2){
+          margin-left:70px;
+          margin-right:70px;
+        }
+      }
+    }
+    p{
+      margin-top:1.5rem;
+    }
+  }
+}
+.kadima_scrollup{
+  width: 45px;
+  height: 40px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  display: none;
+  border-radius: 2px;
+  text-align: center;
+  color: #fafafa;
+  /*font-size: 25x;*/
+  background: #3b3b3b;
+  z-index: 9999;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  &:hover{
+    opacity: 0.8;
+    i{
+      text-decoration: none;
+      color: #fafafa;
+      outline: none;
+    }
+  }
+  &:focus{
+    i{
+      text-decoration: none;
+      color: #fafafa;
+      outline: none;
+    }
+  }
+  i{
+    line-height: 38px;
+    font-size: 24px;
+    vertical-align: middle;
+  }
+}
