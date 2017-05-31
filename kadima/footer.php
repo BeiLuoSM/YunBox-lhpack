@@ -1,5 +1,5 @@
 <!-- kadima Callout Section -->
-<?php $wl_theme_options = kadima_get_options(); ?>
+<?php $theme_options = kadima_get_options(); ?>
 <!-- Footer Widget Secton -->
 <div class="kadima_footer_widget_area" style="display:none">
 	<div class="container">
@@ -24,24 +24,24 @@
             <div class="kadima_footer_area">
 			<div class="col-md-12">
 			<p class="kadima_footer_copyright_info wl_rtl" >
-			<?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }
-			if($wl_theme_options['info_copyright']) { echo "|" .esc_attr($wl_theme_options['info_copyright']); } ?>
-			<a target="_blank" rel="nofollow" href="<?php if($wl_theme_options['info_fax']) { echo esc_url($wl_theme_options['info_fax']); } ?>"><?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_tel']); } ?></a></p>
-			<?php if($wl_theme_options['footer_section_social_media_enbled'] == '1') { ?>
+			<?php if($theme_options['footer_customizations']) { echo esc_attr($theme_options['footer_customizations']); }
+			if($theme_options['info_copyright']) { echo "|" .esc_attr($theme_options['info_copyright']); } ?>
+			<a target="_blank" rel="nofollow" href="<?php if($theme_options['info_fax']) { echo esc_url($theme_options['info_fax']); } ?>"><?php if($theme_options['info_tel']) { echo esc_attr($theme_options['info_tel']); } ?></a></p>
+			<?php if($theme_options['footer_section_social_media_enbled'] == '1') { ?>
 			<div class="kadima_footer_social_div">
 				<ul class="social">
-					<?php if($wl_theme_options['fb_link']!='') { ?>
-					   <li class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
-					<?php } if($wl_theme_options['twitter_link']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"><i class="fa fa-twitter"></i></a></li>
-					<?php } if($wl_theme_options['linkedin_link']!='') { ?>
-					<li class="linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin"><a href="<?php echo esc_url($wl_theme_options['linkedin_link']) ; ?>"><i class="fa fa-linkedin"></i></a></li>
-					<?php } if($wl_theme_options['youtube_link']!='') { ?>
-					<li class="youtube" data-toggle="tooltip" data-placement="top" title="Youtube"><a href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
-	                <?php } if($wl_theme_options['gplus']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="top" title="gplus"><a href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
-	                <?php } if($wl_theme_options['instagram']!='') { ?>
-					<li class="facebook" data-toggle="tooltip" data-placement="top" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"><i class="fa fa-instagram"></i></a></li>
+					<?php if($theme_options['fb_link']!='') { ?>
+					   <li class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
+					<?php } if($theme_options['twitter_link']!='') { ?>
+					<li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($theme_options['twitter_link']) ; ?>"><i class="fa fa-twitter"></i></a></li>
+					<?php } if($theme_options['linkedin_link']!='') { ?>
+					<li class="linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin"><a href="<?php echo esc_url($theme_options['linkedin_link']) ; ?>"><i class="fa fa-linkedin"></i></a></li>
+					<?php } if($theme_options['youtube_link']!='') { ?>
+					<li class="youtube" data-toggle="tooltip" data-placement="top" title="Youtube"><a href="<?php echo esc_url($theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
+	                <?php } if($theme_options['gplus']!='') { ?>
+					<li class="twitter" data-toggle="tooltip" data-placement="top" title="gplus"><a href="<?php echo esc_url($theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
+	                <?php } if($theme_options['instagram']!='') { ?>
+					<li class="facebook" data-toggle="tooltip" data-placement="top" title="instagram"><a href="<?php echo esc_url($theme_options['instagram']) ; ?>"><i class="fa fa-instagram"></i></a></li>
 	                <?php } ?>
 				</ul>
 			</div>
@@ -53,28 +53,28 @@
 </div>
 
 <div class="footer">
-    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/f-bg.gif" alt="">
+    <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/f-bg.gif" alt="">
     <div class="container footer-container">
-        <h1 class="hidden-xs"><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ft-bg.gif" alt=""><?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }?></h1>
+        <h1 class="hidden-xs"><img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/ft-bg.gif" alt=""><?php if($theme_options['footer_customizations']) { echo esc_attr($theme_options['footer_customizations']); }?></h1>
         <h2>ADDRESS:</h2>
-        <span class="footer-container-address"><?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_fax']); } ?></span><br>
-        <span class="footer-container-num"><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/phone2.png" alt=""><?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_tel']); } ?></span>
+        <span class="footer-container-address"><?php if($theme_options['info_tel']) { echo esc_attr($theme_options['info_fax']); } ?></span><br>
+        <span class="footer-container-num"><img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/phone2.png" alt=""><?php if($theme_options['info_tel']) { echo esc_attr($theme_options['info_tel']); } ?></span>
         <ul>
-            <li class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?> " ><i class="fa fa-facebook"></i></a></li>
-            <li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"><i class="fa fa-twitter"></i></a></li>
-            <li class="linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin"><a href="<?php echo esc_url($wl_theme_options['linkedin_link']) ; ?>"><i class="fa fa-linkedin"></i></a></li>
+            <li class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($theme_options['fb_link']); ?> " ><i class="fa fa-facebook"></i></a></li>
+            <li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($theme_options['twitter_link']) ; ?>"><i class="fa fa-twitter"></i></a></li>
+            <li class="linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin"><a href="<?php echo esc_url($theme_options['linkedin_link']) ; ?>"><i class="fa fa-linkedin"></i></a></li>
         </ul>
         <br>
-        <p><?php echo esc_attr($wl_theme_options['info_copyright']); ?></p>
+        <p><?php echo esc_attr($theme_options['info_copyright']); ?></p>
     </div>
 </div>
 
 <a href="#" title="Go Top" class="kadima_scrollup" style="display: inline;">
     <i class="fa fa-chevron-up"></i>
 </a>
-<?php if($wl_theme_options['custom_css']) ?>
+<?php if($theme_options['custom_css']) ?>
 <style type="text/css">
-<?php { echo esc_attr($wl_theme_options['custom_css']); } ?>
+<?php { echo esc_attr($theme_options['custom_css']); } ?>
 </style>
 <?php wp_footer(); ?>
 <?php
