@@ -1,4 +1,5 @@
 @im:!important;
+
 @media (max-width: 1200px) {
   .navbar{
     min-height: 100px @im;
@@ -56,7 +57,7 @@
   }
   .video-right {
     h2{
-      font-size:20px !important;
+      font-size:20px @im;
     }
     p{
       height: 183px;
@@ -167,8 +168,8 @@
     min-height:100px @im;
     .navbar-collapse{
       img{
-        left: 0 !important;
-        bottom: 0 !important;
+        left: 0 @im;
+        bottom: 0 @im;
         margin-bottom: 10px @im;
       }
     }
@@ -202,8 +203,9 @@
     position:relative;
   }
   .navbar-nav{
-    margin-top:0px !important;
-    padding-bottom: 60px;
+    margin-top:0px @im;
+    padding-bottom: 20px;
+    padding-top: 30px;
     &>li{
       padding-top: 0px;
     }
@@ -310,8 +312,8 @@
     min-height:80px @im;
     .navbar-collapse{
       img{
-        left: 0 !important;
-        bottom: 0 !important;
+        left: 0 @im;
+        bottom: 0 @im;
         margin-bottom: 10px @im;
       }
     }
@@ -323,7 +325,7 @@
     position:relative;
   }
   .navbar-nav{
-    margin-top:0px !important;
+    margin-top:20px @im;
     padding-bottom: 30px;
     &>li{
       padding-top: 0px;
@@ -350,6 +352,9 @@
       }
     }
   }
+  #searchform{
+    width: 100% @im;
+}
   .about-us-title {
     .col-sm-4{
       margin-bottom:20px;
@@ -360,7 +365,9 @@
   }
   .advantage{
     margin-top: 20px @im;
+    margin-bottom: 0 @im;
     h2{
+      margin-left: 0px @im;
       margin-top: 20px @im;
       margin-bottom: 6px @im;
       font-size: 20px @im;
@@ -368,6 +375,7 @@
     .advantage-container{
       margin-top:1rem @im;
       .advantage-left {
+        margin-left: -30px @im;
         li{
           width: 80px @im;
           height: 20px @im;
@@ -382,7 +390,7 @@
   }
   .footer-container {
     h1{
-      font-size:16px;
+      font-size:12px;
       margin-top:0;
       margin-bottom:0;
       img{
@@ -391,7 +399,7 @@
       }
     }
     h2{
-      font-size:14px;
+      font-size:12px;
       margin-top:0;
       margin-bottom:0;
     }
@@ -399,7 +407,7 @@
       font-size:12px;
     }
     .footer-container-num{
-      font-size:14px;
+      font-size:12px;
       font-weight:500;
       margin-top:0px;
       margin-bottom: 0px;

@@ -102,12 +102,20 @@
             </div>
             <div class="col-md-9 col-sm-9 col-xs-9">
                 <ul class="advantage-right">
-                    <?php for($i=1; $i<=3; $i++ ) { ?>
-                        <li><img src=" <?php echo esc_attr($wl_theme_options['custom_img_2_'.$i]); ?>"></li>
-                    <?php } ?>
-<!--                    <li class="advantage-right-active"><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ad-1.gif" alt=""></li>-->
-<!--                    <li ><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ad-2.gif" alt=""></li>-->
-<!--                    <li ><img src="http://localhost/wrd-lh/wp-content/themes/lh/images//ad-3.gif" alt=""></li>-->
+<!--                    --><?php //for($i=1; $i<=3; $i++ ) { ?>
+<!--                        <li><img src=" --><?php //echo esc_attr($wl_theme_options['custom_img_2_'.$i]); ?><!--"></li>-->
+<!--                    --><?php //} ?>
+                    <li class="advantage-right-active"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_1']); ?>"></li>
+                    <li >
+                        <a href="#" class="advantage-exterior advantage-exterior-left"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_2']); ?>" alt=""><span class="advantage-exterior-cover"></span></a>
+                        <a href="#" class="advantage-exterior advantage-exterior-right"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_3']); ?>" alt=""><span class="advantage-exterior-cover"></span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="col-xs-6 advantage-mechanical"><img class="advantage-mechanical-1" src="<?php echo esc_attr($wl_theme_options['custom_img_2_4']); ?>" alt=""><span></span></a>
+                        <a href="#" class="col-xs-6 advantage-mechanical"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_5']); ?>" alt=""><span></span></a>
+                        <a href="#" class="col-xs-6 advantage-mechanical"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_6']); ?>" alt=""><span></span></a>
+                        <a href="#" class="col-xs-6 advantage-mechanical"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_7']); ?>" alt=""><span></span></a>
+                    </li>
                 </ul>
             </div>
         </div>
