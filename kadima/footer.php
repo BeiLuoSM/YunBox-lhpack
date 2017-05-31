@@ -55,7 +55,7 @@
 <div class="footer">
     <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/f-bg.gif" alt="">
     <div class="container footer-container">
-        <h1><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ft-bg.gif" alt=""><?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }?></h1>
+        <h1 class="hidden-xs"><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ft-bg.gif" alt=""><?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }?></h1>
         <h2>ADDRESS:</h2>
         <span class="footer-container-address"><?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_fax']); } ?></span><br>
         <span class="footer-container-num"><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/phone2.png" alt=""><?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_tel']); } ?></span>
