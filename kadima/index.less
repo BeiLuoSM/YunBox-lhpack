@@ -4,9 +4,10 @@
 //导航
 .navigation_menu{
   border-bottom: 4px solid #009944;
+  background: #fff;
 }
 .navbar {
-  min-height: 158px;
+  min-height: 108px;
   margin-bottom: 0px;
   border-bottom:4px solid #009944;
   background-color: #fff;
@@ -17,14 +18,14 @@
     img{
       position: absolute;
       right: 0;
-      bottom: 15px;
+      bottom: 17px;
       cursor: pointer;
     }
     #searchform{
       width: 400px;
       position: absolute;
       right: 0;
-      margin-top: 180px;
+      margin-top: 156px;
       transition: 0.5s;
       opacity: 0;
     }
@@ -32,7 +33,7 @@
   .nav-phone {
     .phone{
       display:inline-block;
-      width: 192px;
+      width: 182px;
       height: 44px;
       text-align:center;
       line-height:44px;
@@ -53,22 +54,19 @@
     }
     a{
       .phone;
-      &:hover{
-        text-decoration: underline;
-      }
     }
   }
   .navbar-nav {
     padding-left: 330px;
     float: right;
     margin-top:34px;
-    padding-right: 19px;
+    padding-right: 44px;
     &>li{
-      padding-left: 18px;
-      padding-right: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
       font-size:18px;
-      color: #a9a9a9;
       a{
+        color: #262626;
         &:hover{
           color:#009944 !important;
         }
@@ -99,6 +97,13 @@
   .carousel-indicators,.carousel-control{
     display: none;
   }
+  .flyin{
+    width: 886rem/@r;
+    height: 102rem/@r;
+    top: 218rem/@r;
+    left: 232rem/@r;
+    position: absolute;
+  }
 }
 .kadima_service{
   display: none;
@@ -107,18 +112,19 @@
 //关于
 .about-us{
   position:relative;
-  .about-us-A{
-    position:absolute;
-    top: -144px;
-    z-index: -12;
-  }
+  font-family: "Open Sans";
   h2{
+    font-family: "Open Sans";
+    margin-top: 40px;
     color:#4f4f4f;
+    font-size: 36px;
   }
   .about-us-title{
-    margin-top:86px;
+    margin-top:80px;
     .about-us-container{
       img{
+        width: 23px;
+        height: 23px;
         margin-bottom:28px;
       }
       .under-title{
@@ -138,7 +144,6 @@
     }
   }
 }
-
 .container-fluid{
   padding: 0;
 }
@@ -149,7 +154,7 @@ li{
 .advantage{
   margin-top:74px;
   position:relative;
-  margin-bottom: 360rem/@r;
+  margin-bottom: 294px;
   .advantage-bg{
     position: absolute;
     width: 100%;
@@ -157,11 +162,12 @@ li{
   .advantage-container{
     margin-top:2rem;
     h2{
-      margin-top: 1rem;
+      margin-top: 102px;
       font-size:36px;
       color:#4f4f4f;
-      margin-left:40px;
-      margin-bottom:30px;
+      margin-left:2px;
+      margin-bottom:100px;
+      font-family: "Open Sans";
     }
     .advantage-right{
       margin-bottom:12%;
@@ -175,11 +181,14 @@ li{
         &:nth-of-type(2){
           margin-top: 100px;
         }
+        &:nth-of-type(1){
+          margin-top: 50px;
+        }
         .advantage-exterior-left{
           display: inline-block;
           float: left;
-          width: 588rem/@r;
-          height:386rem/@r;
+          width: 588px;
+          height:386px;
           transition: 0.5s;
           img{
             width: 100%;
@@ -190,26 +199,15 @@ li{
         .advantage-exterior-right{
           display: inline-block;
           position: absolute;
-          left: 620rem/@r;
-          width: 350rem/@r;
-          height: 386rem/@r;
+          left: 620px;
+          width: 350px;
+          height: 386px;
           transition: 0.5s;
           img{
             width: 100%;
             height: 100%;
             transition: 0.5s;
           }
-        }
-        .advantage-exterior-cover{
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: #000;
-          opacity: 0.6;
-          z-index: 3;
-          transition: 0.5s;
         }
         .advantage-mechanical{
           padding: 0;
@@ -221,21 +219,11 @@ li{
             height: 100%;
             transition: 0.5s;
           }
-          span{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #000;
-            opacity: 0.6;
-            z-index: 3;
-            transition: 0.5s;
-          }
         }
       }
       .advantage-right-active{
         opacity: 1 !important;
+        z-index: 10;
       }
        img{
          width: 95%;
@@ -244,17 +232,19 @@ li{
     }
     .advantage-left {
       li{
+        font-family: "Open Sans";
         cursor: pointer;
-        width: 210px;
-        height: 60px;
+        width: 180px;
+        height: 46px;
         background:#fff;
         border:2px solid #009944;
         box-sizing:border-box;
         margin-bottom:24px;
         color:#4e4e4e;
         text-align:center;
-        line-height:60px;
-        font-size:32px;
+        line-height:46px;
+        font-size:30px;
+        font-weight:100;
         &:hover{
           background:#009944 ;
           color: #fff;
@@ -271,16 +261,19 @@ li{
 .product{
   margin-top: 10px;
   width: 100%;
+  font-family: "Open Sans";
   h1{
+    font-family: "Open Sans";
     font-size:36px;
     color:#4f4f4f;
-    margin-left:15px;
-    margin-bottom:50px;
+    margin-left:0px;
+    margin-bottom:54px;
   }
   .product-item {
     h2{
       margin-bottom:16px;
       color:#009944;
+      font-family: "Open Sans";
     }
     img{
       margin-bottom:12px;
@@ -319,11 +312,7 @@ li{
 //视频
 .video{
   margin-top:112px;
-  .video-left {
-    img{
-      width: 100%;
-    }
-  }
+  font-family: "Open Sans";
   .video-right {
     h2{
       font-size:26px;
@@ -332,8 +321,9 @@ li{
       margin-bottom:16px;
     }
     p{
-      font-size:21px;
+      font-size:18px;
       color:#a1a1a1;
+      line-height: 34px;
     }
     a{
       display: block;
@@ -358,24 +348,27 @@ li{
     text-align:center;
     padding-top:1.8rem;
     h1{
-      font-size:60rem/@r;
+      font-size: 36px;
+      margin-bottom: 80px;
       img{
-        margin-right: 20rem/@r;
+        height: 50px;
+        margin-right: 20px;
       }
     }
     h2{
-      font-size:24rem/@r;
-      font-weight:600;
+      font-size:24px;
+      font-family: "Open Sans";
     }
     .footer-container-address{
-      font-size:22rem/@r;
+      font-size:24px;
+      font-family: "Open Sans";
     }
     .footer-container-num{
       display: block;
-      font-size:48rem/@r;
-      font-weight:600;
+      font-size:36px;
       margin-top:20rem/@r;
       margin-bottom: 20rem/@r;
+      font-family: "Open Sans";
       img{
         margin-right:10rem/@r;
       }
@@ -385,11 +378,10 @@ li{
       margin:1rem auto;
       li{
         float: left;
-        font-size: 26rem/@r;
+        font-size: 24rem/@r;
         a{
           color: #fff;
         }
-
         &:nth-of-type(2){
           margin-left:70px;
           margin-right:70px;
@@ -398,6 +390,40 @@ li{
     }
     p{
       margin-top:1.5rem;
+      font-family: "Open Sans";
+    }
+  }
+}
+//子页面底部
+.footer1{
+  width: 100%;
+  height: 158px;
+  border-top: 4px solid #009944;
+  font-family: "Open Sans";
+  .footer-container1{
+    text-align:center;
+    h1{
+      font-size: 36px;
+    }
+    h2{
+      font-size:24px;
+      display: inline;
+    }
+    .footer-container-address1{
+      font-size:24px;
+    }
+    .footer-container-num1{
+      display: block;
+      font-size:36px;
+      margin-top:20px;
+      margin-bottom: 20px;
+      img{
+        margin-right:10px;
+      }
+    }
+    p{
+      margin-top:20px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -438,4 +464,7 @@ li{
     font-size: 24px;
     vertical-align: middle;
   }
+}
+.navbar .navbar-nav .active a{
+
 }

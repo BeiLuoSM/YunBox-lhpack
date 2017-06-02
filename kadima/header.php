@@ -84,7 +84,7 @@
 	</div>
 	<!-- /Header Section -->
 	<!-- Navigation  menus -->
-	<div class="navigation_menu "  data-offset-top="95" id="kadima_nav_top" >
+	<div class="navigation_menu"  data-offset-top="95" id="kadima_nav_top" >
 		<div class="container navbar-container" >
 			<nav class="navbar navbar-default " role="navigation">
 				<div class="navbar-header">
@@ -101,11 +101,11 @@
                         <h2>LINGHAI <br>PLASTIC</h2>
                     </a>
 				</div>
-                <div class="nav-phone">
-                    <a href="#">Quote Now</a>
-                    <span><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/phone.gif" alt="">86-754-88676633</span>
-                </div>
 				<div id="menu" class="collapse navbar-collapse ">
+                    <div class="nav-phone " >
+                        <a href="#">Quote Now</a>
+                        <span><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/phone.gif" alt="">86-754-88676633</span>
+                    </div>
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'primary',
@@ -116,15 +116,14 @@
 						);
 					?>
 					<div id="google_translate_element" ></div>
-                    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/search.gif" alt="">
-                    <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/search.gif" alt="" class="hidden-xs search-img" >
+                    <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" class=" hidden-xs">
                         <div class="input-group">
                             <input type="text" class="form-control"  name="s" id="s" placeholder="<?php _e( "What do you want to find?", 'kadima' ); ?>" />
                             <span class="input-group-btn">
                                 <button class="btn btn-search" type="submit" ><i class="fa fa-search"></i></button>
                             </span>
                         </div>
-
                     </form>
 				</div>
 			</nav>

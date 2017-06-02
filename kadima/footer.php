@@ -52,20 +52,13 @@
 <!-- /Footer Widget Secton -->
 </div>
 
-<div class="footer">
-    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/f-bg.gif" alt="">
-    <div class="container footer-container">
-        <h1 class="hidden-xs"><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ft-bg.gif" alt=""><?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }?></h1>
-        <h2>ADDRESS:</h2>
-        <span class="footer-container-address"><?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_fax']); } ?></span><br>
-        <span class="footer-container-num"><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/phone2.png" alt=""><?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_tel']); } ?></span>
-        <ul>
-            <li class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?> " ><i class="fa fa-facebook"></i></a></li>
-            <li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"><i class="fa fa-twitter"></i></a></li>
-            <li class="linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin"><a href="<?php echo esc_url($wl_theme_options['linkedin_link']) ; ?>"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-        <br>
-        <p><?php echo esc_attr($wl_theme_options['info_copyright']); ?></p>
+<div class="footer1">
+    <div class="container footer-container1">
+        <h1 ><?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }?></h1>
+        <span class="footer-container-num1">TEL : <?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_tel']); } ?></span>
+        <h2 >ADDRESS : </h2>
+        <span class="footer-container-address1 "><?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_fax']); } ?></span><br>
+        <p class="hidden-xs"><?php echo esc_attr($wl_theme_options['info_copyright']); ?></p>
     </div>
 </div>
 

@@ -18,7 +18,7 @@ if ($wl_theme_options['_frontpage']=="1" && is_front_page())
 	if($wl_theme_options['fc_home'] == "1") {
 	get_template_part('footer','callout');
 	}
-	get_footer();
+    get_template_part('footer','index');
 }
 else
 {

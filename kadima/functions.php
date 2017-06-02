@@ -20,6 +20,7 @@
         wp_enqueue_script('jq', '//cdn.bootcss.com/jquery/1.12.4/jquery.min.js', array('jquery'));
         wp_enqueue_script('index1', get_template_directory_uri() .'/js/index1.js', array('jquery'));
 
+
         if(is_front_page()){
             wp_enqueue_script('jquery.carouFredSel', '//cdn.bootcss.com/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js');
             wp_enqueue_script('photobox-js', '//cdn.bootcss.com/photobox/1.9.9/photobox/jquery.photobox.min.js');

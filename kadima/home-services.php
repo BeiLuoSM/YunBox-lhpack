@@ -33,7 +33,6 @@
 <!--    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/banner.gif" class="img-responsive" alt="Responsive image">-->
 <!--</div>-->
 <div class="container about-us">
-    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ab-A.gif" alt="" class="about-us-A">
     <h2>About Us</h2>
     <div class="row about-us-title">
 <!--        <div class="col-sm-4">-->
@@ -89,10 +88,11 @@
 </div>
 
 <div class="advantage container-fluid request">
-    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ad-bg.gif" alt="" class="advantage-bg">
+    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ad-bg3.png" alt="" class="advantage-bg hidden-md hidden-sm hidden-xs">
+    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/ad-bg2.png" alt="" class="advantage-bg hidden-lg hidden-xs">
     <div class="container advantage-container ">
         <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="col-md-3 col-sm-3 col-xs-12">
                 <h2>Advantage</h2>
                 <ul class="advantage-left">
                     <?php for($i=1; $i<=3; $i++ ) { ?>
@@ -100,21 +100,21 @@
                     <?php } ?>
                 </ul>
             </div>
-            <div class="col-md-9 col-sm-9 col-xs-9">
+            <div class="col-md-9 col-sm-9 col-xs-12">
                 <ul class="advantage-right">
 <!--                    --><?php //for($i=1; $i<=3; $i++ ) { ?>
 <!--                        <li><img src=" --><?php //echo esc_attr($wl_theme_options['custom_img_2_'.$i]); ?><!--"></li>-->
 <!--                    --><?php //} ?>
                     <li class="advantage-right-active"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_1']); ?>"></li>
                     <li >
-                        <a href="#" class="advantage-exterior advantage-exterior-left"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_2']); ?>" alt=""><span class="advantage-exterior-cover"></span></a>
-                        <a href="#" class="advantage-exterior advantage-exterior-right"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_3']); ?>" alt=""><span class="advantage-exterior-cover"></span></a>
+                        <a href="#" class="advantage-exterior advantage-exterior-left"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_2']); ?>" alt=""></a>
+                        <a href="#" class="advantage-exterior advantage-exterior-right"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_3']); ?>" alt=""></a>
                     </li>
                     <li>
-                        <a href="#" class="col-xs-6 advantage-mechanical"><img class="advantage-mechanical-1" src="<?php echo esc_attr($wl_theme_options['custom_img_2_4']); ?>" alt=""><span></span></a>
-                        <a href="#" class="col-xs-6 advantage-mechanical"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_5']); ?>" alt=""><span></span></a>
-                        <a href="#" class="col-xs-6 advantage-mechanical"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_6']); ?>" alt=""><span></span></a>
-                        <a href="#" class="col-xs-6 advantage-mechanical"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_7']); ?>" alt=""><span></span></a>
+                        <a href="#" class="col-xs-6 advantage-mechanical"><img class="advantage-mechanical-1" src="<?php echo esc_attr($wl_theme_options['custom_img_2_4']); ?>" alt=""></a>
+                        <a href="#" class="col-xs-6 advantage-mechanical"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_5']); ?>" alt=""></a>
+                        <a href="#" class="col-xs-6 advantage-mechanical"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_6']); ?>" alt=""></a>
+                        <a href="#" class="col-xs-6 advantage-mechanical"><img src="<?php echo esc_attr($wl_theme_options['custom_img_2_7']); ?>" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -126,7 +126,6 @@
     <div class="container">
         <h1>Products</h1>
         <?php for($i=1; $i<=8; $i++ ) { ?>
-
             <div class="col-md-3 col-sm-6 product-item ">
                 <h2><?php echo esc_attr($wl_theme_options['custom_title_3_'.$i]); ?></h2>
                 <img src="<?php echo esc_attr($wl_theme_options['custom_img_3_'.$i]); ?>">
@@ -175,12 +174,17 @@
 <!--            <a href="#">VIEW MORE</a>-->
 <!--        </div>-->
     </div>
-    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/downline.gif" alt="" class="product-down">
+    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/downline.gif" alt="" class="product-down hidden-xs">
 </div>
 
 <div class="video container">
+    <h2 class="hidden-lg hidden-sm hidden-md">About Us</h2>
     <div class="col-sm-6 video-left">
-        <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/video.gif" alt="">
+        <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="550px" height="337px" poster="http://localhost/wrd-lh/wp-content/themes/lh/images/video1.png"
+               data-setup="{}">
+            <source src="http://localhost/wrd-lh/wp-content/themes/lh/images/meishi.mp4" type="video/mp4">
+        </video>
+<!--        <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/video.gif" alt="">-->
     </div>
     <div class="col-sm-6 video-right">
         <h2>shantou linghai plastic packing factory co.ltd</h2>

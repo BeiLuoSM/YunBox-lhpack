@@ -15,7 +15,7 @@
       height: 100px;
     }
     h2{
-      font-size: 32px @im;
+      font-size: 30px @im;
       line-height: 34px @im;
     }
   }
@@ -31,28 +31,42 @@
       }
     }
   }
-
-  .advantage-left {
-    li{
-      width: 180px @im;
-      height: 52px @im;
-      margin-bottom:20px @im;
-      line-height:52px @im;
-      font-size:28px @im;
-    }
+  .advantage{
+    margin-bottom: 140px @im;
   }
-  .advantage-container {
+  .advantage-container{
+    margin-top: 0px @im;
     h2{
-      font-size:32px @im;
+      margin-top: 90px @im;
+      margin-bottom:30px @im;
+      margin-left:40px @im;
+      font-size: 30px @im;
+    }
+    .advantage-exterior-left{
+      width: 588px*0.7 @im;
+      height: 386px*0.7 @im;
+    }
+    .advantage-exterior-right{
+      left: 620px*0.7 @im;
+      width: 350px*0.7 @im;
+      height: 386px*0.7 @im;
     }
   }
   .product{
+    h1{
+      margin-left: 14px @im;
+    }
     .product-item {
       h2 {
         margin-bottom: 16px;
         color: #009944;
-        font-size: 22px;
+        font-size: 24px;
       }
+    }
+  }
+  .video-left{
+    &>div{
+      width:100% @im;
     }
   }
   .video-right {
@@ -60,58 +74,80 @@
       font-size:20px @im;
     }
     p{
-      height: 183px;
+      height: 180px;
       overflow: hidden;
     }
   }
   .footer-container {
     h1{
-      font-size:44px;
-      img{
-        width: 8%;
-        height: 8%;
-      }
+      font-size:30px @im;
+      margin-bottom: 20px @im;
     }
     h2{
-      font-size:20px;
+      font-size:26px @im;
       margin-top:0px;
     }
     .footer-container-address{
-      font-size:18px;
+      font-size:26px @im;
     }
     .footer-container-num{
-      font-size:38px;
-      font-weight:500;
-      margin-top:14px;
-      margin-bottom: 14px;
+      font-size:30px @im;
+      margin-top:10px @im;
+      margin-bottom: 0px @im;
       img{
-        width: 33px;
-        height:38px;
+        width: 33px @im;
+        height:38px @im;
       }
     }
     ul{
-      img{
-        height:24px;
-      }
+      margin-top: 20px @im;
+      margin-bottom: 20px @im;
+    }
+    p{
+      margin-top:20px @im;
     }
   }
 }
 
 @media (max-width: 992px) {
+  #searchform{
+    margin-top: 192px @im;
+  }
   .navbar-nav{
     padding-left:0px @im;
     float: left @im;
     margin-top:80px @im;
   }
+  .advantage{
+    margin-bottom: 100px @im;
+  }
+  .advantage-right{
+    .advantage-exterior-left{
+      width: 588px*0.5 @im;
+      height: 386px*0.5 @im;
+    }
+    .advantage-exterior-right{
+      left: 620px*0.5 @im;
+      width: 350px*0.5 @im;
+      height: 386px*0.5 @im;
+    }
+    li{
+      &:nth-of-type(2){
+        margin-top: 100px @im;
+        margin-left: 20px @im;
+      }
+    }
+  }
   .advantage-left {
     li{
-      width: 120px @im;
+      width: 130px @im;
       height: 36px @im;
       margin-bottom:12px @im;
       line-height:36px @im;
       font-size:22px @im;
     }
   }
+
   .video-right {
     p{
       height: 96px;
@@ -123,35 +159,34 @@
   }
   .footer-container {
     h1{
-      font-size:32px;
+      font-size:26px @im;
+      margin-top: 0 @im;
       img{
-        width: 8%;
-        height: 8%;
+        height: 40px @im;
       }
     }
     h2{
-      font-size:16px;
+      font-size:20px @im;
       margin-top:0px;
     }
     .footer-container-address{
-      font-size:14px;
+      font-size:20px @im;
     }
     .footer-container-num{
-      font-size:28px;
-      font-weight:500;
-      margin-top:8px;
-      margin-bottom: 8px;
+      font-size:26px @im;
+      margin-top:0px @im;
+      margin-bottom: 0px @im;
       img{
-        width: 27px;
-        height:32px;
+        width: 20px @im;
+        height: 25px @im;
       }
     }
     ul{
-      width: 200px;
+      width: 200px @im;
       li{
         &:nth-of-type(2){
-          margin-left:50px;
-          margin-right:50px;
+          margin-left:50px @im;
+          margin-right:50px @im;
         }
       }
       img{
@@ -159,7 +194,7 @@
       }
     }
     p{
-      margin-top:12px;
+      margin-top:10px @im;
     }
   }
 }
@@ -204,8 +239,6 @@
   }
   .navbar-nav{
     margin-top:0px @im;
-    padding-bottom: 20px;
-    padding-top: 30px;
     &>li{
       padding-top: 0px;
     }
@@ -247,62 +280,64 @@
     }
     .advantage-container{
       margin-top:2rem @im;
+      .advantage-exterior-left{
+        width: 588px*0.3 @im;
+        height: 386px*0.3 @im;
+      }
+      .advantage-exterior-right{
+        left: 620px*0.33 @im;
+        width: 350px*0.3 @im;
+        height: 386px*0.3 @im;
+      }
       .advantage-left {
         li{
-          width: 100px @im;
-          height: 30px @im;
-          margin-bottom:10px @im;
-          line-height:30px @im;
+          float: left; @im
+          width: 120px @im;
+          height: 40px @im;
+          margin-bottom:0px @im;
+          line-height:40px @im;
           font-size:18px @im;
-          margin-right:0px @im;
+          margin-right:10px @im;
           cursor: pointer @im;
         }
       }
     }
   }
+  .video{
+    margin-top: 20px @im;
+    h2{
+      margin-bottom: 20px @im;
+      text-align: center;
+    }
+  }
   .footer-container {
     h1{
-      font-size:16px;
+      font-size:20px @im;
       margin-top:0;
       margin-bottom:0;
       img{
-        width: 8%;
-        height: 8%;
+        display: none;
       }
     }
     h2{
-      font-size:14px;
-      margin-top:0;
-      margin-bottom:0;
+      font-size:14px @im;
+      margin-top:-10px @im;
+      margin-bottom:0px @im;
     }
     .footer-container-address{
-      font-size:12px;
+      font-size:14px @im;
     }
     .footer-container-num{
-      font-size:14px;
-      font-weight:500;
-      margin-top:0px;
-      margin-bottom: 0px;
+      font-size:20px @im;
+      margin-top:0px @im;
+      margin-bottom: 0px @im;
       img{
-        width: 12px;
-        height:15px;
-      }
-    }
-    ul{
-      width: 160px @im;
-      img{
-        height:12px;
-      }
-      li{
-        &:nth-of-type(2){
-          margin-left:30px @im;
-          margin-right:30px @im;
-        }
+        width: 13px @im;
+        height:17px @im;
       }
     }
     p{
-      margin-top:0px;
-      font-size:12px;
+      display: none;
     }
   }
 }
@@ -324,16 +359,6 @@
   .container{
     position:relative;
   }
-  .navbar-nav{
-    margin-top:20px @im;
-    padding-bottom: 30px;
-    &>li{
-      padding-top: 0px;
-    }
-    .navbar-nav-search{
-      margin-left:15px;
-    }
-  }
   .navbar-header {
     .navbar-toggle{
       margin-top: 24px;
@@ -352,20 +377,14 @@
       }
     }
   }
-  #searchform{
-    width: 100% @im;
-}
   .about-us-title {
     .col-sm-4{
       margin-bottom:20px;
     }
   }
-  .about-us-A{
-    margin-top:20px;
-  }
   .advantage{
     margin-top: 20px @im;
-    margin-bottom: 0 @im;
+    margin-bottom: 190px @im;
     h2{
       margin-left: 0px @im;
       margin-top: 20px @im;
@@ -374,63 +393,55 @@
     }
     .advantage-container{
       margin-top:1rem @im;
-      .advantage-left {
-        margin-left: -30px @im;
+      .advantage-right{
+        .advantage-exterior-left{
+          width: 200px @im;
+        }
         li{
-          width: 80px @im;
-          height: 20px @im;
-          margin-bottom:10px @im;
-          line-height:20px @im;
-          font-size:12px @im;
-          margin-right:0px @im;
+          &:nth-of-type(2){
+            margin-top: 50px @im;
+          }
+        }
+      }
+      .advantage-left {
+        margin-left: -40px @im;
+        li{
+          float: left;
+          width: 100px @im;
+          height: 30px @im;
+          line-height:30px @im;
+          font-size:16px @im;
+          margin-right:10px @im;
           cursor: pointer @im;
         }
       }
     }
   }
+  .video {
+    margin-top: 20px @im;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px @im;
+    }
+  }
   .footer-container {
     h1{
-      font-size:12px;
-      margin-top:0;
-      margin-bottom:0;
-      img{
-        width: 8%;
-        height: 8%;
-      }
+      font-size:16px @im;
+      margin-top:0 @im;
+      margin-bottom:0 @im;
     }
     h2{
-      font-size:12px;
-      margin-top:0;
-      margin-bottom:0;
+      font-size:12px @im;
+      margin-top:0 @im;
+      margin-bottom:0 @im;
     }
     .footer-container-address{
-      font-size:12px;
+      font-size:12px @im;
     }
     .footer-container-num{
-      font-size:12px;
-      font-weight:500;
-      margin-top:0px;
-      margin-bottom: 0px;
-      img{
-        width: 12px;
-        height:15px;
-      }
-    }
-    ul{
-      width: 160px;
-      img{
-        height:12px;
-      }
-      li{
-        &:nth-of-type(2){
-          margin-left:30px @im;
-          margin-right:30px @im;
-        }
-      }
-    }
-    p{
-      margin-top:0px;
-      font-size:12px;
+      font-size:16px @im;
+      margin-top:0px @im;
+      margin-bottom: 0px @im;
     }
   }
 }

@@ -11,6 +11,42 @@ $(function () {
     window.onresize = function(){
         sizeChange()
     }
+
+    function getScrollTop()
+    {
+        var scrollTop=0;
+        if(document.documentElement&&document.documentElement.scrollTop)
+        {
+            scrollTop=document.documentElement.scrollTop;
+        }
+        else if(document.body)
+        {
+            scrollTop=document.body.scrollTop;
+        }
+        return scrollTop;
+    }
+    window.onscroll=function () {
+        var w = document.documentElement.clientWidth;
+        var scrollTop = getScrollTop();
+        if(w>=1200){
+            if(scrollTop>=80){
+                $(".navbar-brand h2").hide();
+                $(".navbar-brand img").attr("src","http://localhost/wrd-lh/wp-content/themes/lh/images/h-logo1.png").css("width","70px").css("margin-top","22px");
+                $(".nav-phone").hide();
+                $(".navigation_menu").addClass("navbar-fixed-top");
+                $(".navbar-nav").css("padding-left","0").css("margin-top","46px").css("padding-right","0");
+                $(".search-img").hide();
+            }else{
+                $(".navbar-brand h2").show();
+                $(".navbar-brand img").attr("src","http://localhost/wrd-lh/wp-content/themes/lh/images/h-logo.gif").css("width","132px").css("margin-top","");
+                $(".nav-phone").show();
+                $(".navigation_menu").removeClass("navbar-fixed-top");
+                $(".navbar-nav").css("padding-left","330px").css("margin-top","34px").css("padding-right","44px");
+                $(".search-img").show();
+            }
+        }
+    }
+
     function tab() {
         var adL = $(".advantage-left li");
         var adR = $(".advantage-right li");
@@ -35,33 +71,29 @@ $(function () {
         var w = document.documentElement.clientWidth;
         $(".navbar-collapse img").click(function () {
             if(onoff){
-                    $("#searchform").css("margin-top","190px").css("opacity","1");
+                    $(this).attr("src","http://localhost/wrd-lh/wp-content/themes/lh/images/close.png");
+                    $("#searchform").css("margin-top","156px").css("opacity","1");
                     if(w<767){
                         $("#searchform").css("margin-top","10px").css("opacity","1").css("left","0");
                     }
             }else{
-                $("#searchform").css("margin-top","180px").css("opacity","0");
+                $(this).attr("src","http://localhost/wrd-lh/wp-content/themes/lh/images/search.gif");
+                $("#searchform").css("margin-top","156px").css("opacity","0");
             }
             onoff = !onoff;
         })
     })()
 
-
-    function advantageHover(){
+    function adToBig(c,w,h){
         var fs = parseInt($("html").css("fontSize"));
-            function adToBig(c,w,h,num){
-                $(c).mouseover(function () {
-                    $(".advantage-exterior-cover").eq(num).css("opacity","0");
-                    $(this).css("marginTop","-5px").css("marginLeft","-5px").css("width",w/71.362*fs*1.03+"px").css("height",h/71.362*fs*1.03+"px");
-                }).mouseout(function () {
-                    $(".advantage-exterior-cover").eq(num).css("opacity","0.6");
-                    $(this).css("marginTop","0px").css("marginLeft","0px").css("width",w/71.362*fs+"px").css("height",h/71.362*fs+"px");
-                })
-            }
-            adToBig(".advantage-exterior-left",588,386,0);
-            adToBig(".advantage-exterior-right",350,386,1);
+        $(c).mouseover(function () {
+            $(this).css("marginTop","-5px").css("marginLeft","-5px").css("width",w/71.362*fs*1.03+"px").css("height",h/71.362*fs*1.03+"px");
+        }).mouseout(function () {
+            $(this).css("marginTop","0px").css("marginLeft","0px").css("width",w/71.362*fs+"px").css("height",h/71.362*fs+"px");
+        })
     }
-    advantageHover();
+    adToBig(".advantage-exterior-left",588,386);
+    adToBig(".advantage-exterior-right",350,386);
 
     (function () {
         for(let i =0 ;i<$(".advantage-mechanical").length;i++){
@@ -75,5 +107,11 @@ $(function () {
             })
         }
     })()
+
+    // var myPlayer = videojs('example_video_1');
+    // videojs("example_video_1").ready(function(){
+    //     var myPlayer = this;
+    //     myPlayer.play();
+    // });
 
 })

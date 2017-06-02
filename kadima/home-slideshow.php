@@ -1,4 +1,4 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" ">
     <div class="carousel-inner">
     <?php
         $theme_options = kadima_get_options();
@@ -7,7 +7,9 @@
             if($theme_options['slide_image_'.$i]!='') {
     ?>
                 <div class="item <?php if($j==1) echo "active"; ?>">
-                    <img src="<?php echo esc_url($theme_options['slide_image_'.$i]); ?>" class="img-responsive" alt="<?php echo esc_attr($theme_options['slide_title_'.$i]); ?>" />
+                    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/banner-fly.gif" alt="" class="animated flyin slideInLeft" >
+                    <img src="<?php echo esc_url($theme_options['slide_image_1']); ?>" class="img-responsive hidden-md hidden-sm hidden-xs" alt="<?php echo esc_attr($theme_options['slide_title_1']); ?>" />
+                    <img src="<?php echo esc_url($theme_options['slide_image_2']); ?>" class="img-responsive hidden-lg" alt="<?php echo esc_attr($theme_options['slide_title_2']); ?>" />
                         <div class="container">
                             <div class="carousel-caption">
                             <?php if($theme_options['slide_title_'.$i]!='') {  ?>
