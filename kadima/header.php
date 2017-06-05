@@ -11,26 +11,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="<?php bloginfo('charset'); ?>" />
-	<?php $wl_theme_options = kadima_get_options(); ?>
-	<?php if($wl_theme_options['upload_image_favicon']!=''){ ?>
-	<link rel="shortcut icon" href="<?php  echo esc_url($wl_theme_options['upload_image_favicon']); ?>" />
+	<?php $theme_options = kadima_get_options(); ?>
+	<?php if($theme_options['upload_image_favicon']!=''){ ?>
+	<link rel="shortcut icon" href="<?php  echo esc_url($theme_options['upload_image_favicon']); ?>" />
 	<?php } ?>
-	<?php
-		if (is_home()) {
-			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
-			<link rel="dns-prefetch" href="//cdn.yunclever.com">
-			<link rel="dns-prefetch" href="//cdn.bootcss.com">
-			<link rel="dns-prefetch" href="//static.addtoany.com">';
-		} elseif (isset($_COOKIE['yc_visit_cookie'])) {
-			echo '';
-		}
-		else {
-			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
-			<link rel="dns-prefetch" href="//cdn.yunclever.com">
-			<link rel="dns-prefetch" href="//cdn.bootcss.com">
-			<link rel="dns-prefetch" href="//static.addtoany.com">';
-		}
-	?>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -44,8 +28,8 @@
 				<div class="col-md-6 col-sm-12 wl_rtl" >
 					<div class="logo">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php if($wl_theme_options['upload_image_logo']){ ?>
-						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
+					<?php if($theme_options['upload_image_logo']){ ?>
+						<img class="img-responsive" src="<?php echo $theme_options['upload_image_logo']; ?>" style="height:<?php if($theme_options['height']!='') { echo $theme_options['height']; }  else { "80"; } ?>px; width:<?php if($theme_options['width']!='') { echo $theme_options['width']; }  else { "200"; } ?>px;" />
 						<?php } else {
 							echo get_bloginfo('name');
 						} ?>
@@ -53,27 +37,27 @@
 					<p><?php bloginfo( 'description' ); ?></p>
 					</div>
 				</div>
-				<?php if($wl_theme_options['header_social_media_in_enabled']=='1') { ?>
+				<?php if($theme_options['header_social_media_in_enabled']=='1') { ?>
 				<div class="col-md-6 col-sm-12">
-				<?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
+				<?php if($theme_options['email_id'] || $theme_options['phone_no'] !='') { ?>
 				<ul class="head-contact-info">
-						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
-						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
+						<?php if($theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $theme_options['email_id']; ?>"><?php echo esc_attr($theme_options['email_id']); ?></a></li><?php } ?>
+						<?php if($theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone"></i><a href="tel:<?php echo $theme_options['phone_no']; ?>"><?php echo esc_attr($theme_options['phone_no']); ?></a></li><?php } ?>
 				</ul>
 				<?php } ?>
 					<ul class="social">
-					<?php if($wl_theme_options['fb_link']!='') { ?>
-					   <li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
-					<?php } if($wl_theme_options['twitter_link']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']); ?>"><i class="fa fa-twitter"></i></a></li>
-					<?php } if($wl_theme_options['linkedin_link']!='') { ?>
-					<li class="linkedin" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><a href="<?php echo esc_url($wl_theme_options['linkedin_link']); ?>"><i class="fa fa-linkedin"></i></a></li>
-					<?php } if($wl_theme_options['youtube_link']!='') { ?>
-					<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"><a href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
-	                <?php } if($wl_theme_options['gplus']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="gplus"><a href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
-	                <?php } if($wl_theme_options['instagram']!='') { ?>
-					<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"><i class="fa fa-instagram"></i></a></li>
+					<?php if($theme_options['fb_link']!='') { ?>
+					   <li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a  href="<?php echo esc_url($theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
+					<?php } if($theme_options['twitter_link']!='') { ?>
+					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="<?php echo esc_url($theme_options['twitter_link']); ?>"><i class="fa fa-twitter"></i></a></li>
+					<?php } if($theme_options['linkedin_link']!='') { ?>
+					<li class="linkedin" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><a href="<?php echo esc_url($theme_options['linkedin_link']); ?>"><i class="fa fa-linkedin"></i></a></li>
+					<?php } if($theme_options['youtube_link']!='') { ?>
+					<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"><a href="<?php echo esc_url($theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
+	                <?php } if($theme_options['gplus']!='') { ?>
+					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="gplus"><a href="<?php echo esc_url($theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
+	                <?php } if($theme_options['instagram']!='') { ?>
+					<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="instagram"><a href="<?php echo esc_url($theme_options['instagram']) ; ?>"><i class="fa fa-instagram"></i></a></li>
 	                <?php } ?>
 					</ul>
 				</div>
@@ -95,17 +79,17 @@
 					  <span class="icon-bar"></span>
 					</button>
                     <a class="navbar-brand" href="#">
-                        <img alt="logo" src="http://localhost/wrd-lh/wp-content/themes/lh/images/h-logo.gif" class="img-responsive">
+                        <img alt="logo" src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/h-logo.gif" class="img-responsive">
                     </a>
                     <a class="navbar-brand" href="#">
                         <h2>LINGHAI <br>PLASTIC</h2>
                     </a>
 				</div>
 				<div id="menu" class="collapse navbar-collapse ">
-                    <div class="nav-phone " >
-                        <a href="#">Quote Now</a>
-                        <span><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/phone.gif" alt="">86-754-88676633</span>
-                    </div>
+                     <div class="nav-phone">
+                    <a href="#">Quote Now</a>
+                    <span><img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/phone.gif" alt="">86-754-88676633</span>
+                </div>
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'primary',
@@ -116,7 +100,7 @@
 						);
 					?>
 					<div id="google_translate_element" ></div>
-                    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/search.gif" alt="" class="hidden-xs search-img" >
+                    <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/search.gif" alt="" class="hidden-xs search-img" >
                     <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" class=" hidden-xs">
                         <div class="input-group">
                             <input type="text" class="form-control"  name="s" id="s" placeholder="<?php _e( "What do you want to find?", 'kadima' ); ?>" />
