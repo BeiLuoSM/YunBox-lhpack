@@ -95,7 +95,7 @@
 					  <span class="icon-bar"></span>
 					</button>
                     <a class="navbar-brand" href="#">
-                        <img alt="logo" src="http://localhost/wrd-lh/wp-content/themes/lh/images/h-logo.gif" class="img-responsive">
+                        <img alt="logo" src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/h-logo.gif" class="img-responsive">
                     </a>
                     <a class="navbar-brand" href="#">
                         <h2>LINGHAI <br>PLASTIC</h2>
@@ -103,28 +103,19 @@
 				</div>
 				<div id="menu" class="collapse navbar-collapse ">
                     <div class="nav-phone " >
-                        <a href="#">Quote Now</a>
-                        <span><img src="http://localhost/wrd-lh/wp-content/themes/lh/images/phone.gif" alt="">86-754-88676633</span>
+                        <a href="http://www.lhpack.com/contact/">Quote Now</a>
+                        <span><img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/phone.gif" alt="">86-754-88686622</span>
                     </div>
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'primary',
 							'menu_class' => 'nav navbar-nav',
 							'fallback_cb' => 'kadima_fallback_page_menu',
-							'walker' => new kadima_nav_walker(),
+							// 'walker' => new kadima_nav_walker(),
 							)
 						);
 					?>
 					<div id="google_translate_element" ></div>
-                    <img src="http://localhost/wrd-lh/wp-content/themes/lh/images/search.gif" alt="" class="hidden-xs search-img" >
-                    <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" class=" hidden-xs">
-                        <div class="input-group">
-                            <input type="text" class="form-control"  name="s" id="s" placeholder="<?php _e( "What do you want to find?", 'kadima' ); ?>" />
-                            <span class="input-group-btn">
-                                <button class="btn btn-search" type="submit" ><i class="fa fa-search"></i></button>
-                            </span>
-                        </div>
-                    </form>
 				</div>
 			</nav>
 		</div>

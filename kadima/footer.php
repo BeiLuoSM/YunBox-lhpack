@@ -50,16 +50,17 @@
 		</div>
 </div>
 <!-- /Footer Widget Secton -->
-</div>
+
 
 <div class="footer1">
-    <div class="container footer-container1">
-        <h1 ><?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }?></h1>
-        <span class="footer-container-num1">TEL : <?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_tel']); } ?></span>
-        <h2 >ADDRESS : </h2>
-        <span class="footer-container-address1 "><?php if($wl_theme_options['info_tel']) { echo esc_attr($wl_theme_options['info_fax']); } ?></span><br>
-        <p class="hidden-xs"><?php echo esc_attr($wl_theme_options['info_copyright']); ?></p>
-    </div>
+	<h2><img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/ft2-logo.png">LINGHAI PLASTIC</h2>
+	<h3><span class="fa fa-phone"></span>86-754-88686622</h3>
+	<ul>
+	    <li><a href="#" class="fa fa-facebook"></a></li>
+	    <li><a href="#" class="fa fa-twitter"></a></li>
+	    <li><a href="#" class="fa fa-linkedin"></a></li>
+	</ul>
+	<p>Copyright © 2008 Shantou Linghai Plastic Packing Factory Co., Ltd. All rights reserved</p>
 </div>
 
 <a href="#" title="Go Top" class="kadima_scrollup" style="display: inline;">

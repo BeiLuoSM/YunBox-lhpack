@@ -1298,6 +1298,29 @@ function kadima_customizer( $wp_customize ) {
 			'settings'  => 'kadima_options[info_support]'
 		)
 	);
+
+
+
+    // slider options
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[slide_image_1]', array(
+        'selector' => '.item>span',
+        'container_inclusive' => false,
+    ) );
+    // custom-1 options
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[custom_img_1_1]', array(
+        'selector' => '.swiper-container>span',
+        'container_inclusive' => false,
+    ) );
+    // custom-2 options
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[custom_title_2_1]', array(
+        'selector' => '.video>h2',
+        'container_inclusive' => false,
+    ) );
+    // custom-3 options
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[custom_title_3_1]', array(
+        'selector' => '.product>div',
+        'container_inclusive' => false,
+    ) );
 }
 function kadima_sanitize_text( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );

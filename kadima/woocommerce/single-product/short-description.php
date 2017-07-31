@@ -28,5 +28,7 @@ if ( ! $post->post_excerpt ) {
 
 ?>
 <div class="woocommerce-product-details__short-description">
+    <h2 class="short-des-title"><span style="font-family: verdana, geneva, sans-serif;">OUR ADVANTAGES</span></h2>
+    <p class="line"><span style="font-family: verdana, geneva, sans-serif;"> </span></p>
     <?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ); ?>
 </div>

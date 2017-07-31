@@ -1,184 +1,110 @@
 @im:!important;
 
 @media (max-width: 1200px) {
-  .navbar{
-    min-height: 100px @im;
-  }
+#searchform{
+  margin-top: 142px @im;
+}
+.navbar {
   .navbar-nav {
-    li{
-      padding-left: 0px @im;
-      padding-right: 0px @im;
-    }
+    padding-left: 240px;
+    margin-top:20px;
   }
   .navbar-brand{
+    padding:15px 5px;
     img{
-      height: 100px;
+      width:100px;
     }
     h2{
-      font-size: 30px @im;
-      line-height: 34px @im;
+      margin-top:10px;
+      line-height:36px;
+      font-size: 26px;
     }
   }
-  .nav-phone{
-    a,span{
-      width: 170px @im;
-      height:34px @im;
-      font-size: 14px @im;
-      line-height: 34px @im;
-      img{
-        height: 18px @im;
-        margin: 5px @im;
-      }
-    }
-  }
-  .advantage{
-    margin-bottom: 140px @im;
-  }
-  .advantage-container{
-    margin-top: 0px @im;
-    h2{
-      margin-top: 90px @im;
-      margin-bottom:30px @im;
-      margin-left:40px @im;
-      font-size: 30px @im;
-    }
-    .advantage-exterior-left{
-      width: 588px*0.7 @im;
-      height: 386px*0.7 @im;
-    }
-    .advantage-exterior-right{
-      left: 620px*0.7 @im;
-      width: 350px*0.7 @im;
-      height: 386px*0.7 @im;
-    }
-  }
-  .product{
-    h1{
-      margin-left: 14px @im;
-    }
-    .product-item {
-      h2 {
-        margin-bottom: 16px;
-        color: #009944;
-        font-size: 24px;
-      }
-    }
-  }
+}
+.video{
   .video-left{
     &>div{
-      width:100% @im;
+      width: 440px;
+      height: 270px;
     }
   }
   .video-right {
     h2{
-      font-size:20px @im;
+      font-size:22px;
+      margin-bottom:10px;
     }
     p{
-      height: 180px;
-      overflow: hidden;
+      font-size:16px;
+      line-height: 30px;
     }
   }
-  .footer-container {
-    h1{
-      font-size:30px @im;
-      margin-bottom: 20px @im;
-    }
+}
+.product{
+  .product-item {
     h2{
-      font-size:26px @im;
-      margin-top:0px;
-    }
-    .footer-container-address{
-      font-size:26px @im;
-    }
-    .footer-container-num{
-      font-size:30px @im;
-      margin-top:10px @im;
-      margin-bottom: 0px @im;
-      img{
-        width: 33px @im;
-        height:38px @im;
-      }
-    }
-    ul{
-      margin-top: 20px @im;
-      margin-bottom: 20px @im;
-    }
-    p{
-      margin-top:20px @im;
+      font-size:22px;
     }
   }
 }
 
+.about-child>div:nth-of-type(2) .row div:nth-of-type(1) p, .about-child>div:nth-of-type(2) .row div:nth-of-type(3) p,.about-child>div:nth-of-type(2) .row div:nth-of-type(2) p{
+  line-height: 28px;
+}
+
+
+//新闻页
+.kadima_blog-img{
+    img{
+        width:450px;
+        height:450px;
+    }
+}
+
+}
+
 @media (max-width: 992px) {
   #searchform{
-    margin-top: 192px @im;
+    margin-top: 172px @im;
   }
   .navbar-nav{
     padding-left:0px @im;
     float: left @im;
-    margin-top:80px @im;
+    margin-top:50px @im;
   }
-  .advantage{
-    margin-bottom: 100px @im;
-  }
-  .advantage-right{
-    .advantage-exterior-left{
-      width: 588px*0.5 @im;
-      height: 386px*0.5 @im;
+  .video{
+    .video-left{
+      &>div{
+        width: 350px;
+        height: 215px;
+      }
     }
-    .advantage-exterior-right{
-      left: 620px*0.5 @im;
-      width: 350px*0.5 @im;
-      height: 386px*0.5 @im;
-    }
-    li{
-      &:nth-of-type(2){
-        margin-top: 100px @im;
-        margin-left: 20px @im;
+    .video-right {
+      h2{
+        font-size:16px;
+      }
+      p{
+        font-size:14px;
+        line-height:28px;
       }
     }
   }
-  .advantage-left {
-    li{
-      width: 130px @im;
-      height: 36px @im;
-      margin-bottom:12px @im;
-      line-height:36px @im;
-      font-size:22px @im;
+  .product{
+    .container{
+      padding-top:30px;
     }
-  }
-
-  .video-right {
-    p{
-      height: 96px;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
-      overflow: hidden;
+    .product-item {
+      h2{
+        font-size:22px;
+      }
     }
   }
   .footer-container {
+    padding-top:65px @im;
     h1{
-      font-size:26px @im;
+      font-size:20px @im;
       margin-top: 0 @im;
       img{
         height: 40px @im;
-      }
-    }
-    h2{
-      font-size:20px @im;
-      margin-top:0px;
-    }
-    .footer-container-address{
-      font-size:20px @im;
-    }
-    .footer-container-num{
-      font-size:26px @im;
-      margin-top:0px @im;
-      margin-bottom: 0px @im;
-      img{
-        width: 20px @im;
-        height: 25px @im;
       }
     }
     ul{
@@ -193,158 +119,62 @@
         height:18px;
       }
     }
-    p{
-      margin-top:10px @im;
-    }
-  }
-}
-@media (max-width: 767px) {
-  .navbar{
-    min-height:100px @im;
-    .navbar-collapse{
-      img{
-        left: 0 @im;
-        bottom: 0 @im;
-        margin-bottom: 10px @im;
-      }
-    }
-    .nav-phone {
-      .phone2{
-        position:absolute @im;
-        width: 130px @im;
-        height: 30px @im;
-        text-align:center @im;
-        line-height:30px @im;
-        top: 0px @im;
-        right: 70px @im;
-        border-radius:3px @im;
-        box-sizing: border-box @im;
-        font-size:14px @im;
-      }
-      span{
-        .phone2;
-        img{
-          display: none;
-        }
-      }
-      a{
-        .phone2;
-        top: 36px @im;
-        right:84px @im;
-      }
-    }
-  }
-  .container{
-    position:relative;
-  }
-  .navbar-nav{
-    margin-top:0px @im;
-    &>li{
-      padding-top: 0px;
-    }
-    .navbar-nav-search{
-      margin-left:15px;
-    }
-  }
-  .navbar-header {
-    .navbar-toggle{
-      margin-top: 24px;
-      margin-bottom: 64px;
-    }
-    .navbar-brand {
-      padding-right: 0 @im;
-      img{
-        height: 80px @im;
-      }
-      h2{
-        line-height:30px @im;
-        font-size:26px @im;
-        margin-top:10px @im;
-      }
-    }
-  }
-  .about-us-title {
-    .col-sm-4{
-      margin-bottom:20px;
-    }
-  }
-  .about-us-A{
-    margin-top:20px;
-  }
-  .advantage{
-    margin-top: 20px @im;
-    h2{
-      margin-top: 30px @im;
-      margin-bottom: 10px @im;
-      font-size: 30px @im;
-    }
-    .advantage-container{
-      margin-top:2rem @im;
-      .advantage-exterior-left{
-        width: 588px*0.3 @im;
-        height: 386px*0.3 @im;
-      }
-      .advantage-exterior-right{
-        left: 620px*0.33 @im;
-        width: 350px*0.3 @im;
-        height: 386px*0.3 @im;
-      }
-      .advantage-left {
-        li{
-          float: left; @im
-          width: 120px @im;
-          height: 40px @im;
-          margin-bottom:0px @im;
-          line-height:40px @im;
-          font-size:18px @im;
-          margin-right:10px @im;
-          cursor: pointer @im;
-        }
-      }
-    }
-  }
-  .video{
-    margin-top: 20px @im;
-    h2{
-      margin-bottom: 20px @im;
-      text-align: center;
-    }
-  }
-  .footer-container {
-    h1{
-      font-size:20px @im;
-      margin-top:0;
-      margin-bottom:0;
-      img{
-        display: none;
-      }
-    }
-    h2{
+    p, .footer-container-address{
       font-size:14px @im;
-      margin-top:-10px @im;
-      margin-bottom:0px @im;
-    }
-    .footer-container-address{
-      font-size:14px @im;
-    }
-    .footer-container-num{
-      font-size:20px @im;
-      margin-top:0px @im;
-      margin-bottom: 0px @im;
-      img{
-        width: 13px @im;
-        height:17px @im;
+      &:nth-of-type(1){
+        margin-top:20px;
       }
     }
-    p{
+  }
+  .specifications{
+    display: none;
+  }
+  .child-pro-details{
+    padding-top:0;
+    div{
       display: none;
     }
+    table{
+      width:90%;
+      margin-left:0;
+    }
   }
+// 产品页
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+    width:48.5%;
+}
+//关于页
+.about-child>div:nth-of-type(2) .row div:nth-of-type(1) p, .about-child>div:nth-of-type(2) .row div:nth-of-type(3) p,.about-child>div:nth-of-type(2) .row div:nth-of-type(2) p{
+    font-size:13px;
+    line-height:26px;
+}
+//新闻页
+.kadima_blog-img{
+    img{
+        width:350px;
+        height:350px;
+    }
+}
+.news p{
+    font-size:13px;
+    line-height:24px;
+    margin-bottom:20px;
+}
+
+}
+@media (max-width: 767px) {
+
 }
 
 @media (max-width: 480px) {
+  .row{
+    margin:0;
+  }
   .navbar{
     min-height:80px @im;
+    .navbar-nav{
+      margin-top:0 @im;
+    }
     .navbar-collapse{
       img{
         left: 0 @im;
@@ -367,53 +197,13 @@
     .navbar-brand {
       padding:15px 0 @im;
       img{
-        height: 50px @im;
+        width:50px @im;
         margin-right: 10px;
       }
       h2{
         line-height:20px @im;
         font-size:18px @im;
         margin-top:5px @im;
-      }
-    }
-  }
-  .about-us-title {
-    .col-sm-4{
-      margin-bottom:20px;
-    }
-  }
-  .advantage{
-    margin-top: 20px @im;
-    margin-bottom: 190px @im;
-    h2{
-      margin-left: 0px @im;
-      margin-top: 20px @im;
-      margin-bottom: 6px @im;
-      font-size: 20px @im;
-    }
-    .advantage-container{
-      margin-top:1rem @im;
-      .advantage-right{
-        .advantage-exterior-left{
-          width: 200px @im;
-        }
-        li{
-          &:nth-of-type(2){
-            margin-top: 50px @im;
-          }
-        }
-      }
-      .advantage-left {
-        margin-left: -40px @im;
-        li{
-          float: left;
-          width: 100px @im;
-          height: 30px @im;
-          line-height:30px @im;
-          font-size:16px @im;
-          margin-right:10px @im;
-          cursor: pointer @im;
-        }
       }
     }
   }
@@ -424,7 +214,30 @@
       margin-bottom: 20px @im;
     }
   }
+  .seamless{
+    padding-bottom: 30px;
+    h2{
+      font-size:24px;
+      width:330px;
+      height:54px;
+    }
+  }
+  .product{
+    .container{
+      &>h2{
+        text-align: center;
+      }
+    }
+    .product-item {
+      padding-left:15px;
+      margin-top: 38px;
+      h2{
+        font-size:22px;
+      }
+    }
+  }
   .footer-container {
+    padding-top:20px @im;
     h1{
       font-size:16px @im;
       margin-top:0 @im;
@@ -443,5 +256,48 @@
       margin-top:0px @im;
       margin-bottom: 0px @im;
     }
+  }
+  .child-com-title{
+    font-size:24px;
+  }
+  .child-pro-pic1,.child-pro-pic2{
+    margin-top:30px;
+  }
+  .footer1{
+    padding-top: 0;
+    margin-top:0;
+    p{
+        height:auto;
+        line-height:20px;
+        font-size:12px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+  }
+  //关于页
+  .about-child{
+    padding-top:0;
+  }
+  .about-child>div:nth-of-type(1) h2{
+    margin-bottom:20px;
+  }
+  .about-child>div:nth-of-type(2) .row div:nth-of-type(1), .about-child>div:nth-of-type(2) .row div:nth-of-type(3){
+    margin-top:0;
+    border: none;
+    height:400px;
+  }
+  .about-child>div:nth-of-type(2) .row div:nth-of-type(1) p, .about-child>div:nth-of-type(2) .row div:nth-of-type(2) p, .about-child>div:nth-of-type(2) .row div:nth-of-type(3) p{
+    font-size:16px;
+  }
+  .about-child>div:nth-of-type(2) .row div:nth-of-type(2){
+    height:500px;
+  }
+
+  //新闻页
+  .kadima_fuul_blog_detail_padding{
+    margin-bottom:50px;
+  }
+  .news p{
+    font-size:16px;
   }
 }

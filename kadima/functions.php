@@ -10,17 +10,17 @@
         wp_enqueue_style('font-awesome', '//statics.yunclever.com/font-awesome/4.7.0/css/font-awesome.min.css');
         wp_enqueue_style('video-js-css', '//statics.yunclever.com/videojs/5.17.0/video-js.min.css');
         wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
-        //wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css');
-//        wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
+        wp_enqueue_style('baguetteBox', '//statics.yunclever.com/baguetteBox/baguetteBox.min.css');
+        wp_enqueue_style('swiper', get_template_directory_uri() . '/css/swiper.min.css');
         wp_enqueue_style('index', get_template_directory_uri() . '/index.css');
+        wp_enqueue_style('response', get_template_directory_uri() . '/response.css');
         wp_enqueue_script('bootstrap-js', '//statics.yunclever.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
         wp_enqueue_script('video-js', '//statics.yunclever.com/videojs/5.17.0/video.min.js', array('jquery'));
         wp_enqueue_script('logjs', '//statics.yunclever.com/log/0.3.0/log.min.js', array('jquery'));
+        wp_enqueue_script('baguetteBox', '//statics.yunclever.com/baguetteBox/baguetteBox.min.js');
         wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
-        wp_enqueue_script('jq', '//cdn.bootcss.com/jquery/1.12.4/jquery.min.js', array('jquery'));
+        wp_enqueue_script('swiper', get_template_directory_uri() .'/js/swiper.min.js', array('jquery'));
         wp_enqueue_script('index1', get_template_directory_uri() .'/js/index1.js', array('jquery'));
-
-
         if(is_front_page()){
             wp_enqueue_script('jquery.carouFredSel', '//cdn.bootcss.com/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js');
             wp_enqueue_script('photobox-js', '//cdn.bootcss.com/photobox/1.9.9/photobox/jquery.photobox.min.js');
@@ -128,12 +128,14 @@
 		if ( ! isset( $content_width ) ) $content_width = 550; //px
 		add_image_size('home_post_thumb',340,210,true);
 		add_image_size('wl_page_thumb',730,350,true);
-		add_image_size('blog_2c_thumb',570,350,true);
+		add_image_size('blog_2c_thumb',540,540,true);
 		add_theme_support( 'title-tag' );
+        add_theme_support('customize-selective-refresh-widgets');
 		load_theme_textdomain( 'kadima', WL_TEMPLATE_DIR_CORE . '/lang' );
 		add_theme_support( 'post-thumbnails' );
 		//set_post_thumbnail_size( 160 );
 		register_nav_menu( 'primary', __( 'Primary Menu', 'kadima' ) );
+        register_nav_menu( 'PRDM', __( 'PRDM', 'kadima' ) );
 		$args = array('default-color' => '000000',);
 		add_theme_support( 'custom-background', $args);
 		add_theme_support( 'automatic-feed-links');
@@ -167,14 +169,14 @@
 			'after_title' => '</h2></div>'
 		) );
     	register_sidebar( array(
-    		'name' => __( 'Footer Widget Area', 'kadima' ),
-    		'id' => 'footer-widget-area',
-    		'description' => __( 'footer widget area', 'kadima' ),
-    		'before_widget' => '<div class="col-md-4 col-sm-12 kadima_footer_widget_column">',
-    		'after_widget' => '</div>',
-    		'before_title' => '<h3>',
-    		'after_title' => '</h3>',
-    	) );
+            'name' => __( 'Footer Widget Area', 'kadima' ),
+            'id' => 'footer-widget-area',
+            'description' => __( 'footer widget area', 'kadima' ),
+            'before_widget' => '<div class="col-sm-12 kadima_footer_widget_column">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>',
+        ) );
 	}
 	function kadima_breadcrumbs() { // 面包屑导航
         $delimiter = '';
@@ -382,4 +384,18 @@
 			return '';
 		}
 	}
+
+    add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 6;' ), 20 );
+    add_filter('loop_shop_columns', 'loop_columns');
+    if (!function_exists('loop_columns')) {
+        function loop_columns() {
+            return 3; // 3 products per row
+        }
+    }
+    add_filter( 'woocommerce_product_tabs', 'wc_remove_reviews_tab' );
+    function wc_remove_reviews_tab( $tabs ){
+        unset($tabs['reviews']);
+        return $tabs;
+    }
+
 ?>
