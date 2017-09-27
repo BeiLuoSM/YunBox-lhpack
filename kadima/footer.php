@@ -53,7 +53,7 @@
 
 
 <div class="footer1">
-	<h2><img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/ft2-logo.png">LINGHAI PLASTIC</h2>
+	<h2><img src="http://www.lhpack.com/wp-content/themes/kadima/images/h-logo1.png">LINGHAI PLASTIC</h2>
 	<h3><span class="fa fa-phone"></span>86-754-88686622</h3>
 	<ul>
 	    <li><a href="#" class="fa fa-facebook"></a></li>

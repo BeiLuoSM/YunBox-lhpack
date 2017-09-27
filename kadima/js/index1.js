@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
                     $(".navbar-brand").css("padding", "15px 7px");
                     // $(".navbar-brand h2").hide();
                     $(".navbar-brand h2").css("fontSize", "18px").css("line-height", "24px").css("margin-top", "8px");
-                    $(".navbar-brand img").attr("src", "http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/h-logo1.png").css("width", "70px");
+                    $(".navbar-brand img").attr("src", "http://www.lhpack.com/wp-content/themes/kadima/images/h-logo1.png").css("width", "70px");
                     $(".nav-phone").hide();
                     $(".navigation_menu").addClass("navbar-fixed-top");
                     $(".navbar-nav").css("padding-left", "0").css("padding-right", "0");
@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
                     $(".navbar-brand").css("padding", "15px 15px");
                     // $(".navbar-brand h2").show();
                     $(".navbar-brand h2").css("fontSize", "36px").css("line-height", "44px").css("margin-top", "20px");
-                    $(".navbar-brand img").attr("src", "http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/h-logo.gif").css("width", "132px");
+                    $(".navbar-brand img").attr("src", "http://www.lhpack.com/wp-content/themes/kadima/images/h-logo.gif").css("width", "132px");
                     $(".nav-phone").show();
                     $(".navigation_menu").removeClass("navbar-fixed-top");
                     $(".navbar-nav").css("padding-left", "330px").css("margin-top", "34px").css("padding-right", "44px");

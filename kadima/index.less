@@ -308,7 +308,6 @@ li{
 .grid figure img {
     position: relative;
     display: block;
-    min-height: 100%;
     max-width: 100%;
     opacity: 1;
 }
@@ -428,6 +427,7 @@ figure.effect-steve:hover img {
     padding-top:40px;
     h2{
         text-align:center;
+        color:#0586d7;
         img{
             width:56px;
             margin-right:20px;
@@ -629,6 +629,11 @@ figure.effect-steve:hover img {
     width: 100%;
     height: 100%;
     position:relative;
+    &>span{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
 }
 .swiper-slide {
     background-position: center;
@@ -755,9 +760,16 @@ figure.effect-steve:hover img {
                         font-size:36px;
                         margin-bottom:10px;
                     }
+                    a{
+                      color: #009944;
+                      text-decoration: underline;
+                    }
                     &:hover{
                         color:#fff;
                         background:#009944;
+                        a{
+                          color:#fff;
+                        }
                     }
                 }
                 .col-md-12{
@@ -824,22 +836,23 @@ figure.effect-steve:hover img {
     text-align:center !important;
     line-height:32px !important;
 }
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
-    width:100% @im;
-    background:#009944 @im;
-    text-align:center;
-    margin:0 @im;
-    color:#fff @im;
-    border-radius:0 @im;
-    padding:10px 0;
-    font-size:16px;
+.woocommerce-loop-product__title{
+    text-align: center;
+    font-size: 16px @im;
+    padding: 10px 0 @im;
+    color: #fff;
+    background: #094;
     &:hover{
-        background:#08783a @im;
+        background:#08783a;
     }
 }
-.woocommerce-loop-product__title{
-    display: none;
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+    background: #009944;
+    &:hover{
+        background: #07a74e @im;
+    }
 }
+
 .woocommerce ul.products li.product a img{
     margin:0;
 }
@@ -879,6 +892,11 @@ figure.effect-steve:hover img {
                     }
                 }
             }
+        }
+    }
+    .col-md-9{
+        .page-description,.quote-form,.button {
+          display: none;
         }
     }
 }
@@ -985,4 +1003,9 @@ figure.effect-steve:hover img {
     .navigation_en{
         margin-top:30px;
     }
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__image:nth-child(n+2){
+    padding-right: 1%;
+    margin-top: 10px;
 }

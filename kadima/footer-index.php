@@ -2,7 +2,7 @@
 <?php $wl_theme_options = kadima_get_options(); ?>
 <!-- Footer Widget Secton -->
 <div class="kadima_footer_widget_area footer">
-    <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/f-bg.gif" alt="">
+    <img src="http://www.lhpack.com/wp-content/themes/kadima/images/f-bg.gif" alt="">
 	<div class="container footer-container">
 		<?php
 		if ( is_active_sidebar( 'footer-widget-area' ) ){

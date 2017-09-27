@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="about-child-banner">
-    <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/news-bg.png" class="img-responsive">
+    <img src="http://www.lhpack.com/wp-content/themes/kadima/images/news-bg.png" class="img-responsive">
 </div>
 <div class="container">
 	<div class="row kadima_blog_wrapper single-news">

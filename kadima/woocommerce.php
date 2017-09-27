@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div>
-	<img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/child-product.png" class="img-responsive">
+	<img src="http://www.lhpack.com/wp-content/themes/kadima/images/child-product.png" class="img-responsive">
 </div>
 <div class="kadima_header_breadcrum_title">
 	<div class="container">
@@ -54,7 +54,7 @@
 	if ( is_product() ) {
 ?>
 <div class="child-pro-pic1 container">
-	<img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/child-pro-bottom2.png" alt="" class="img-responsive">
+	<img src="http://www.lhpack.com/wp-content/themes/kadima/images/child-pro-bottom2.png" alt="" class="img-responsive">
 </div>
 <?php
 	}

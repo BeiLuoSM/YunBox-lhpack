@@ -8,7 +8,7 @@
     ?>
                 <div class="item <?php if($j==1) echo "active"; ?>">
                     <span></span>
-                    <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/banner-fly.gif" alt="" class="animated flyin slideInLeft" >
+                    <img src="http://www.lhpack.com/wp-content/themes/kadima/images/banner-fly.gif" alt="" class="animated flyin slideInLeft" >
                     <img src="<?php echo esc_url($theme_options['slide_image_1']); ?>" class="img-responsive" alt="<?php echo esc_attr($theme_options['slide_title_1']); ?>" />
                         <div class="container">
                             <div class="carousel-caption">

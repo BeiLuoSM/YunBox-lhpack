@@ -95,7 +95,7 @@
 					  <span class="icon-bar"></span>
 					</button>
                     <a class="navbar-brand" href="#">
-                        <img alt="logo" src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/h-logo.gif" class="img-responsive">
+                        <img alt="logo" src="http://www.lhpack.com/wp-content/themes/kadima/images/h-logo.gif" class="img-responsive">
                     </a>
                     <a class="navbar-brand" href="#">
                         <h2>LINGHAI <br>PLASTIC</h2>
@@ -104,7 +104,7 @@
 				<div id="menu" class="collapse navbar-collapse ">
                     <div class="nav-phone " >
                         <a href="http://www.lhpack.com/contact/">Quote Now</a>
-                        <span><img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/phone.gif" alt="">86-754-88686622</span>
+                        <span><img src="http://www.lhpack.com/wp-content/themes/kadima/images/phone.gif" alt="">86-754-88686622</span>
                     </div>
 					<?php
 						wp_nav_menu( array(

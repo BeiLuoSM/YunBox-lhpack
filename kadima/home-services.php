@@ -30,11 +30,11 @@
 </div>
 
 <div class="video container">
-    <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-A.gif" class="hidden-sm hidden-xs">
+    <img src="http://www.lhpack.com/wp-content/themes/kadima/images/ab-A.gif" class="hidden-sm hidden-xs">
     <h2 class="  ">About Us</h2>
     <div class="row">
         <div class="col-sm-6 video-left">
-            <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="550px" height="337px" poster="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/videopost.png"
+            <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="550px" height="337px" poster="http://www.lhpack.com/wp-content/themes/kadima/images/videopost.png"
                    data-setup="{}">
                 <source src="http://cdn.yunclever.com/video/client_name/o/0615%E9%99%B5%E6%B5%B7%E8%A7%86%E9%A2%91%EF%BC%88%E7%BB%88%EF%BC%89.mp4" type="video/mp4">
             </video>
@@ -49,8 +49,8 @@
 
 <div class="seamless container-fulid">
     <h2>Seamless OEM Process</h2>
-    <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/seamless1.png" class="img-responsive">
-    <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/seamless2.png" class="img-responsive">
+    <img src="http://www.lhpack.com/wp-content/themes/kadima/images/seamless1.png" class="img-responsive">
+    <img src="http://www.lhpack.com/wp-content/themes/kadima/images/seamless2.png" class="img-responsive">
 </div>
 
 <div class="swiper-container">
@@ -67,7 +67,7 @@
 
 <div class="product">
     <div class="container">
-        <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/p.png" class="hidden-sm hidden-xs">
+        <img src="http://www.lhpack.com/wp-content/themes/kadima/images/p.png" class="hidden-sm hidden-xs">
         <h2>Products</h2>
         <div class=row>
             <?php for($i=1; $i<=4; $i++ ) { ?>

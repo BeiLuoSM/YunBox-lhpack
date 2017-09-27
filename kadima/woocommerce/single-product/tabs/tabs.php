@@ -44,6 +44,12 @@ if ( ! empty( $tabs ) ) : ?>
 		<?php foreach ( $tabs as $key => $tab ) : ?>
 			<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>" role="tabpanel" aria-labelledby="tab-title-<?php echo esc_attr( $key ); ?>">
 				<?php call_user_func( $tab['callback'], $key, $tab ); ?>
+				<div class="specifications">
+					<h2><span> SPECIFICATIONS</span></h2>
+					<p>1) Material:PVC base and PET lid</p>
+					<p>2) Resistant to freezing</p>
+					<p>3) Used for packing food</p>
+				</div>
 			</div>
 		<?php endforeach; ?>
 	</div>

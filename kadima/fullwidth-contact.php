@@ -1,28 +1,28 @@
 <?php //Template Name:contact
 get_header(); ?>
 <div class="about-child-banner">
-    <img src="http://lhpack.hk1i1.yunclever.com/wp-content/themes/kadima/images/contact-1.png" class="img-responsive">
+    <img src="http://www.lhpack.com/wp-content/themes/kadima/images/contact-1.png" class="img-responsive">
 </div>
 <?php get_template_part('breadcrums'); ?>
 <div class="container contact-child">
     <div class="row kadima_blog_wrapper">
         <div class="col-md-6">
-            <form>
+            <form id="formpostmail">
                 <div class="form-group">
-                    <label for="exampleInputName">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+                    <label for="yourname">Name</label>
+                    <input type="text" class="form-control" id="yourname" placeholder="Name">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <label for="youremail">Email</label>
+                    <input type="email" class="form-control" id="youremail" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputSubject">Subject</label>
                     <input type="text" class="form-control" id="exampleInputSubject" placeholder="Subject">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputMessage">Message</label>
-                    <textarea class="form-control" rows="6"></textarea>
+                    <label for="yourmessage">Message</label>
+                    <textarea class="form-control" rows="6" id="yourmessage"></textarea>
                 </div>
                 <button type="submit" class="btn btn-default">SEND MESSAGE</button>
             </form>
